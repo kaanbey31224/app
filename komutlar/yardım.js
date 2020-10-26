@@ -6,7 +6,7 @@ const EmbedPinCode = new Discord.MessageEmbed()
 
 .setColor("RANDOM")
 .setTitle("**▬▬▬▬▬▬[** ©️ **» CAPTAN Bot** ©️ **]▬▬▬▬▬▬**  \n\n> :floppy_disk: `-istatistik` **Botun İstatistiklerine Bakarsınız!** \n> :floppy_disk: **Prefixim:** `-`")
-.setThumbnail("https://cdn.discordapp.com/emojis/671320714044768307.gif?v=1")
+.setThumbnail("https://cdn.discordapp.com/emojis/770265448892858368.gif?v=1")
 .setDescription(`
 
 **▬▬▬▬▬▬▬[** :closed_lock_with_key:  **Komut Listesi**   :closed_lock_with_key: **]▬▬▬▬▬▬**
