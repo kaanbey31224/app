@@ -206,3 +206,4 @@ client.login(ayarlar.token)
    client.on("ready", () => {
   client.channels.cache.get("770217169865670696").join();
 }) 
+
