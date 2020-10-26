@@ -24,5 +24,5 @@ exports.help = {
   name: 'moderasyon',
   category: 'kullanıcı',
   description: 'Yardım Menüsü.',
-   usage:'!moderasyon'
+   usage:'-moderasyon'
 }

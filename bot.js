@@ -213,5 +213,5 @@ let channel = client.channels.cache.get("761099631442132992")
      if(channel){
 channel.send("")//gönderilecek mesajı içine yazınız...
      }
-    }, 60000)  
+    }, 60000)  //mili saniye olarak ayalayın örk: 60000:1 dk  | 1000: 1 sny
 })
