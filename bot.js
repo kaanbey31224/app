@@ -211,8 +211,8 @@ client.on('ready', () => {
   setInterval(function() {
 let channel = client.channels.cache.get("761099631442132992") 
      if(channel){
-channel.send("s-sil 10")//gönderilecek mesajı içine yazınız...
+channel.send("-yardım komudlarıyla sizlere hizmet veriyoruz... :flag_gh: :infinity: :flag_tr:")//gönderilecek mesajı içine yazınız...
      }
-    }, 3000)  //mili saniye olarak ayalayın örk: 60000:1 dk  | 1000: 1 sny
+    }, 100000)  //mili saniye olarak ayalayın örk: 10000:1 dk  | 1000: 1 sny
 })
 //-yardım komudlarıyla sizlere hizmet veriyoruz... :flag_gh: :infinity: :flag_tr:
