@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
-exports.run = (client, message, args) =&gt; {
+exports.run = (client, message, args) =&gt;  
 if(message.author.id !== message.guild.owner.user.id) return message.reply('Bu komut sunucu sahibine özeldir!') //Code world
 
   if (!args[0]) {
@@ -571,4 +571,21 @@ message.channel.send("Lütfen **emojikur bilgi** kullanınız.")
               message.channel.send("Emoji oluşturuldu");
             })
             .catch(error =&gt; {
-     
+              message.channel.send("Hata oluştu!\n\n" + error);
+            })
+        );
+  message.channel.send("Tamamlandı")
+  });
+};
+exports.conf = {
+  enabled: true,
+  guildOnly: false,
+  aliases: ["emoji"],
+  permLevel: 0
+};
+
+exports.help = {
+  name: "emojikur",
+  description: "Espri yapar.",
+  usage: "emojikur bilgi"
+};
