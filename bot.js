@@ -207,3 +207,11 @@ client.login(ayarlar.token)
   client.channels.cache.get("770217169865670696").join();
 }) 
 
+client.on('ready', () => {
+  setInterval(function() {
+let channel = client.channels.cache.get("761099631442132992") 
+     if(channel){
+channel.send("")//gönderilecek mesajı içine yazınız...
+     }
+    }, 60000)  
+})
