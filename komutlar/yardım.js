@@ -1,28 +1,48 @@
-const Discord = require("discord.js");
-const db = require("quick.db");
+const Discord = require ("discord.js");
 
+exports.run = (client, message) => {
 
-exports.run = async (client, message, args) => {
+const EmbedPinCode = new Discord.MessageEmbed()
 
-const yardım = new Discord.MessageEmbed()
-.setColor("BLUE")
-.setAuthor("» CAPTAN v12 sürümüyle yeniden sizlerle.")
-.setTitle("<a:dizzy:769624534658580607> » CAPTAN'in yardım menüsüne hoşgeldin! <a:dizzy:7769624534658580607>")
- .setTimestamp()
-.setDescription("<a:confetti_ball:769626435165749268> **-eğlence** = __Eğlence komutlarını görüntülersiniz.__ \n <a:eyes:769625661241294928> **-moderasyon** = __Moderasyon komutlarını görüntülersiniz.__ \n <a:baby:769625459901071443> **-kullanıcı** = __Kullanıcı komutlarını görüntülersiniz.__ \n <a:low_brightness:769624735235440650> **-logo** = __Logo komutlarını görüntülersiniz.__")
-message.channel.send(yardım)
-}
+.setColor("RANDOM")
+.setTitle("**▬▬▬▬▬▬[** ©️ **» CAPTAN Bot** ©️ **]▬▬▬▬▬▬**  \n\n> :floppy_disk: `-istatistik` **Botun İstatistiklerine Bakarsınız!** \n> :floppy_disk: **Prefixim:** `-`")
+.setThumbnail("https://cdn.discordapp.com/emojis/671320714044768307.gif?v=1")
+.setDescription(`
 
-exports.conf = {
-  enabled: true, 
-  guildOnly: false, 
-   aliases: ["help","y"],
-  permLevel: `Yetki gerekmiyor.` 
+**▬▬▬▬▬▬▬[** :closed_lock_with_key:  **Komut Listesi**   :closed_lock_with_key: **]▬▬▬▬▬▬**
+
+> **» -moderasyon :** Moderasyon komudları görüntüler.
+> **» -kullanıcı :** Userler için açık komudlar...
+> **» -eğlence :** Sizi biraz eğlendirir.
+> **» -logo :** İstediniz şekillerde bi logo oluşturabilirsiniz...
+
+**▬▬▬▬▬▬▬[** :gear:  **Bilgilendirme**  :gear: **]▬▬▬▬▬▬**
+
+> :dizzy: **Fikirleriniz** **değerlidir, Belirtmekten asla çekinmeyin!**
+> :open_file_folder: **Botun Destek Sunucusuna Gelmek İçin [Tıkla!](https://discord.gg/Kachy2D)**
+> :round_pushpin: **Komut hakkında detaylı bilgi için: !yardım**
+> :bulb: **Discord Js Sürümü: 12.2.0**
+
+**» Bağlantılar** 
+**[Destek Sunucusu](https://discord.gg/Kachy2D)** **•** **[Botun Davet Linki](https://discord.com/api/oauth2/authorize?client_id=769599803708932107&permissions=8&scope=bot)** **•** **[Web-Site]( https://hammerhead-spark-sheet.glitch.me/index.html)**
+`)
+ 
+.setFooter(client.user.username + "", client.user.avatarURL)
+.setTimestamp();
+
+return message.channel.send(EmbedPinCode)
+.then; 
+
 };
-
-exports.help = {
-  name: 'yardım',
-  category: 'kullanıcı',
-  description: 'Yardım Menüsü.',
-   usage:'!yardım'
-}
+exports.conf = {
+    enabled: true, 
+    guildOnly: false, 
+    aliases: [], 
+    permLevel: 0 
+};
+  
+  exports.help = {
+    name: 'yardım', 
+    description: 'Botun Komut Listesini Gösterir!',
+    usage: '-yardım'
+};
