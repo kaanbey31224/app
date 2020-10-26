@@ -20,7 +20,7 @@ const EmbedPinCode = new Discord.MessageEmbed()
 
 > :dizzy: **Fikirleriniz** **değerlidir, Belirtmekten asla çekinmeyin!**
 > :open_file_folder: **Botun Destek Sunucusuna Gelmek İçin [Tıkla!](https://discord.gg/Kachy2D)**
-> :round_pushpin: **Komut hakkında detaylı bilgi için: !yardım**
+> :round_pushpin: **Komut hakkında detaylı bilgi için: -yardım**
 > :bulb: **Discord Js Sürümü: 12.2.0**
 
 **» Bağlantılar** 
