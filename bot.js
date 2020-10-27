@@ -209,7 +209,7 @@ client.login(ayarlar.token)
 
 client.on('ready', () => {
   setInterval(function() {
-let channel = client.channels.cache.get("761099631442132992") 
+let channel = client.channels.cache.get("") // kanal ID
      if(channel){
 channel.send("-yardım komudlarıyla sizlere hizmet veriyoruz... :flag_gh: :infinity: :flag_tr:")//gönderilecek mesajı içine yazınız...
      }
