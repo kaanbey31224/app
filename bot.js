@@ -207,12 +207,3 @@ client.login(ayarlar.token)
   client.channels.cache.get("770160983766728737").join();//sesli bi kanala katılacagı icin kanal ID si
 }) 
 
-client.on('ready', () => {
-  setInterval(function() {
-let channel = client.channels.cache.get("770160983766728736") 
-     if(channel){
-channel.send("-yardım komudlarıyla sizlere hizmet veriyoruz... :flag_gh: :infinity: :flag_tr:")//gönderilecek mesajı içine yazınız...
-     }
-    }, 100000)  //mili saniye olarak ayalayın örk: 10000:1 dk  | 1000: 1 sny
-})
-//-yardım komudlarıyla sizlere hizmet veriyoruz... :flag_gh: :infinity: :flag_tr:
