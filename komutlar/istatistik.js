@@ -4,7 +4,7 @@ exports.run = async (client, message, args) => {
   
 const istatistikler = new Discord.MessageEmbed()
   .addField(`:robot: |  Pingim` ,`${client.ws.ping}ms`,true)
-  .addField(`:mortar_board: | Yapımcım` ,`<@201016292885397504>`,true)
+  .addField(`:mortar_board: | Yapımcım` ,`<@754730560009797723>`,true)
  .addField(`:rocket: | Toplam Kullanıcı`, `${client.users.cache.size}`, true)
  .addField(`:crystal_ball: | Toplam Sunucu`, `${client.guilds.cache.size}`, true)
   message.channel.send(istatistikler)

@@ -15,6 +15,7 @@ const EmbedPinCode = new Discord.MessageEmbed()
 > **» -kullanıcı :** Userler için açık komudlar...
 > **» -eğlence :** Sizi biraz eğlendirir.
 > **» -logo :** İstediniz şekillerde bi logo oluşturabilirsiniz...
+> **» -eko-yardım :** Ekonomi menüsünü gösterir..!
 
 **▬▬▬▬▬▬▬[** :gear:  **Bilgilendirme**  :gear: **]▬▬▬▬▬▬**
 

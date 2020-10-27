@@ -3,7 +3,7 @@ const db = require('quick.db');
 
 exports.run = async (client, message, args) => {
   
-  if (!args[0]) return message.reply(`Mevcut Markettekiler : `)
+  if (!args[0]) return message.reply(`Matket şuan kapalı malesef :name_badge: `)
   
   if (args[0] === 'sa') {
     let lrowspara = await db.get(`para_${message.author.id}`) 
