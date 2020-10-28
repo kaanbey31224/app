@@ -158,8 +158,6 @@ client.on("messageUpdate", msg => {
         const kufur = ["oç", 
                        "amk", 
                        "ananı sik iyim",
-                       "aq",
-                       "muq", 
                        "piç",
                        "orospu çocuğu",
                        "orospu",
