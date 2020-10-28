@@ -207,3 +207,209 @@ client.login(ayarlar.token)
   client.channels.cache.get("770217169865670696").join();//sesli bi kanala katılacagı icin kanal ID si
 }) 
 
+//----------------------------------Public Sunucu Sistemi----------------------------// 
+client.on('message', async message => {
+  const ms = require('ms');
+  const prefix = await require('quick.db').fetch(`prefix_${message.guild.id}`) || ayarlar.prefix
+  const args = message.content.slice(prefix.length).trim().split(/ +/g);
+  const command = args.shift().toLowerCase();
+  let u = message.mentions.users.first() || message.author;
+  if (command === "-public-kur") {
+  if (message.guild.channels.find(channel => channel.name === "Bot Kullanımı")) return message.channel.send(" Bot Paneli Zaten Ayarlanmış.")
+  if (!message.member.hasPermission('ADMINISTRATOR'))
+  return message.channel.send(" Bu Kodu `Yönetici` Yetkisi Olan Kişi Kullanabilir.");
+    message.channel.send(`Public Sunucunun Kurulmasından Eminseniz **Kur** Yazmanız Yeterli Olacaktır.`)
+      message.channel.awaitMessages(response => response.content === 'Kur', {
+        max: 1,
+        time: 10000,
+        errors: ['time'],
+     })
+    .then((collected) => {
+
+message.guild.createChannel('【BILGILENDIRME】', 'category', [{
+  id: message.guild.id,
+}]);
+
+message.guild.createChannel(`📋・kurallar`, 'text')
+.then(channel =>
+      channel.setParent(message.guild.channels.find(channel => channel.name === "【BILGILENDIRME】")))
+        
+        message.guild.createChannel(`📢・duyurular`, 'text')
+.then(channel =>
+      channel.setParent(message.guild.channels.find(channel => channel.name === "【BILGILENDIRME】")))
+        
+        message.guild.createChannel(`🎁・boost-bilgi`, 'text')
+.then(channel =>
+      channel.setParent(message.guild.channels.find(channel => channel.name === "【BILGILENDIRME】")))
+        
+        message.guild.createChannel(`🎉・cekilis`, 'text')
+.then(channel =>
+      channel.setParent(message.guild.channels.find(channel => channel.name === "【BILGILENDIRME】")))
+        
+        message.guild.createChannel(`📕・bilgilendirme`, 'text')
+.then(channel =>
+      channel.setParent(message.guild.channels.find(channel => channel.name === "【BILGILENDIRME】")))
+        
+                message.guild.createChannel(`📤・gelen-giden`, 'text')
+.then(channel =>
+      channel.setParent(message.guild.channels.find(channel => channel.name === "【BILGILENDIRME】")))
+        
+                        message.guild.createChannel(`📝・yetkili-basvuru`, 'text')
+.then(channel =>
+      channel.setParent(message.guild.channels.find(channel => channel.name === "【BILGILENDIRME】")))
+        
+        message.guild.createChannel('【CEZA BİLGİ】', 'category', [{
+  id: message.guild.id,
+}]);
+        
+                                message.guild.createChannel(`📝・neden-ceza-alırım`, 'text')
+.then(channel =>
+      channel.setParent(message.guild.channels.find(channel => channel.name === "【CEZA BİLGİ】")))
+        
+                                        message.guild.createChannel(`📝・mute-bilgi`, 'text')
+.then(channel =>
+      channel.setParent(message.guild.channels.find(channel => channel.name === "【CEZA BİLGİ】")))
+        
+                                               message.guild.createChannel(`📝・ban-bilgi`, 'text')
+.then(channel =>
+      channel.setParent(message.guild.channels.find(channel => channel.name === "【CEZA BİLGİ】")))
+        
+                message.guild.createChannel('【GENEL】', 'category', [{
+  id: message.guild.id,
+}]);
+        
+        message.guild.createChannel(`💬・sohbet`, 'text')
+.then(channel =>
+      channel.setParent(message.guild.channels.find(channel => channel.name === "【GENEL】")))
+        
+                message.guild.createChannel(`🤖・bot-komut`, 'text')
+.then(channel =>
+      channel.setParent(message.guild.channels.find(channel => channel.name === "【GENEL】")))
+        
+        message.guild.createChannel(`📷・foto-chat`, 'text')
+.then(channel =>
+      channel.setParent(message.guild.channels.find(channel => channel.name === "【GENEL】")))
+        
+                        message.guild.createChannel('【OTHER TEXT】', 'category', [{
+  id: message.guild.id,
+}]);
+        
+                message.guild.createChannel(`🐟・burc-hakkinda`, 'text')
+.then(channel =>
+      channel.setParent(message.guild.channels.find(channel => channel.name === "【OTHER TEXT】")))
+        
+        message.guild.createChannel(`🐟・haftalik-burc-yorumlari`, 'text')
+.then(channel =>
+      channel.setParent(message.guild.channels.find(channel => channel.name === "【OTHER TEXT】")))
+        
+        message.guild.createChannel(`🎲・gune-soz-birak`, 'text')
+.then(channel =>
+      channel.setParent(message.guild.channels.find(channel => channel.name === "【OTHER TEXT】")))
+        
+        message.guild.createChannel(`📚・oneri-istek-sikayet`, 'text')
+.then(channel =>
+      channel.setParent(message.guild.channels.find(channel => channel.name === "【OTHER TEXT】")))
+        
+        message.guild.createChannel(`⭐️・sorun-cozme-chat`, 'text')
+.then(channel =>
+      channel.setParent(message.guild.channels.find(channel => channel.name === "【OTHER TEXT】")))
+        
+        message.guild.createChannel('【SESLİ SOHBET】', 'category', [{
+  id: message.guild.id,
+}]);
+        
+      message.guild.createChannel(`🔊・Genel Sohbet `, 'voice')
+.then(channel =>
+      channel.setParent(message.guild.channels.find(channel => channel.name === "【SESLİ SOHBET】")))
+        
+        message.guild.createChannel(`🔊・Genel Sohbet `, 'voice')
+.then(channel =>
+      channel.setParent(message.guild.channels.find(channel => channel.name === "【SESLİ SOHBET】")))
+        
+        message.guild.createChannel(`🔊・2 Kişilik Sohbet `, 'voice')
+.then(channel =>
+      channel.setParent(message.guild.channels.find(channel => channel.name === "【SESLİ SOHBET】")))
+        
+        message.guild.createChannel(`🔊・2 Kişilik Sohbet `, 'voice')
+.then(channel =>
+      channel.setParent(message.guild.channels.find(channel => channel.name === "【SESLİ SOHBET】")))
+        
+        message.guild.createChannel(`🔊・3 Kişilik Sohbet `, 'voice')
+.then(channel =>
+      channel.setParent(message.guild.channels.find(channel => channel.name === "【SESLİ SOHBET】")))
+        
+        message.guild.createChannel(`🔊・3 Kişilik Sohbet `, 'voice')
+.then(channel =>
+      channel.setParent(message.guild.channels.find(channel => channel.name === "【SESLİ SOHBET】")))
+        
+        message.guild.createChannel(`🔊・4 Kişilik Sohbet `, 'voice')
+.then(channel =>
+      channel.setParent(message.guild.channels.find(channel => channel.name === "【SESLİ SOHBET】")))
+        
+        message.guild.createChannel(`🔊・5 Kişilik Sohbet `, 'voice')
+.then(channel =>
+      channel.setParent(message.guild.channels.find(channel => channel.name === "【SESLİ SOHBET】")))
+        
+                message.guild.createChannel('【MUZIK KANALLARI】', 'category', [{
+  id: message.guild.id,
+}]);
+        
+        message.guild.createChannel(`🎶・Müzik Odası `, 'voice')
+.then(channel =>
+      channel.setParent(message.guild.channels.find(channel => channel.name === "【MUZIK KANALLARI】")))
+        
+                message.guild.createChannel(`🎶・Müzik Odası `, 'voice')
+.then(channel =>
+      channel.setParent(message.guild.channels.find(channel => channel.name === "【MUZIK KANALLARI】")))
+        
+                        message.guild.createChannel('【VALORANT】', 'category', [{
+  id: message.guild.id,
+}]);
+        
+                        message.guild.createChannel(`🎮・Valorant`, 'voice')
+.then(channel =>
+      channel.setParent(message.guild.channels.find(channel => channel.name === "【VALORANT】")))
+        
+        message.guild.createChannel(`🎮・Valorant`, 'voice')
+.then(channel =>
+      channel.setParent(message.guild.channels.find(channel => channel.name === "【VALORANT】")))
+        
+                                message.guild.createChannel('【CS:GO】', 'category', [{
+  id: message.guild.id,
+}]);
+        
+                message.guild.createChannel(`🎮・CS:GO REKABETCİ`, 'voice')
+.then(channel =>
+      channel.setParent(message.guild.channels.find(channel => channel.name === "【CS:GO】")))
+        
+        message.guild.createChannel(`🎮・CS:GO REKABETCİ`, 'voice')
+.then(channel =>
+      channel.setParent(message.guild.channels.find(channel => channel.name === "【CS:GO】")))
+        
+        message.guild.createChannel(`🎮・CS:GO YOLDAŞ`, 'voice')
+.then(channel =>
+      channel.setParent(message.guild.channels.find(channel => channel.name === "【CS:GO】")))
+        
+        message.guild.createChannel('【LOL】', 'category', [{
+  id: message.guild.id,
+}]);
+        
+      message.guild.createChannel(`🎮・LOL ODASI`, 'voice')
+.then(channel =>
+      channel.setParent(message.guild.channels.find(channel => channel.name === "【LOL】")))
+        
+        message.guild.createChannel(`🎮・LOL ODASI`, 'voice')
+.then(channel =>
+      channel.setParent(message.guild.channels.find(channel => channel.name === "【LOL】")))
+        
+        
+        
+        
+
+       message.channel.send("Public Sunucunuz Kuruldu !")
+     
+            })   
+      
+}
+});
+//----------------------------------Public Sunucu Kurma Sistemi Son----------------------------// 
