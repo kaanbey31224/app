@@ -9,9 +9,9 @@ const EmbedPinCode = new Discord.MessageEmbed()
 .setDescription(` 
 **▬▬▬▬▬▬▬[** :gear:  **up Yardım Bilgilendirme**  :gear: **]▬▬▬▬▬▬**
 
-> :dizzy: **up yani botunuzu 7/24 yapmak istiyorsanız aşagıdaki şartları yerine getirmeniz gerekmektedir**
+> :dizzy: ** botunuzu 7/24 yapmakmı istiyon aşagıdaki tıkla yazan yere tıklaman yeterli gerekli bilgi orda (:**
 > :open_file_folder: **ilk başta bu sunucuya katılman gerekli [Tıkla!](https://discord.gg/58XwFxu)**
-> :round_pushpin: **Komut hakkında detaylı bilgi için: -up**
+> :round_pushpin: **Gerekli bilgi Destek Sunucumuzda**
 
 **» Bağlantılar** 
 **[Destek Sunucusu](https://discord.gg/Kachy2D)** **•** **[Botun Davet Linki](https://discord.com/api/oauth2/authorize?client_id=769599803708932107&permissions=8&scope=bot)** **•** **[Web-Site]( https://hammerhead-spark-sheet.glitch.me/index.html)**
