@@ -13,7 +13,7 @@ const EmbedPinCode = new Discord.MessageEmbed()
 
 > **» -mnk :** birine kapak laf söylemek mi istiyorsun o zmn bu komud tam senin için ;)
 > **» -fakemesaj :** demek bu kadar ilerledin bir arkadaşına güzel bi süpriz yapmak istermisin? :D
-
+> **» 
 **▬▬▬▬▬▬▬[** :gear:  **Bilgilendirme**  :gear: **]▬▬▬▬▬▬**
 
 > :dizzy: **ooooo kimleri görüyorum demekki bu komudun sırrını cözmüşsün helal olsun be dostum..!**
