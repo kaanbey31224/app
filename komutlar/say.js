@@ -19,7 +19,7 @@ let mobil = message.guild.members.cache.filter(m => !m.user.bot && (m.user.prese
   let  çevrimiçi = message.guild.members.cache.filter(m => !m.user.bot && m.user.presence.status !== "offline").size
     const embed = new Discord.MessageEmbed()
         .setColor("BLACK")
-        .setThumbnail(`https://cdn.discordapp.com/attachments/655459488236568597/655887650494087178/loading_1.gif`)
+        .setThumbnail(`https://media.discordapp.net/attachments/761099716993613824/771419350828843059/gif_3.gif?width=115&height=115`)
     
         .addField(`<a:mag_right:771416107000922173> **__Sunucudaki Toplam Üye Sayısı__**`,`**\`\`\`${message.guild.memberCount}\`\`\`**`)
     
@@ -41,7 +41,7 @@ let mobil = message.guild.members.cache.filter(m => !m.user.bot && (m.user.prese
     
         .addField(`<a:warning:771417064946663445>  **__Boost Sayısı__**`,`»  **${message.guild.premiumSubscriptionCount}**`)
     
-        .addField(`<a:small_orange_diamond:771414619776352277> **__Kullanıcılar__**`, ` <:domda:709739242594631690> Çevrimiçi : **${message.guild.members.cache.filter(o => o.presence.status === 'online').size}** \n <:ris:719162225486594098> Rahatsız Etmeyin : **${message.guild.members.cache.filter(dnd => dnd.presence.status === 'dnd').size}** \n <:domda5:709739242972250183> Boşta: **${message.guild.members.cache.filter(i => i.presence.status === 'idle').size}** \n <:ghost:771415418778681396> Görünmez/Çevrimdışı : **${message.guild.members.cache.filter(off => off.presence.status === 'offline').size}** \n <a:robot:771415675431813140> Botlar : **${botlar}**`, true)
+        .addField(`<a:family_mwgb:771418259672006666> **__Kullanıcılar__**`, ` <:candle:771417797037260830> Çevrimiçi : **${message.guild.members.cache.filter(o => o.presence.status === 'online').size}** \n <:no_entry_sign:771418814755110962> Rahatsız Etmeyin : **${message.guild.members.cache.filter(dnd => dnd.presence.status === 'dnd').size}** \n <:biohazard:771419017637527602> Boşta: **${message.guild.members.cache.filter(i => i.presence.status === 'idle').size}** \n <:ghost:771415418778681396> Görünmez/Çevrimdışı : **${message.guild.members.cache.filter(off => off.presence.status === 'offline').size}** \n <a:robot:771415675431813140> Botlar : **${botlar}**`, true)
     
      .addField(`<a:small_orange_diamond:771414619776352277> Üyelerin Bağlandığı Cihazlar:`, `**${pc}** Kişi **__Bilgisayardan__**\n**${web}** Kişi **__Webden__**\n**${mobil}** Kişi İse **__Mobilden__** Bağlanıyor!`, false)
     
