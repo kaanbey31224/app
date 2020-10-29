@@ -1,29 +1,26 @@
-const Discord = require('discord.js')
-const db = require('quick.db')
- 
-exports.run = async (client ,message, args) =>{
-if(args[0] === 'aktif') {
-    db.set(`${message.guild.id}.kufur`, true)
-    message.channel.send('Başarılı Şekilde `Aktif` Edildi. Bot ban yetkisi Olanların Mesajını Silmeyecektir.')
-  return
+const Discord = require('discord.js');
+const db = require('quick.db');
+exports.run = async (client, message, args) => {
+ if (!message.member.hasPermission('ADMINISTRATOR')) return message.reply('Yetkiniz Bulunmamaktadır!');
+let reklam = db.fetch(`kufurengel.${message.guild.id}`)
+if(!reklam) {
+message.channel.send(`Küfür filtresi başarıyla açıldı.`)
+db.set(`kufurengel.${message.guild.id}`, true)
+} else {
+message.channel.send(`Küfür filtresi başarıyla kapatıldı.`)
+db.delete(`kufurengel.${message.guild.id}`)
 }
-if (args[0] === 'deaktif') {
-  db.delete(`${message.guild.id}.kufur`)
-message.channel.send('Başarılı Şekilde `Deaktif` Edildi')
-return
-}
-  message.channel.send('Lüten `Aktif` yada `Deaktif` Yazın!')
 };
+
 exports.conf = {
- enabled: true,
- guildOnly: false,
- aliases: ['küfürengel','küfür-engel','küfür'],
- permLevel: 0
+  enabled: true,
+  guildOnly: false,
+  aliases: ['küfür'],
+  permLevel: 0
 };
- 
+
 exports.help = {
- name: 'küfür-ayarla',
- description: 'Davet Log Kanalını Belirler',
- usage: 'davet-kanal-ayarla #kanal'
+  name: 'küfür',
+  description: 'Manyak* Code ait ağacı kökten çalanı g*tten',
+  usage: 'reklam-filtre'
 };
- 
