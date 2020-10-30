@@ -14,7 +14,7 @@ if (!message.member.hasPermission("MANAGE_GUILD")) {
     if(await db.fetch(`hgbbKanalResim_${message.guild.id}`)) {
         const embed = new MessageEmbed()
       .setColor("#0AFF00")
-      .setDescription(`Hoşgeldin kanalı sunuda zaten aktif.\nSıfırlamak için g!hg-bb-sıfırla`)
+      .setDescription(`Hoşgeldin kanalı sunuda zaten aktif.\nSıfırlamak için -hg-bb-sıfırla`)
       .setFooter(`${client.user.username} Hoşgeldin  sistemi.`,message.guild.iconURL({ dynamic: true }))
       .setTimestamp();
     message.channel.send(embed)
@@ -59,7 +59,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'hg-hb',
+  name: 'hg-bb',
   description: 'Sayaç kanalını ve sayısını ayarlarsınız.',
   usage: 'sayaç #Kanal <Sayı>'
 };
