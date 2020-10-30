@@ -3,7 +3,7 @@ const db = require("quick.db");
 module.exports.run = async (bot, message, args) => {
   if (!message.member.hasPermission("KICK_MEMBERS")) {
     const embed = new Discord.MessageEmbed()
-      .setDescription("```Ne yazık ki bu komutu kullanmaya yetkin yok.```")
+      .setDescription("**Ne yazık ki bu komutu kullanmaya yetkin yok.**")
       .setColor("BLACK");
  
     message.channel.send(embed);
