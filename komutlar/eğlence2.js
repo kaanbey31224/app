@@ -9,7 +9,7 @@ const eğlence = new Discord.MessageEmbed()
 .setAuthor("» CAPTAN v12 sürümüyle yeniden sizlerle.")
 .setTitle("<a:maple_leaf:742698148329291826> » CAPTANEğlence Komutları <a:maple_leaf:742698148329291826>")
  .setTimestamp()
-.setDescription("<a:dizzy:750065080741134407> **-kralol** =  Kral olmaya ne dersin?. <a:confetti_ball:749525084586115153> \n")
+.setDescription("<a:dizzy:750065080741134407> **-kapaklaf** =  Birine güzel bi söz sözlemeye ne dersin?. <a:confetti_ball:749525084586115153> \n <a:dizzy:750065080741134407> **-kralol** =  Kral olmaya ne dersin?. <a:confetti_ball:749525084586115153> \n")
 message.channel.send(eğlence)
 }
 
