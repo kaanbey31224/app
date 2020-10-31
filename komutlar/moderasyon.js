@@ -16,7 +16,7 @@ exports.conf = {
   enabled: true, 
   guildOnly: false, 
    aliases: ['mod'],
-  permLevel: `Yetki gerekmiyor.` 
+  permLevel: `Yetki gerekmiyor.`
 };
 
 exports.help = {
