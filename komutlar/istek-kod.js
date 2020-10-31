@@ -6,10 +6,10 @@ let istek = args.slice(0).join(' ')
 if(!istek) return message.channel.send('**Bug Bildirmek için Bir Bug Yazınız.** :x:')
 
 const embed = new Discord.MessageEmbed()
-.setTitle("Captan Bug Sistemi")
+.setTitle("Captan İstek Sistemi")
 .setColor('BLUE')
-.setDescription(`**Bug Kanalı** ${message.channel.name} \n **Bug Bildirilen Sunucu** \`${message.guild.name}\` \n **Bugu Bildiren Kullanıcı** <@${message.author.id}> \n **Bildirilen Bug :** \`${istek}\``)
-client.channels.cache.get('769634341570478106').send(embed)
+.setDescription(`**istek Kanalı** ${message.channel.name} \n **istek Bildirilen Sunucu** \`${message.guild.name}\` \n **İstek Bildiren Kullanıcı** <@${message.author.id}> \n **İstenen komut :** \`${istek}\``)
+client.channels.cache.get('772082804204896266').send(embed)
   
 message.channel.send("Bug bildiriminiz gönderildi. :confetti_ball:").then(message => message.delete({ timeout: 5000 }));
 };
@@ -21,7 +21,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'bug-bildir',
+  name: 'istek-kod',
   description: 'İstek kodları belirtmeye yarar',
   usage: 'istek-kod <istek>'
 }
