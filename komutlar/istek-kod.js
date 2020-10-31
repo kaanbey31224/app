@@ -3,7 +3,7 @@ exports.run = async (client, message, args) => {
 
   
 let istek = args.slice(0).join(' ')
-if(!istek) return message.channel.send('**Bug Bildirmek için Bir Bug Yazınız.** :x:')
+if(!istek) return message.channel.send('**İstek kod Bildirmek için Bir İstek Yazınız.** :x:')
 
 const embed = new Discord.MessageEmbed()
 .setTitle("Captan İstek Sistemi")
