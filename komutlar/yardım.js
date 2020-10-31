@@ -5,7 +5,7 @@ exports.run = (client, message) => {
 const EmbedPinCode = new Discord.MessageEmbed()
 
 .setColor("RANDOM")
-.setTitle("<a:Gifshare_kirmizi:772064567646748692>[ ©️ **» CAPTAN Bot** ©️ ]<a:Gifshare_kirmizi:772064567646748692>  \n\n> :floppy_disk: `-istatistik` **Botun İstatistiklerine Bakarsınız!** \n> :floppy_disk: **Prefixim:** `-`")
+.setTitle("**▬▬▬▬▬▬[** ©️ **» CAPTAN Bot** ©️ **]▬▬▬▬▬▬**  **  **Prefixim: `-`")
 .setThumbnail("https://cdn.discordapp.com/emojis/770265448892858368.gif?v=1")
 .setDescription(`
 
