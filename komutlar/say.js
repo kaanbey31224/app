@@ -40,13 +40,8 @@ let mobil = message.guild.members.cache.filter(m => !m.user.bot && (m.user.prese
        .addField(`<a:warning:771417064946663445>  **__Boost Seviyesi__**`,`»  **${message.guild.premiumTier}/3**`)
     
         .addField(`<a:warning:771417064946663445>  **__Boost Sayısı__**`,`»  **${message.guild.premiumSubscriptionCount}**`)
-    
-        .addField(`<a:family_mwgb:771418259672006666> **__Kullanıcılar__**`, ` <:candle:771417797037260830> Çevrimiçi : **${message.guild.members.cache.filter(o => o.presence.status === 'online').size}** \n <:no_entry_sign:771418814755110962> Rahatsız Etmeyin : **${message.guild.members.cache.filter(dnd => dnd.presence.status === 'dnd').size}** \n <:biohazard:771419017637527602> Boşta: **${message.guild.members.cache.filter(i => i.presence.status === 'idle').size}** \n <:ghost:771415418778681396> Görünmez/Çevrimdışı : **${message.guild.members.cache.filter(off => off.presence.status === 'offline').size}** \n <a:robot:771415675431813140> Botlar : **${botlar}**`, true)
-    
-     .addField(`<a:small_orange_diamond:771414619776352277> Üyelerin Bağlandığı Cihazlar:`, `**${pc}** Kişi **__Bilgisayardan__**\n**${web}** Kişi **__Webden__**\n**${mobil}** Kişi İse **__Mobilden__** Bağlanıyor!`, false)
-    
-         .addField(`<a:small_orange_diamond:771414619776352277>  **__Son Üyeler__**`,`\n»  Son 1 **Saatte** Giren Üyeler **•** **${message.guild.members.cache.filter(a => (new Date().getTime() - a.joinedTimestamp) < 3600000).size}** \n» Son 1 **Günde** Giren Üyeler **•** **${message.guild.members.cache.filter(a => (new Date().getTime() - a.joinedTimestamp) < 86400000).size}** \n»   Son 1 **Haftada** Giren Üyeler **•** **${message.guild.members.cache.filter(a => (new Date().getTime() - a.joinedTimestamp) < 604800000).size}** \n»   Son 1 **Ayda** Giren Üyeler **•** **${message.guild.members.cache.filter(a => (new Date().getTime() - a.joinedTimestamp) < 2629800000).size}**`)
-        .setTitle(`<a:small_orange_diamond:771414619776352277> ${message.author.tag} - Tarafından istendi.`)
+   
+       .setTitle(`<a:small_orange_diamond:771414619776352277> ${message.author.tag} - Tarafından istendi.`)
     .setImage("https://media.discordapp.net/attachments/697145772801785876/716671769355747348/1.gif")
         .setFooter(`© 2020 Captan BOT Tüm Hakları Saklıdır.`, client.user.avatarURL)
     message.channel.send(embed);
