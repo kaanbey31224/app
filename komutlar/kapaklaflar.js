@@ -70,7 +70,7 @@ exports.run = async (client, msg, args) => {
    };
    
   exports.help = {
-    name: 'mnk',
+    name: 'kapaklaf',
     description: 'Etiketlediniz Kisiye Kapak Laflar Soler.',
     usage: '-kapaklaflar'
    }

@@ -14,6 +14,7 @@ const EmbedPinCode = new Discord.MessageEmbed()
 > **» -moderasyon :** Moderasyon komudları görüntüler.
 > **» -kullanıcı :** Userler için açık komudlar...
 > **» -eğlence :** Sizi biraz eğlendirir.
+> **» -eğlence2 :** size güzel komudlarımı göstereyim sizi eğlendirecek...
 > **» -logo :** İstediniz şekillerde bi logo oluşturabilirsiniz...
 > **» -eko-yardım :** Ekonomi menüsünü gösterir..!
 
@@ -22,7 +23,7 @@ const EmbedPinCode = new Discord.MessageEmbed()
 > :dizzy: **Fikirleriniz** **değerlidir, Belirtmekten asla çekinmeyin!**
 > :open_file_folder: **Botun Destek Sunucusuna Gelmek İçin [Tıkla!](https://discord.gg/Kachy2D)**
 > :round_pushpin: **Komut hakkında detaylı bilgi için: -yardım**
-> :bulb: **Discord Js Sürümü: 12.2.0**
+> :bulb: **Discord Js Sürümü: 12.4.0**
 
 **» Bağlantılar** 
 **[Destek Sunucusu](https://discord.gg/Kachy2D)** **•** **[Botun Davet Linki](https://discord.com/api/oauth2/authorize?client_id=769599803708932107&permissions=8&scope=bot)** **•** **[Web-Site]( https://hammerhead-spark-sheet.glitch.me/index.html)**
