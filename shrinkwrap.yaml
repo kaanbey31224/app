@@ -1941,7 +1941,7 @@ shrinkwrapVersion: 3
 specifiers:
   chalk: ^4.1.0
   common-tags: ^1.8.0
-  discord.js: ^12.4.0
+  discord.js: ^12.2.0
   express: ^4.17.1
   generate-password: ^1.5.0
   jimp: ^0.13.0
