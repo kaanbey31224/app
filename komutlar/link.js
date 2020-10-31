@@ -38,5 +38,5 @@ exports.conf = {
 exports.help = {
  name: 'reklam-engel',
  description: 'reklamm',
- usage: 'gkanal'
+ usage: '-kanal'
 };
