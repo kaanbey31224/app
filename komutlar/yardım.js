@@ -17,7 +17,7 @@ const EmbedPinCode = new Discord.MessageEmbed()
 > **» -logo :** İstediniz şekillerde bi logo oluşturabilirsiniz...
 > **» -eko-yardım :** Ekonomi menüsünü gösterir..!
 
-▬▬▬▬▬▬**[**:gear:  **Bilgilendirme** :gear:  **]**▬▬▬▬▬▬
+<a:Snrsz_renk:769654493704355880><a:Snrsz_renk:769654493704355880><a:Snrsz_renk:769654493704355880><a:Snrsz_renk:769654493704355880>**[**<a:tamir:749238412254642237>  **Bilgilendirme** <a:tamir:749238412254642237>  **]**<a:Snrsz_renk:769654493704355880><a:Snrsz_renk:769654493704355880><a:Snrsz_renk:769654493704355880><a:Snrsz_renk:769654493704355880><a:Snrsz_renk:769654493704355880>
 
 > <a:isaret_3:768949706621321219> **Fikirleriniz** **değerlidir, Belirtmekten asla çekinmeyin!**
 > <a:isaret_3:768949706621321219> **Botun Destek Sunucusuna Gelmek İçin [Tıkla!](https://discord.gg/Kachy2D)**
