@@ -5,7 +5,7 @@ exports.run = (client, message) => {
 const EmbedPinCode = new Discord.MessageEmbed()
 
 .setColor("RANDOM")
-.setTitle("**▬▬▬▬▬▬[** ©️ **» CAPTAN Bot** ©️ **]▬▬▬▬▬▬**  \n\n> :floppy_disk: `-istatistik` **Botun İstatistiklerine Bakarsınız!** \n> :floppy_disk: **Prefixim:** `-`")
+.setTitle("<a:Gifshare_kirmizi:772064567646748692>[ ©️ **» CAPTAN Bot** ©️ ]<a:Gifshare_kirmizi:772064567646748692>  \n\n> :floppy_disk: `-istatistik` **Botun İstatistiklerine Bakarsınız!** \n> :floppy_disk: **Prefixim:** `-`")
 .setThumbnail("https://cdn.discordapp.com/emojis/770265448892858368.gif?v=1")
 .setDescription(`
 
@@ -16,6 +16,7 @@ const EmbedPinCode = new Discord.MessageEmbed()
 > **» -eğlence :** Sizi biraz eğlendirir.
 > **» -eğlence2 :** size güzel komudlarımı göstereyim sizi eğlendirecek...
 > **» -logo :** İstediniz şekillerde bi logo oluşturabilirsiniz...
+> **» -logo2 :**logo2 kamutlarıyla sizlerle...
 > **» -eko-yardım :** Ekonomi menüsünü gösterir..!
 
 **▬▬▬▬▬▬▬[** :gear:  **Bilgilendirme**  :gear: **]▬▬▬▬▬▬**
