@@ -8,8 +8,8 @@ exports.run = (bot, message) => {
     for (const guild of guilds) {
       embed.addField(`**${guild.name}** - ÜYE SAYISI : **${guild.memberCount}**`, guild.id);
       embed.setColor('RANDOM')
-      embed.setTitle('<a:emojiismi:emojiid>Sunucular')
-      embed.setDescription(`Büyük bir ailedeyiz !. Ailemde **${bot.guilds.size}** kadar sunucu var !`)
+      embed.setTitle('<a:sabitlendi:768037585703665694>Sunucular')
+      embed.setDescription(`<a:isaret_3:768949706621321219>Büyük bir ailedeyiz !. Ailemde **${bot.guilds.cache.size}**  sunucu var !`)
     }
     message.channel.send({embed: embed});
   } 
