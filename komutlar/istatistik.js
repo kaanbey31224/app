@@ -7,7 +7,7 @@ const istatistikler = new Discord.MessageEmbed()
   .addField(`:mortar_board: | Yapımcım` ,`<@754730560009797723>`,true)
 .addField(`:mortar_board: |   Developor` ,`<@642790531482648636>`,true)
  .addField(`:rocket: | Toplam Kullanıcı`, `${client.users.cache.size}`, true)
- .addField(`:crystal_ball: | Toplam Sunucu`, `${botasd.guilds.cache.size}`, true)
+ .addField(`:crystal_ball: | Toplam Sunucu`, `${client.guilds.cache.size}`, true)
   message.channel.send(istatistikler)
 }//lrows
 exports.conf = {
