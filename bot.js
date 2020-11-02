@@ -680,3 +680,24 @@ client.login(ayarlar.token)
   client.channels.cache.get("770217169865670696").join();//sesli bi kanala katılacagı icin kanal ID si
 }) 
 
+
+client.on("guildMemberRemove", async member => {
+
+  const kanal = await db.fetch(`sayacK_${member.guild.id}`);
+  const sayaç = await db.fetch(`sayacS_${member.guild.id}`);
+  const sonuç = sayaç - member.guild.memberCount;
+  const mesaj = await db.fetch(`sayacBB_${member.guild.id}`)
+  if (!kanal) return;
+  if (!sayaç) return;
+    ///....
+
+  if (!mesaj) {
+    return client.channels.get(kanal).send(":loudspeaker: :outbox_tray: Kullanıcı Ayrıldı. `" + sayaç + "` Kişi Olmamıza `" + sonuç + "` Kişi Kaldı `" + member.guild.memberCount + "` Kişiyiz!" + "`" + member.user.username + "`");
+      }
+
+  if (mesaj) {
+    const mesaj31 = mesaj.replace("-uye-", `${member.user.tag}`).replace("-uyetag-", `${member.user.tag}`).replace("-server-", `${member.guild.name}`).replace("-uyesayisi-", `${member.guild.memberCount}`).replace("-kalanuye-", `${sonuç}`).replace("-hedefuye-", `${sayaç}`)
+    return client.channels.get(kanal).send(mesaj31);
+  }
+});
+
