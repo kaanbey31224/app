@@ -12,6 +12,10 @@ app.listen(process.env.PORT, () => console.log('Port ayarlandı: ' + process.env
 //////////////////
 
 
+setInterval(() => {
+  https.get(`https://son-guzell.glitch.me/`);//Buraya glitch linkinizi doğru şekilde giriniz. ve Botunuz 7/24 olacaktır!
+}, 280000)
+
 
 client.on("message", message => {
   let client = message.client;
