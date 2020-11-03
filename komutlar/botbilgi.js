@@ -17,6 +17,8 @@ module.exports.run = async(client, message, args) => {
     .addField('<a:reminder_ribbon:742698007262396426> Bellek kullanımı:', (process.memoryUsage().heapUsed / 2048 / 2048).toFixed(2))
     .addField('<a:reminder_ribbon:742698007262396426> Kütüphanesi;', `Discord.js`)
     .addField(`<a:reminder_ribbon:742698007262396426> Discord.js sürümü:`, Discord.version)
+    .addField(' Yapımcım', '<@754730560009797723> Ve <@642790531482648636>')
+    .addField(' Botun Yapılmaya Başlandığı Tarih ', '**15.10.2020**')
     .setTimestamp()
     message.channel.send(embed);
 }
