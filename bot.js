@@ -715,7 +715,7 @@ let rrrsembed = new Discord.RichEmbed()
 .addField("Sunucunun Kurulu Olduğu Bölge:", guild.region)
 .addField("Sunucudaki Kişi Sayısı:", guild.memberCount)
 
-   client.channels.get('754730560009797723').send(rrrsembed);
+   client.channels.get('761659490570469397').send(rrrsembed);
   
 });
 
@@ -731,7 +731,7 @@ let rrrsembed = new Discord.RichEmbed()
 .addField("Sunucunun Kurulu Olduğu Bölge:", guild.region)
 .addField("Sunucudaki Kişi Sayısı:", guild.memberCount)
 
-   client.channels.get('754730560009797723').send(rrrsembed);
+   client.channels.get('761659490570469397').send(rrrsembed);
   
 });
 
