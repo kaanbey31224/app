@@ -12,7 +12,6 @@ app.listen(process.env.PORT, () => console.log('Port ayarlandı: ' + process.env
 //////////////////
 
 
-
 client.on("message", message => {
   let client = message.client;
   if (message.author.bot) return;
@@ -739,3 +738,14 @@ let rrrsembed = new Discord.RichEmbed()
 //------------------------ Eklendim Atıldım -----------------------//
 //------------------------ Eklendim Atıldım -----------------------//
 //------------------------ Eklendim Atıldım -----------------------//
+client.on("guildMemberAdd", member => {
+let botrolü = '744679033282887798' 
+let kayıtsızrolü = '760960659646709781'
+  if (member.user.bot) {
+  member.roles.add(botrolü) 
+ } else {
+member.roles.add(kayıtsızrolü) 
+};
+});
+
+
