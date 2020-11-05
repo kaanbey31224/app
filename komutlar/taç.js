@@ -19,7 +19,7 @@ msg.delete(30000);
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ["tac,kurucu"],
+  aliases: ['kurucu','tac','sahip'],
   permLevel: 0
 };
 
