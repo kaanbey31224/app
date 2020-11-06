@@ -1,4 +1,4 @@
-{ 
+{
   "main": "bot.js",
   "scripts": {
     "start": "node bot.js"
@@ -8,9 +8,9 @@
   },
   "dependencies": {
     "discord.js": "^12.4.0",
-    "quick.db": "^7.1.1",
+    "quick.db": "^7.1.2",
     "express": "^4.17.1",
-    "moment": "^2.27.0",
+    "moment": "^2.29.1",
     "jimp": "^0.13.0",
     "common-tags": "^1.8.0",
     "moment-duration-format": "^2.2.2",
