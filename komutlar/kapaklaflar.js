@@ -1,7 +1,17 @@
 exports.run = async (client, msg, args) => {
     let kapak=[
-Aslında ben seni olduğun gibi kabul ederdim de; sen olmamışsın sıkıntı orada
-Eskiden altını çizdiklerimin şimdi ise üstünü çiziyorum.
+"Aslında ben seni olduğun gibi kabul ederdim de; sen olmamışsın sıkıntı orada",
+"Eskiden altını çizdiklerimin şimdi ise üstünü çiziyorum.",
+"Küfür etmeyi bende sevmiyorum ama şerefsizlik yapana teşekkür edemem.",
+"Tabağına yiyebileceğin kadar yemek, hayatına sevebileceğin kadar insan al. İsrafın lüzumu yok.",
+"Matematikte kötüsün ama çıkarlarını hesaplamada çok iyisin.",
+"Sokak lambası gibi olma ey yar kime yandığın belli olsun.",
+"İyileştirir diye medet umduklarımız tekrar tekrar yaralıyor bizi.",
+"Şerefin kadar konuş desem ömür boyu susacak insanlar tanıyorum.",
+"Belki tavırların beni en ağır küfürlere tahrik eder ama benim yüzümdeki o iplemez gülüş senin gelmişini geçmişini tatmin eder.",
+"Sen hayata at gözlükleriyle bakmaya devam edersen, birilerinin çüş demesi zoruna gitmesin.",
+"Şu saatten sonra sende Fırtına kopsa; bende yaprak oynamaz.",
+"Bir zamanlar toz konduramadıklarım, şimdi kirden görünmez olmuş.",
       "Aslında ben seni olduğun gibi kabul ederdim de; sen olmamışsın sıkıntı orada…",
       "Yalanım yok ki benim, aklımdasın hala. Ne yapayım güzelim gereksiz şeyleri kafa hep takıyorum.",
       "A101'de satılan 25 kuruşluk çikolatanın tadını bile veremeyen insanlar var. Öyle gereksizler... ",
