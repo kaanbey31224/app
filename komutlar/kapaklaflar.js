@@ -1,5 +1,8 @@
 exports.run = async (client, msg, args) => {
     let kapak=[
+Aslında ben seni olduğun gibi kabul ederdim de; sen olmamışsın sıkıntı orada
+Eskiden altını çizdiklerimin şimdi ise üstünü çiziyorum.
+      "Aslında ben seni olduğun gibi kabul ederdim de; sen olmamışsın sıkıntı orada…",
       "Yalanım yok ki benim, aklımdasın hala. Ne yapayım güzelim gereksiz şeyleri kafa hep takıyorum.",
       "A101'de satılan 25 kuruşluk çikolatanın tadını bile veremeyen insanlar var. Öyle gereksizler... ",
       "Bazı insanların da aynı televizyon gibi tepesine vurulduğunda düzelmesi en büyük temennimdir.",
