@@ -7,7 +7,7 @@ const ayarlar=require("./ayarlar.json");
 const express = require('express');
 /////
 const app = express()
-app.get('/', (req, res) => res.send("Bot Aktif"))
+app.get('/', (req, res) => res.send("Bot Aktif | Discord = https://discord.gg/Kachy2D"))
 app.listen(process.env.PORT, () => console.log('Port ayarlandı: ' + process.env.PORT))
 //////////////////
 
@@ -700,44 +700,7 @@ client.on("guildMemberRemove", async member => {
   }
 });
 
-//------------------------ Eklendim Atıldım -----------------------//
-//------------------------ Eklendim Atıldım -----------------------//
 
-client.on('guildDelete', guild => {
-
-let rrrsembed = new Discord.RichEmbed()
-
-.setColor("RED")
-.setTitle("Bot Kicklendi")
-.addField("Sunucu Adı:", guild.name)
-.addField("Sunucu sahibi", guild.owner)
-.addField("Sunucu Sahibi'nin İd'si", guild.ownerID)
-.addField("Sunucunun Kurulu Olduğu Bölge:", guild.region)
-.addField("Sunucudaki Kişi Sayısı:", guild.memberCount)
-
-   client.channels.get('761659490570469397').send(rrrsembed);
-  
-});
-
-client.on('guildCreate', guild => {
-
-let rrrsembed = new Discord.RichEmbed()
-
-.setColor("GREEN")
-.setTitle("Bot Eklendi")
-.addField("Sunucu Adı:", guild.name)
-.addField("Sunucu sahibi", guild.owner)
-.addField("Sunucu Sahibi'nin İd'si", guild.ownerID)
-.addField("Sunucunun Kurulu Olduğu Bölge:", guild.region)
-.addField("Sunucudaki Kişi Sayısı:", guild.memberCount)
-
-   client.channels.get('761659490570469397').send(rrrsembed);
-  
-});
-
-//------------------------ Eklendim Atıldım -----------------------//
-//------------------------ Eklendim Atıldım -----------------------//
-//------------------------ Eklendim Atıldım -----------------------//
 client.on("guildMemberAdd", member => {
 let botrolü = '744679033282887798' 
 let kayıtsızrolü = '760960659646709781'
