@@ -7,10 +7,7 @@ exports.run = async (client, message, args) => {
       if(güvenlik === "MEDIUM") güvenlik = "Orta"
    if(güvenlik === "HIGH") güvenlik = "Yüksek"
      if(güvenlik === "VERY_HIGH") güvenlik = " En Yüksek"
-  let pc = message.guild.members.cache.filter(m => !m.user.bot && (m.user.presence.status !== "offline")).filter(m => Object.keys(m.user.presence.clientStatus).includes("desktop")).size
-let web = message.guild.members.cache.filter(m => !m.user.bot && (m.user.presence.status !== "offline")).filter(m => Object.keys(m.user.presence.clientStatus).includes("web")).size
-let mobil = message.guild.members.cache.filter(m => !m.user.bot && (m.user.presence.status !== "offline")).filter(m => Object.keys(m.user.presence.clientStatus).includes("mobile")).size
-    const voiceChannels = message.guild.channels.cache.filter(c => c.type === 'voice');
+     const voiceChannels = message.guild.channels.cache.filter(c => c.type === 'voice');
     let count = 0
   let guild = message.guild;
      let botlar = message.guild.members.cache.filter(m => m.user.bot).size;
@@ -22,8 +19,6 @@ let mobil = message.guild.members.cache.filter(m => !m.user.bot && (m.user.prese
         .setThumbnail(`https://media.discordapp.net/attachments/761099716993613824/771419350828843059/gif_3.gif?width=115&height=115`)
     
         .addField(`<a:mag_right:771416107000922173> **__Sunucudaki Toplam Üye Sayısı__**`,`**\`\`\`${message.guild.memberCount}\`\`\`**`)
-    
-        .addField(`<a:mag_right:771416107000922173> **__Toplam Çevrimiçi Üye Sayısı__**`, `**\`\`\`${çevrimiçi}\`\`\`**`) 
     
         .addField(`<a:mag_right:771416107000922173> **__Seslideki Üye Sayısı__**`,`**\`\`\`${count}\`\`\`**`)
     
