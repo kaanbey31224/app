@@ -10,13 +10,13 @@ const EmbedPinCode = new Discord.MessageEmbed()
 .setDescription(`
 **» Bağlantılar** 
 **[Destek Sunucusu](https://discord.gg/Kachy2D)** **•** **[Botun Davet Linki](https://discord.com/api/oauth2/authorize?client_id=771311130890993680&permissions=8&scope=bot)** **•** **[Web-Site]( https://hammerhead-spark-sheet.glitch.me/index.html)**
-Bir komut hakkında detaylı __yardım için__: -yardım
+Bir komut hakkında detaylı __yardım için__: **-yardım**
 
 • Bot ile ilgili tavsiyelerinizi veya bulduğunuz hataları **-istek-kod** yazarak bize iletebilirsiniz
 
 **• Komutlar**
->  [-moderasyon](https://discord.gg/Kachy2D) → Moderasyon komudları görüntüler.
->  [-kullanıcı](https://discord.gg/Kachy2D) → Kullanıcı komutları.
+> [-moderasyon](https://discord.gg/Kachy2D) → Moderasyon komudları görüntüler.
+> [-kullanıcı](https://discord.gg/Kachy2D) → Kullanıcı komutları.
 > [-eğlence](https://discord.gg/Kachy2D) → eğlence komutları.
 > [-eğlence](https://discord.gg/Kachy2D) → eğlence komutları.
 > [-logo](https://discord.gg/Kachy2D) → Logo komutları.
