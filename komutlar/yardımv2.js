@@ -5,13 +5,17 @@ exports.run = (client, message) => {
 const EmbedPinCode = new Discord.MessageEmbed()
 
 .setColor("RANDOM")
-.setTitle("**▬▬▬▬▬▬[** ©️ **» CAPTAN Bot** ©️ **]▬▬▬▬▬▬**  **  **Prefixim: `-`")
+.setTitle("**▬▬▬▬▬▬[** ©️ **» CAPTAN Bot** ©️ **]▬▬▬▬▬▬**")
 .setThumbnail("https://cdn.discordapp.com/emojis/770265448892858368.gif?v=1")
 .setDescription(`
+**» Bağlantılar** 
+**[Destek Sunucusu](https://discord.gg/Kachy2D)** **•** **[Botun Davet Linki](https://discord.com/api/oauth2/authorize?client_id=769599803708932107&permissions=8&scope=bot)** **•** **[Web-Site]( https://hammerhead-spark-sheet.glitch.me/index.html)**
+Bir komut hakkında detaylı __yardım için__: -yardım
 
-**▬▬▬▬▬▬▬[** :closed_lock_with_key:  **Komut Listesi**   :closed_lock_with_key: **]▬▬▬▬▬▬**
+• Bot ile ilgili tavsiyelerinizi veya bulduğunuz hataları **-istek-kod** yazarak bize iletebilirsiniz
 
-> **» -moderasyon :** Moderasyon komudları görüntüler.
+**• Komutlar**
+>  [-moderasyon](https://discord.gg/Kachy2D)  **→ Moderasyon komudları görüntüler.**
 > **» -kullanıcı :** Userler için açık komudlar...
 > **» -eğlence :** Sizi biraz eğlendirir.
 > **» -eğlence2 :** size güzel komudlarımı göstereyim sizi eğlendirecek...
@@ -19,11 +23,10 @@ const EmbedPinCode = new Discord.MessageEmbed()
 > **» -logo2 :**logo2 kamutlarıyla sizlerle...
 
 **▬▬▬▬▬▬▬[** :gear:  **Bilgilendirme**  :gear: **]▬▬▬▬▬▬**
-> :open_file_folder: **Botun Destek Sunucusuna Gelmek İçin [Tıkla!](https://discord.gg/Kachy2D)**
-> :bulb: **Discord Js Sürümü: 12.4.0**
 
-**» Bağlantılar** 
-**[Destek Sunucusu](https://discord.gg/Kachy2D)** **•** **[Botun Davet Linki](https://discord.com/api/oauth2/authorize?client_id=769599803708932107&permissions=8&scope=bot)** **•** **[Web-Site]( https://hammerhead-spark-sheet.glitch.me/index.html)**
+:mortar_board: | Yapımcım` ,`<@754730560009797723>`,true)
+> 
+
 `)
  
 .setFooter(client.user.username + "", client.user.avatarURL)
