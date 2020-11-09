@@ -23,8 +23,9 @@ Bir komut hakkında detaylı __yardım için__: -yardım
 > [-logo2](https://discord.gg/Kachy2D) → logo komutları.
 
 **▬▬▬▬▬▬▬[** :gear:  **Bilgilendirme**  :gear: **]▬▬▬▬▬▬**
-> :bulb: **Discord Js Sürümü: 12.4.0**
-
+> :bulb: **Discord Js Sürümü : 12.4.0**
+> :robot: **quick.db Sürümü : 7.1.2**
+> :eye_in_speech_bubble: **moment Sürümü : 2.29.1**
 © 2020 Captan | Geliştiriciler, ve   adlı kişilerdir. Bu kişilerden başka geliştirici yoktur!
 
 `)
