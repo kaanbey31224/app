@@ -24,8 +24,7 @@ Bir komut hakkında detaylı __yardım için__: -yardım
 
 **▬▬▬▬▬▬▬[** :gear:  **Bilgilendirme**  :gear: **]▬▬▬▬▬▬**
 
-:mortar_board: | Yapımcım` ,`<@754730560009797723>`,true)
-> 
+© 2020 Captan | Geliştiriciler, ve   adlı kişilerdir. Bu kişilerden başka geliştirici yoktur!
 
 `)
  
