@@ -34,7 +34,7 @@ exports.run = function (client, message, args) {
 .setAuthor(üye.username, üye.displayAvatarURL)
 .setColor('GREEN')
 .setThumbnail(üye.displayAvatarURL)
-.addField('Profil', `**Ad:** ${üye.username + '#' + üye.discriminator}\n**ID: ** ${üye.id}\n**Son Mesaj: ** ${üye.lastMessage}\n**Son Mesaj İD: ** ${üye.lastMessageID}\n**Oynadığı Oyun: ** ${üye.presence.game ? üye.presence.game.name : 'Şu an oyun oynamıyor'}\n**Durum** ${durm}\n**Oluşturulduğu Tarih: ** ${(`${moment(üye.createdAt).format('DD')} ${aylar[moment(üye.createdAt).format('MM')]} ${moment(üye.createdAt).format('YYYY HH:mm:ss')}`)}\n**Bot mu?** ${üye.bot ? ':white_check_mark:' : ':negative_squared_cross_mark:'}\n**Rolleri: ** ${message.guild.members.get(üye.id).roles.filter(r => r.name !== "@everyone").map(r => r).join(' **|** ')}`)
+.addField('Profil', `**Ad:** ${üye.username + '#' + üye.discriminator}\n**ID: ** ${üye.id}\n**Son Mesaj: ** ${üye.lastMessage}\n**Son Mesaj İD: ** ${üye.lastMessageID}\n**Oynadığı Oyun: ** ${üye.presence.game ? üye.presence.game.name : 'Şu an oyun oynamıyor'}\n**Durum** ${durm}\n**Oluşturulduğu Tarih: ** ${(`${moment(üye.createdAt).format('DD')} ${aylar[moment(üye.createdAt).format('MM')]} ${moment(üye.createdAt).format('YYYY HH:mm:ss')}`)}\n**Bot mu?** ${üye.bot ? '::flag_tr: :' : ':negative_squared_cross_mark:'}\n**Rolleri: ** ${message.guild.members.get(üye.id).roles.filter(r => r.name !== "@everyone").map(r => r).join(' **|** ')}`)
     .setTimestamp()
         .setFooter(`${client.user.tag} | ${prefix}yardım`)
 message.channel.send(embed)
@@ -47,7 +47,6 @@ const embed = new Discord.MessageEmbed()
 .setTimestamp()
 .setFooter(`${client.user.tag} | ${prefix}yardım`)
 message.channel.send(embed)
-  
   }
   
 }

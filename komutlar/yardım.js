@@ -21,12 +21,12 @@ const EmbedPinCode = new Discord.MessageEmbed()
 **▬▬▬▬▬▬▬[** :gear:  **Bilgilendirme**  :gear: **]▬▬▬▬▬▬**
 
 > :dizzy: **Fikirleriniz** **değerlidir, Belirtmekten asla çekinmeyin!**
-> :open_file_folder: **Botun Destek Sunucusuna Gelmek İçin [Tıkla!](https://discord.gg/Kachy2D)**
+> :open_file_folder: **Botun Destek Sunucusuna Gelmek İçin [Tıkla!](https://discord.gg/9sB5pGSsGN)**
 > :round_pushpin: **Komut hakkında detaylı bilgi için: -yardım**
 > :bulb: **Discord Js Sürümü: 12.4.0**
 
 **» Bağlantılar** 
-**[Destek Sunucusu](https://discord.gg/Kachy2D)** **•** **[Botun Davet Linki](https://discord.com/api/oauth2/authorize?client_id=771311130890993680&permissions=8&scope=bot)** **•** **[Web-Site]( https://hammerhead-spark-sheet.glitch.me/index.html)**
+**[Destek Sunucusu](https://discord.gg/9sB5pGSsGN)** **•** **[Botun Davet Linki](https://discord.com/api/oauth2/authorize?client_id=771311130890993680&permissions=8&scope=bot)** **•** **[Web-Site]( https://hammerhead-spark-sheet.glitch.me/index.html)**
 `)
  
 .setFooter(client.user.username + "", client.user.avatarURL)
