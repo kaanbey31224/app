@@ -29,7 +29,7 @@ Bir komut hakkında detaylı __yardım için__: **-yardım**
 > :eye_in_speech_bubble: **moment Sürümü : 2.29.1**
 © 2020 Captan | Tüm hakları saklıdır.
 :flag_sn:  @Manyak*#9999 :flag_tr: 
-:flag_sn:  ☪ 𝐸𝒮𝑀𝐸𝑅ヅ#1408 :flag_tr: 
+:flag_sn: @☪ 𝐸𝒮𝑀𝐸𝑅ヅ#1408 :flag_tr: 
 `)
  
 
