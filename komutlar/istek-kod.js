@@ -9,7 +9,7 @@ const embed = new Discord.MessageEmbed()
 .setTitle("Captan İstek Sistemi")
 .setColor('BLUE')
 .setDescription(`**istek Kanalı** ${message.channel.name} \n **istek Bildirilen Sunucu** \`${message.guild.name}\` \n **İstek Bildiren Kullanıcı** <@${message.author.id}> \n **İstenen komut :** \`${istek}\``)
-client.channels.cache.get('772082804204896266').send(embed)
+client.channels.cache.get('776732501270986752').send(embed)
   
 message.channel.send("İstek kod  bildiriminiz gönderildi. :confetti_ball:").then(message => message.delete({ timeout: 5000 }));
 };

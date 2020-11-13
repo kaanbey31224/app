@@ -9,7 +9,7 @@ const embed = new Discord.MessageEmbed()
 .setTitle("Captan Bug Sistemi")
 .setColor('BLUE')
 .setDescription(`**Bug Kanalı** ${message.channel.name} \n **Bug Bildirilen Sunucu** \`${message.guild.name}\` \n **Bugu Bildiren Kullanıcı** <@${message.author.id}> \n **Bildirilen Bug :** \`${istek}\``)
-client.channels.cache.get('769634341570478106').send(embed)
+client.channels.cache.get('776732448817676319').send(embed)
   
 message.channel.send("Bug bildiriminiz gönderildi. :confetti_ball:").then(message => message.delete({ timeout: 5000 }));
 };
@@ -22,6 +22,6 @@ exports.conf = {
 
 exports.help = {
   name: 'bug-bildir',
-  description: 'İstek kodları belirtmeye yarar',
-  usage: 'istek-kod <istek>'
+  description: 'bug belirtmeye yarar',
+  usage: 'bug-bildir <bug>'
 }

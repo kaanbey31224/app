@@ -676,7 +676,7 @@ client.on("message", async msg => {
 client.login(ayarlar.token)
 
   client.on("ready", () => {
-  client.channels.cache.get("770217169865670696").join();//sesli bi kanala katılacagı icin kanal ID si
+  client.channels.cache.get("776728047884697620").join();//sesli bi kanala katılacagı icin kanal ID si
 }) 
 
 
@@ -702,8 +702,8 @@ client.on("guildMemberRemove", async member => {
 
 
 client.on("guildMemberAdd", member => {
-let botrolü = '744679033282887798' 
-let kayıtsızrolü = '760960659646709781'
+let botrolü = '776781897296117770' 
+let kayıtsızrolü = '776729108818034708'
   if (member.user.bot) {
   member.roles.add(botrolü) 
  } else {
