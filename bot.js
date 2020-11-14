@@ -152,7 +152,7 @@ client.on("message", async msg => {
       ".biz",
       ".party",
       ".rf.gd",
-      ".az""
+      ".az"]
               if (reklam.some(word => msg.content.toLowerCase().includes(word))) {
                 try {
                   if (!msg.member.hasPermission("MANAGE_GUILD")) {
