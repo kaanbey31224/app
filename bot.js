@@ -133,7 +133,26 @@ client.on("message", async msg => {
     
     let i = await db.fetch(`reklamFiltre_${msg.guild.id}`)  
           if (i == 'acik') {
-              const reklam = ["https://","http://","discord.gg"];
+              const reklam = ["https://","http://","discord.gg",
+      "discord.gg",
+      ".com",
+      ".net",
+      ".xyz",
+      ".tk",
+      ".pw",
+      ".io",
+      ".me",
+      ".gg",
+      "www.",
+      "https",
+      "http",
+      ".gl",
+      ".org",
+      ".com.tr",
+      ".biz",
+      ".party",
+      ".rf.gd",
+      ".az""
               if (reklam.some(word => msg.content.toLowerCase().includes(word))) {
                 try {
                   if (!msg.member.hasPermission("MANAGE_GUILD")) {
