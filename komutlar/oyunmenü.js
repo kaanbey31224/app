@@ -4,13 +4,13 @@ const db = require("quick.db");
 
 exports.run = async (client, message, args) => {
 
-const Oyun = new Discord.MessageEmbed()
+const eğlence = new Discord.MessageEmbed()
 .setColor("RANDOM")
 .setAuthor("» CAPTAN v12 sürümüyle yeniden sizlerle.")
 .setTitle("<a:maple_leaf:742698148329291826> » CAPTANEğlence Komutları <a:maple_leaf:742698148329291826>")
  .setTimestamp()
 .setDescription("<a:dizzy:750065080741134407> **-adamasmaca** = Birlikte bir oyun oynamaya ne dersin **adam asmaca**. <a:confetti_ball:749525084586115153> \n  <a:dizzy:750065080741134407> **-yazan-kazanır** =  Yazan karanır oyununu oynadıktan sonra tekrar oynamaya ne dersin?. <a:confetti_ball:749525084586115153> \n <a:dizzy:750065080741134407> **-kapaklaf** =  Birine güzel bi söz sözlemeye ne dersin?. <a:confetti_ball:749525084586115153> \n <a:dizzy:750065080741134407> **-kralol** =  Kral olmaya ne dersin?. <a:confetti_ball:749525084586115153> \n")
-message.channel.send(Oyun)
+message.channel.send(eğlence)
 }
 
 exports.conf = {
@@ -21,8 +21,8 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'Oyunlar',
+  name: 'eğlence2',
   category: 'kullanıcı',
   description: 'Yardım Menüsü.',
-   usage:'-Oyunlar'
+   usage:'-eğlence2'
 }
