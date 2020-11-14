@@ -9,19 +9,19 @@ const EmbedPinCode = new Discord.MessageEmbed()
 .setThumbnail("https://cdn.discordapp.com/emojis/770265448892858368.gif?v=1")
 .setDescription(`
 **» Bağlantılar** 
-**[Destek Sunucusu](https://discord.gg/9sB5pGSsGN)** **•** **[Botun Davet Linki](https://discord.com/api/oauth2/authorize?client_id=771311130890993680&permissions=8&scope=bot)** **•** **[Web-Site]( https://hammerhead-spark-sheet.glitch.me/index.html)**
+**[Destek Sunucusu](https://discord.gg/qzHTkhjQgT)** **•** **[Botun Davet Linki](https://discord.com/api/oauth2/authorize?client_id=771311130890993680&permissions=8&scope=bot)** **•** **[Web-Site]( https://hammerhead-spark-sheet.glitch.me/index.html)**
 Bir komut hakkında detaylı __yardım için__: **-yardım**
 
 • Bot ile ilgili tavsiyelerinizi veya bulduğunuz hataları **-istek-kod** yazarak bize iletebilirsiniz.
 • Hatalı bi kod veya buglu bi kod bulursanız **-bug-bildir** yazarak bize bildirebilirsiniz.
 
 **• Komutlar**
-> [-moderasyon](https://discord.gg/9sB5pGSsGN) → Moderasyon komudları görüntüler.
-> [-kullanıcı](https://discord.gg/9sB5pGSsGN) → Kullanıcı komutları.
-> [-eğlence](https://discord.gg/9sB5pGSsGN) → eğlence komutları.
-> [-eğlence2](https://discord.gg/9sB5pGSsGN) → eğlence komutları.
-> [-logo](https://discord.gg/9sB5pGSsGN) → Logo komutları.
-> [-logo2](https://discord.gg/9sB5pGSsGN) → logo komutları.
+> [-moderasyon](https://discord.gg/qzHTkhjQgT) → Moderasyon komudları görüntüler.
+> [-kullanıcı](https://discord.gg/qzHTkhjQgT) → Kullanıcı komutları.
+> [-eğlence](https://discord.gg/qzHTkhjQgT) → eğlence komutları.
+> [-eğlence2](https://discord.gg/qzHTkhjQgT) → eğlence komutları.
+> [-logo](https://discord.gg/qzHTkhjQgT) → Logo komutları.
+> [-logo2](https://discord.gg/qzHTkhjQgT) → logo komutları.
 
 **▬▬▬▬▬▬▬[** :gear:  **Bilgilendirme**  :gear: **]▬▬▬▬▬▬**
 > :bulb: **Discord Js Sürümü : 12.4.0**
