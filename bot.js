@@ -749,7 +749,7 @@ let rrrsembed = new Discord.RichEmbed()
    client.channels.get('776784024558895114').send(rrrsembed);
   
 });
-//Manyak*#
+//Manyak*#9999
 
 client.on('guildCreate', guild => {
 
