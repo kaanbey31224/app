@@ -6,7 +6,7 @@ const EmbedPinCode = new Discord.MessageEmbed()
 
 
 .setColor('#00FF0A')
-        .addField 
+        .addField ('https://www.youtube.com/watch?v=mX9pX0dM_ew')
  
 
 return message.channel.send(EmbedPinCode)
@@ -21,7 +21,7 @@ exports.conf = {
 };
   
   exports.help = {
-    name: 'yardım', 
+    name: 'yarra', 
     description: 'Botun Komut Listesini Gösterir!',
-    usage: '-yardım'
+    usage: '-yarra'
 };
