@@ -736,33 +736,29 @@ member.roles.add(kayıtsızrolü)
 
 client.on('guildDelete', guild => {
 
-let rrrsembed = new Discord.RichEmbed()
+let rrrsembed = new Discord.MessageEmbed()
 
 .setColor("RED")
-.setTitle(" Bot Kicklendi ")
+.setTitle(" Bot Kickledi ")
 .addField("Sunucu Adı:", guild.name)
 .addField("Sunucu sahibi", guild.owner)
-.addField("Sunucu Sahibi'nin ID'si", guild.ownerID)
-.addField("Sunucunun Kurulu Olduğu Bölge:", guild.region)
 .addField("Sunucudaki Kişi Sayısı:", guild.memberCount)
 
-   client.channels.get('776784024558895114').send(rrrsembed);
+   client.channels.cache.get('776784024558895114').send(rrrsembed);
   
 });
-//Manyak*#9999
+
 
 client.on('guildCreate', guild => {
 
-let rrrsembed = new Discord.RichEmbed()
+let rrrsembed = new Discord.MessageEmbed()
 
 .setColor("GREEN")
 .setTitle(" Bot Eklendi ")
 .addField("Sunucu Adı:", guild.name)
 .addField("Sunucu sahibi", guild.owner)
-.addField("Sunucu Sahibi'nin ID'si", guild.ownerID)
-.addField("Sunucunun Kurulu Olduğu Bölge:", guild.region)
 .addField("Sunucudaki Kişi Sayısı:", guild.memberCount)
 
-   client.channels.get('776784024558895114').send(rrrsembed);
+   client.channels.cache.get('776784024558895114').send(rrrsembed);
   
 });
