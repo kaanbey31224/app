@@ -6,13 +6,13 @@ exports.run = function(client, message, args) {
  const kisi = message.mentions.users.first() || message.author;
  var x
  switch (kisi.presence.status) {
-     case 'online': x ='<:018:744605682904596552>'
+     case 'online': x ='<:online:779097055971901450>'
      break;
-     case 'dnd': x='<:011:744605690353418380> '
+     case 'dnd': x='<:rahatszetmeyin:779096961235681281> '
      break;
-     case 'offline': x='<:domda3:709739242972250124>'
+     case 'offline': x='<:grnmez:779096763758804992>'
      break;
-     case 'idle': x='<:019:744605683323764868>'
+     case 'idle': x='<:idle:779096858701070337>'
      break
  }
  var f =''
