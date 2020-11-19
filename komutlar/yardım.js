@@ -26,7 +26,7 @@ const EmbedPinCode = new Discord.MessageEmbed()
 > :bulb: **Discord Js Sürümü: 12.4.0**
 
 **» Bağlantılar** 
-**[Destek Sunucusu](https://discord.gg/qzHTkhjQgT)** **•** **[Botun Davet Linki](https://discord.com/api/oauth2/authorize?client_id=771311130890993680&permissions=8&scope=bot)** **•** **[Web-Site]( https://hammerhead-spark-sheet.glitch.me/index.html)**
+**[Destek Sunucusu](https://discord.gg/qzHTkhjQgT)** **•** **[Botun Davet Linki](https://discord.com/api/oauth2/authorize?client_id=779006421625995345&permissions=8&scope=bot)** **•** **[Web-Site]( https://hammerhead-spark-sheet.glitch.me/index.html)**
 `)
  
 .setFooter(client.user.username + "", client.user.avatarURL)
