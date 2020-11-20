@@ -28,8 +28,8 @@ Bir komut hakkında detaylı __yardım için__: **-yardım**
 > :robot: **quick.db Sürümü : 7.1.2**
 > :eye_in_speech_bubble: **moment Sürümü : 2.29.1**
 © 2020 Captan | Tüm hakları saklıdır.
-:flag_sn:  <@754730560009797723> :flag_tr: 
-:flag_sn: <@> :flag_tr: 
+:flag_sn:  <@754730560009797723> ``Manyak*#9999`` :flag_tr: 
+:flag_sn: <@642790531482648636> ``Hȥ.𝑬𝑺𝑴𝑬𝑹#1408`` :flag_tr: 
 `)
  
 
