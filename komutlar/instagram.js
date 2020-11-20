@@ -12,7 +12,7 @@ exports.run = (client, message, args) => {
     if (data.isPrivate === true) gizlimi = "Evet";
     if (data.isVerified === false) onaylimi = "Hayır";
     if (data.isVerified === true) onaylimi = "Evet";
-    const embed = new Discord.RichEmbed()
+    const embed = new Discord.MessageEmbed()
       .setColor("RANDOM")
       .setThumbnail(`${data.avatarHD}`)
       .addField("🔱 Kullanıcı İsmi: ", `${kullanici}`)
