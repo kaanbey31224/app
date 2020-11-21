@@ -22,14 +22,22 @@ Bir komut hakkında detaylı __yardım için__: **-yardım**
 > [-ban](https://discord.gg/qzHTkhjQgT) → Etiketlediğiniz kişiyi sunucudan banlarsınız.
 > [-kick](https://discord.gg/qzHTkhjQgT) → Etiketlediğiniz kişiyi sunucudan atarsınız.
 > [-duyuru](https://discord.gg/qzHTkhjQgT) → Bot yazdıgının mesajı duyuru yapar.
+> [-küfür](https://discord.gg/qzHTkhjQgT) → Küfür engel sistemini açarsınız.
+> [-reklam](https://discord.gg/qzHTkhjQgT) → Reklam engel sistemi açarsınız.
+> [-slowmode](https://discord.gg/qzHTkhjQgT) → Yavaş modu ayarlarsınız. 
+> [-forceban](https://discord.gg/qzHTkhjQgT) →  etiketlediniz kişiyi perma banlar.
+> [-unban](https://discord.gg/qzHTkhjQgT) → Birisinin banını açarsınız.
+> [-sa-as](https://discord.gg/qzHTkhjQgT) →  Sa-As sistemini aktif eder.
+> [-sunucubilgi](https://discord.gg/qzHTkhjQgT) →  Sunucu hakkında bilgi verir
+> [-üyedurum](https://discord.gg/qzHTkhjQgT) →  Sunucu üyeleri hakkında bilgi verir
+> [-çekiliş](https://discord.gg/qzHTkhjQgT) → Çekiliş yaparsınız.
+
 
 **▬▬▬▬▬▬▬[** :gear:  **Bilgilendirme**  :gear: **]▬▬▬▬▬▬**
 > :bulb: **Discord Js Sürümü : 12.4.0**
 > :robot: **quick.db Sürümü : 7.1.2**
 > :eye_in_speech_bubble: **moment Sürümü : 2.29.1**
 © 2020 Captan | Tüm hakları saklıdır.
-:flag_sn:  <@754730560009797723> ``Manyak*#9999`` :flag_tr: 
-:flag_sn: <@642790531482648636> ``Hȥ.𝑬𝑺𝑴𝑬𝑹#1408`` :flag_tr: 
 `)
  
 
@@ -45,7 +53,7 @@ exports.conf = {
 };
   
   exports.help = {
-    name: 'moderasyonv2', 
+    name: 'moderasyonv', 
     description: 'Botun Komut Listesini Gösterir!',
     usage: '-moderasyon'
 };
