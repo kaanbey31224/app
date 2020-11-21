@@ -16,12 +16,20 @@ Bir komut hakkında detaylı __yardım için__: **-yardım**
 • Hatalı bi kod veya buglu bi kod bulursanız **-bug-bildir** yazarak bize bildirebilirsiniz.
 
 **• Komutlar**
-> [-moderasyon](https://discord.gg/qzHTkhjQgT) → Moderasyon komudları görüntüler.
-> [-kullanıcı](https://discord.gg/qzHTkhjQgT) → Kullanıcı komutları.
-> [-eğlence](https://discord.gg/qzHTkhjQgT) → eğlence komutları.
-> [-eğlence2](https://discord.gg/qzHTkhjQgT) → eğlence komutları.
-> [-logo](https://discord.gg/qzHTkhjQgT) → Logo komutları.
-> [-logo2](https://discord.gg/qzHTkhjQgT) → logo komutları.
+> [-medya](https://discord.gg/qzHTkhjQgT) → Sosyal medyalarım. 
+> [-toplamkomut](https://discord.gg/qzHTkhjQgT) → Botta ne kadar komut oldunu gösterir.
+> [-aile](https://discord.gg/qzHTkhjQgT) → Ne kadar büyük bi aile oldumuzu öğrenmek istermisin?
+> [-say](https://discord.gg/qzHTkhjQgT) → Sunucu hakkında detaylı bilgi verir.
+> [-avatar](https://discord.gg/qzHTkhjQgT) → Etiketlediğin birisinin avatarını gösterir.
+> [-yetkilerim](https://discord.gg/qzHTkhjQgT) → Hangi yetkilere sahip olduğunuzu gösterir.
+> [-profil](https://discord.gg/qzHTkhjQgT) → Etiketlediğin kişini profilini görürsünüz.
+> [-sunucuresmi](https://discord.gg/qzHTkhjQgT) → Sunucu resmini gösterir.
+> [-ping](https://discord.gg/qzHTkhjQgT) → Botun Pingine Bakarsın. 
+> [-id](https://discord.gg/qzHTkhjQgT) → Etiketlediğin kişini ıd sini gösterir 
+> [-davet](https://discord.gg/qzHTkhjQgT) → beni sunucuna ekle.
+> [-botbilgi](https://discord.gg/qzHTkhjQgT) → Bot hakkında bilgi gösterir
+> [-bug-bildir](https://discord.gg/qzHTkhjQgT) → Yazdığınız bug'u yapımcılarıma bildirir.
+> [-istek-kod](https://discord.gg/qzHTkhjQgT) → Yazdığınız istek kodu yapımcılarıma bildirir.
 
 **▬▬▬▬▬▬▬[** :gear:  **Bilgilendirme**  :gear: **]▬▬▬▬▬▬**
 > :bulb: **Discord Js Sürümü : 12.4.0**
@@ -43,7 +51,7 @@ exports.conf = {
 };
   
   exports.help = {
-    name: 'yardım', 
+    name: 'kullanıcı', 
     description: 'Botun Komut Listesini Gösterir!',
     usage: '-yardım'
 };
