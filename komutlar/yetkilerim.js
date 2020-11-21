@@ -1,4 +1,5 @@
-const Discord = require('discord.js');
+
+    const Discord = require('discord.js');
 const { stripIndents } = require('common-tags');
 
 exports.run = (client, msg, args) => {
@@ -43,11 +44,11 @@ let x;
     //üyeleri yasakla
     if (msg.member.hasPermission("BAN_MEMBERS")) x7 = ":white_check_mark:"
     if (!msg.member.hasPermission("BAN_MEMBERS")) x7 = ":x: "
-    
+
     //mesajları yönet
     if (msg.member.hasPermission("MANAGE_MESSAGES")) x8 = ":white_check_mark:"
-    if (!msg.member.hasPermission("MANAGE_MESSAGES")) x8 = ":x: "
-    
+    if (!msg.member.hasPermission("MANAGE_MESSAGES")) x8 = ":x: "    
+
     //kullanıcı adlarını yönet
     if (msg.member.hasPermission("MANAGE_NICKNAMES")) x9 = ":white_check_mark:"
     if (!msg.member.hasPermission("MANAGE_NICKNAMES")) x9 = ":x: "
