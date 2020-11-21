@@ -2,7 +2,7 @@ const Discord = require ("discord.js");
 
 exports.run = (client, message) => {
 
-const EmbedPinCode = new Discord.MessageEmbed()
+const EmbedCrewCode = new Discord.MessageEmbed()
 
 .setColor("RANDOM")
 .setTitle("**▬▬▬▬▬▬[** ©️ **» CAPTAN Bot** ©️ **]▬▬▬▬▬▬**")
@@ -19,9 +19,7 @@ Bir komut hakkında detaylı __yardım için__: **-yardım**
 > [-moderasyon](https://discord.gg/qzHTkhjQgT) → Moderasyon komudları görüntüler.
 > [-kullanıcı](https://discord.gg/qzHTkhjQgT) → Kullanıcı komutları.
 > [-eğlence](https://discord.gg/qzHTkhjQgT) → eğlence komutları.
-> [-eğlence2](https://discord.gg/qzHTkhjQgT) → eğlence komutları.
 > [-logo](https://discord.gg/qzHTkhjQgT) → Logo komutları.
-> [-logo2](https://discord.gg/qzHTkhjQgT) → logo komutları.
 
 **▬▬▬▬▬▬▬[** :gear:  **Bilgilendirme**  :gear: **]▬▬▬▬▬▬**
 > :bulb: **Discord Js Sürümü : 12.4.0**
@@ -31,7 +29,7 @@ Bir komut hakkında detaylı __yardım için__: **-yardım**
 `)
  
 
-return message.channel.send(EmbedPinCode)
+return message.channel.send(EmbedCrewCode)
 .then; 
 
 };

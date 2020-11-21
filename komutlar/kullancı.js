@@ -31,6 +31,7 @@ Bir komut hakkında detaylı __yardım için__: **-yardım**
 > [-botbilgi](https://discord.gg/qzHTkhjQgT) → Bot hakkında bilgi gösterir
 > [-bug-bildir](https://discord.gg/qzHTkhjQgT) → Yazdığınız bug'u yapımcılarıma bildirir.
 > [-istek-kod](https://discord.gg/qzHTkhjQgT) → Yazdığınız istek kodu yapımcılarıma bildirir.
+> [-instagram](https://discord.gg/qzHTkhjQgT) → Yazdığınız intagram kullanıcsı hakkında bilgi verir.
 
 **▬▬▬▬▬▬▬[** :gear:  **Bilgilendirme**  :gear: **]▬▬▬▬▬▬**
 > :bulb: **Discord Js Sürümü : 12.4.0**
