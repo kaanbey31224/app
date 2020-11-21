@@ -12,8 +12,8 @@ const EmbedPinCode = new Discord.MessageEmbed()
 **[Destek Sunucusu](https://discord.gg/qzHTkhjQgT)** **•** **[Botun Davet Linki](https://discord.com/api/oauth2/authorize?client_id=779006421625995345&permissions=8&scope=bot)** **•** **[Web-Site]( https://hammerhead-spark-sheet.glitch.me/index.html)**
 Bir komut hakkında detaylı __yardım için__: **-yardım**
 
-• Bot ile ilgili tavsiyelerinizi veya bulduğunuz hataları **-istek-kod** yazarak bize iletebilirsiniz.
-• Hatalı bi kod veya buglu bi kod bulursanız **-bug-bildir** yazarak bize bildirebilirsiniz.
+• Bot ile ilgili tavsiyelerinizi veya bulduğunuz hataları -istek-kod yazarak bize iletebilirsiniz.
+• Hatalı bi kod veya buglu bi kod bulursanız -bug-bildir yazarak bize bildirebilirsiniz.
 
 **• Komutlar**
 > [-zarat](https://discord.gg/qzHTkhjQgT) →  Zar atarsınız
@@ -28,10 +28,14 @@ Bir komut hakkında detaylı __yardım için__: **-yardım**
 > [-tersyazı](https://discord.gg/qzHTkhjQgT) →  Yazdığınız yazıyı bot tersten yazar
 > [-mcskin](https://discord.gg/qzHTkhjQgT) →Yazdığınız ismin minecraft görünüşünü atar.
 > [-fbi](https://discord.gg/qzHTkhjQgT) → FBİ gifi atar.
-> [-token](https://discord.gg/qzHTkhjQgT) →  
-> [-](https://discord.gg/qzHTkhjQgT) →  
-> [-](https://discord.gg/qzHTkhjQgT) → 
-
+> [-token](https://discord.gg/qzHTkhjQgT) →  Botun tokenini gösterir.
+> [-düello](https://discord.gg/qzHTkhjQgT) →  Arkadaşlarınızla düello yaparsınız.
+> [-wasted](https://discord.gg/qzHTkhjQgT) → Polis tarafından yakalanırsnız
+> [-atatürk](https://discord.gg/qzHTkhjQgT) → Atatürk gifi atar.
+> [-yumruk-at](https://discord.gg/qzHTkhjQgT) → Etiketlediğin kişiye bot yumruk atar.
+> [-yazan-kazanır](https://discord.gg/qzHTkhjQgT) → Yazan kazanır oyunu.
+> [-kapaklaf](https://discord.gg/qzHTkhjQgT) → Etiketlediğin kişiye bot kapaklaf söyler.
+> [-kralol](https://discord.gg/qzHTkhjQgT) → Kral olursunuz.
 
 **▬▬▬▬▬▬▬[** :gear:  **Bilgilendirme**  :gear: **]▬▬▬▬▬▬**
 > :bulb: **Discord Js Sürümü : 12.4.0**
@@ -53,7 +57,7 @@ exports.conf = {
 };
   
   exports.help = {
-    name: 'eğlencea', 
+    name: 'eğlence', 
     description: 'Botun Komut Listesini Gösterir!',
     usage: '-eğlence'
 };
