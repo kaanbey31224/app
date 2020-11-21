@@ -11,7 +11,7 @@ module.exports.run = async(client, message, args) => {
     .setTitle('<a:desktop:742698007262396426> İstatistik;')
     .addField('<a:reminder_ribbon:742698007262396426> Gecikme: ', client.ws.ping + 'ms')
     .addField('<a:reminder_ribbon:742698007262396426> Çalışma Süresi: ', `${duration}`)
-    .addFieldKullanıcılar:', client.users.cache.size)
+    .addField('<a:reminder_ribbon:742698007262396426> Kullanıcılar:', client.users.cache.size)
     .addField('<a:reminder_ribbon:742698007262396426> Kanallar:', client.channels.cache.size)
     .addField('<a:reminder_ribbon:742698007262396426> Sunucular:', client.guilds.cache.size)
     .addField('<a:reminder_ribbon:742698007262396426> Bellek kullanımı:', (process.memoryUsage().heapUsed / 2048 / 2048).toFixed(2))
