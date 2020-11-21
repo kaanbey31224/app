@@ -16,6 +16,7 @@ Bir komut hakkında detaylı __yardım için__: **-yardım**
 • Hatalı bi kod veya buglu bi kod bulursanız **-bug-bildir** yazarak bize bildirebilirsiniz.
 
 **• Komutlar**
+> [-kullanıcı-bilgi](https://discord.gg/qzHTkhjQgT) → Etiketlediniz kullanıcın bilgilerini gösterir.
 > [-medya](https://discord.gg/qzHTkhjQgT) → Sosyal medyalarım. 
 > [-toplamkomut](https://discord.gg/qzHTkhjQgT) → Botta ne kadar komut oldunu gösterir.
 > [-aile](https://discord.gg/qzHTkhjQgT) → Ne kadar büyük bi aile oldumuzu öğrenmek istermisin?
@@ -53,5 +54,5 @@ exports.conf = {
   exports.help = {
     name: 'kullanıcı', 
     description: 'Botun Komut Listesini Gösterir!',
-    usage: '-yardım'
+    usage: '-kullanıcı'
 };

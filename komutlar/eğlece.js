@@ -16,21 +16,21 @@ Bir komut hakkında detaylı __yardım için__: **-yardım**
 • Hatalı bi kod veya buglu bi kod bulursanız **-bug-bildir** yazarak bize bildirebilirsiniz.
 
 **• Komutlar**
-> [-kayıt-bilgi](https://discord.gg/qzHTkhjQgT) →  Kayıt için bilgi.
-> [-taç](https://discord.gg/qzHTkhjQgT) → Sunucunun sahibini gösterir.
-> [-sil](https://discord.gg/qzHTkhjQgT) → Yazdığınız miktarda mesajı siler.
-> [-ban](https://discord.gg/qzHTkhjQgT) → Etiketlediğiniz kişiyi sunucudan banlarsınız.
-> [-kick](https://discord.gg/qzHTkhjQgT) → Etiketlediğiniz kişiyi sunucudan atarsınız.
-> [-duyuru](https://discord.gg/qzHTkhjQgT) → Bot yazdıgının mesajı duyuru yapar.
-> [-küfür](https://discord.gg/qzHTkhjQgT) → Küfür engel sistemini açarsınız.
-> [-reklam](https://discord.gg/qzHTkhjQgT) → Reklam engel sistemi açarsınız.
-> [-slowmode](https://discord.gg/qzHTkhjQgT) → Yavaş modu ayarlarsınız. 
-> [-forceban](https://discord.gg/qzHTkhjQgT) →  etiketlediniz kişiyi perma banlar.
-> [-unban](https://discord.gg/qzHTkhjQgT) → Birisinin banını açarsınız.
-> [-sa-as](https://discord.gg/qzHTkhjQgT) →  Sa-As sistemini aktif eder.
-> [-sunucubilgi](https://discord.gg/qzHTkhjQgT) →  Sunucu hakkında bilgi verir
-> [-üyedurum](https://discord.gg/qzHTkhjQgT) →  Sunucu üyeleri hakkında bilgi verir
-> [-çekiliş](https://discord.gg/qzHTkhjQgT) → Çekiliş yaparsınız.
+> [-zarat](https://discord.gg/qzHTkhjQgT) →  Zar atarsınız
+> [-kasaaç](https://discord.gg/qzHTkhjQgT) → CsGo kasası açmaya ne dersin?.
+> [-emojiyazı](https://discord.gg/qzHTkhjQgT) → Emojili yazı yazmaya ne dersin?.
+> [-espiri](https://discord.gg/qzHTkhjQgT) → Bot espiri yapar.
+> [-sor](https://discord.gg/qzHTkhjQgT) → Bot sorduğunuz soruya cevap verir.
+> [-ara112](https://discord.gg/qzHTkhjQgT) → Ambulansı ararsınız.
+> [-vine](https://discord.gg/qzHTkhjQgT) → Bot size komik paylaşımlar gösterir.
+> [-adamasmaca](https://discord.gg/qzHTkhjQgT) → Adam asmaca oyunu.
+> [-balıktut](https://discord.gg/qzHTkhjQgT) → Dereden balık tutarsınız.
+> [-tersyazı](https://discord.gg/qzHTkhjQgT) →  Yazdığınız yazıyı bot tersten yazar
+> [-mcskin](https://discord.gg/qzHTkhjQgT) →Yazdığınız ismin minecraft görünüşünü atar.
+> [-fbi](https://discord.gg/qzHTkhjQgT) → FBİ gifi atar.
+> [-token](https://discord.gg/qzHTkhjQgT) →  
+> [-](https://discord.gg/qzHTkhjQgT) →  
+> [-](https://discord.gg/qzHTkhjQgT) → 
 
 
 **▬▬▬▬▬▬▬[** :gear:  **Bilgilendirme**  :gear: **]▬▬▬▬▬▬**
@@ -53,7 +53,7 @@ exports.conf = {
 };
   
   exports.help = {
-    name: 'moderasyon', 
+    name: 'eğlencea', 
     description: 'Botun Komut Listesini Gösterir!',
-    usage: '-moderasyon'
+    usage: '-eğlence'
 };
