@@ -16,12 +16,12 @@ Bir komut hakkında detaylı __yardım için__: **-yardım**
 • Hatalı bi kod veya buglu bi kod bulursanız **-bug-bildir** yazarak bize bildirebilirsiniz.
 
 **• Komutlar**
-> [-moderasyon](https://discord.gg/qzHTkhjQgT) → Moderasyon komudları görüntüler.
-> [-kullanıcı](https://discord.gg/qzHTkhjQgT) → Kullanıcı komutları.
-> [-eğlence](https://discord.gg/qzHTkhjQgT) → eğlence komutları.
-> [-eğlence2](https://discord.gg/qzHTkhjQgT) → eğlence komutları.
-> [-logo](https://discord.gg/qzHTkhjQgT) → Logo komutları.
-> [-logo2](https://discord.gg/qzHTkhjQgT) → logo komutları.
+> [-kayıt-bilgi](https://discord.gg/qzHTkhjQgT) →  Kayıt için bilgi.
+> [-taç](https://discord.gg/qzHTkhjQgT) → Sunucunun sahibini gösterir.
+> [-sil](https://discord.gg/qzHTkhjQgT) → Yazdığınız miktarda mesajı siler.
+> [-ban](https://discord.gg/qzHTkhjQgT) → Etiketlediğiniz kişiyi sunucudan banlarsınız.
+> [-kick](https://discord.gg/qzHTkhjQgT) → Etiketlediğiniz kişiyi sunucudan atarsınız.
+> [-duyuru](https://discord.gg/qzHTkhjQgT) → Bot yazdıgının mesajı duyuru yapar.
 
 **▬▬▬▬▬▬▬[** :gear:  **Bilgilendirme**  :gear: **]▬▬▬▬▬▬**
 > :bulb: **Discord Js Sürümü : 12.4.0**
@@ -45,7 +45,7 @@ exports.conf = {
 };
   
   exports.help = {
-    name: 'yardımv2', 
+    name: 'moderasyonv2', 
     description: 'Botun Komut Listesini Gösterir!',
-    usage: '-yardım'
+    usage: '-moderasyon'
 };
