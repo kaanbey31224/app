@@ -2,11 +2,11 @@ const Discord = require("discord.js");
 const db = require("quick.db");
 module.exports.run = async (bot, message, args) => {
   if (!message.member.hasPermission("KICK_MEMBERS")) {
-    const embed = new Discord.MessageEmbed()
+    const embedCrewCode = new Discord.MessageEmbed()
       .setDescription("```⚠ Ne yazık ki bu komutu kullanmaya yetkin yok. ⚠ ```")
       .setColor("BLACK");
  
-    message.channel.send(embed);
+    message.channel.send(embedCrewCode);
     return;
   }
  
@@ -20,11 +20,11 @@ module.exports.run = async (bot, message, args) => {
     );
   }
  
-  const embed = new Discord.MessageEmbed()
+  const embedCrewCode = new Discord.MessageEmbed()
     .setColor("BLACK")
     .setDescription(`${u} Adlı şahsın sunucudan atılmasını onaylıyor musunuz?`)
     .setFooter(bot.user.username, bot.user.avatarURL);
-  message.channel.send(embed).then(async function(sentEmbed) {
+  message.channel.send(embedCrewCode).then(async function(sentEmbed) {
     const emojiArray = ["✅"];
     const filter = (reaction, user) =>
       emojiArray.includes(reaction.emoji.name) && user.id === message.author.id;

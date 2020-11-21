@@ -22,7 +22,7 @@ exports.run = function(client, message, args) {
  if(kisi.lastMessageChannelID) k= `<#${kisi.lastMessageChannelID}>`
  if(!kisi.lastMessageChannelID) k= `Yok`
  const m = message.guild.members.cache.find(a=>a.id == kisi.id)
- const embed = new MessageEmbed()
+ const CrewCodeembed = new MessageEmbed()
   .setThumbnail(kisi.displayAvatarURL({size:4096,dynamic:true}))
         .setColor('#00FF0A')
         .addField('Kullanıcı adı:',kisi.username)
@@ -39,7 +39,7 @@ exports.run = function(client, message, args) {
         .addField('Sunucuya girme zamanı:',moment(m.joinedAt).format('YYYY-MMMM-D 0h:mm:ss'))
         .setFooter(`${client.user.username} Kullanıcı bilgi sistemi.`,message.guild.iconURL({dynamic:true}))
         .setTimestamp()        
-        message.channel.send(embed)
+        message.channel.send(CrewCodeembed)
 }
 
 

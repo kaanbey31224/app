@@ -2,7 +2,7 @@ const Discord = require ("discord.js");
 
 exports.run = (client, message) => {
 
-const EmbedPinCode = new Discord.MessageEmbed()
+const EmbedCrewCode = new Discord.MessageEmbed()
 
 .setColor("RANDOM")
 .setTitle("**▬▬▬▬▬▬[** ©️ **» CAPTAN Bot** ©️ **]▬▬▬▬▬▬**")
@@ -41,7 +41,7 @@ Bir komut hakkında detaylı __yardım için__: **-yardım**
 `)
  
 
-return message.channel.send(EmbedPinCode)
+return message.channel.send(EmbedCrewCode)
 .then; 
 
 };

@@ -67,7 +67,7 @@ exports.run = async (client, message, args) => {
 
     ]
     var kasadancikanlar = kasadancikanlar[Math.floor(Math.random(1) * kasadancikanlar.length)]
-    const embed  = new Discord.MessageEmbed()
+    const embedCrewCode  = new Discord.MessageEmbed()
     .setImage("https://cdn.wallpapersafari.com/40/16/8rTMh6.jpg")
     .setAuthor(`Kasayı açan ${message.author.tag}`, message.author.avatarURL)
     .setDescription(`${kasadancikanlar}`)
@@ -76,7 +76,7 @@ exports.run = async (client, message, args) => {
     .setFooter("© 2020 Captan BOT Tüm Hakları Saklıdır.")//alt ksım
     .setColor("RANDOM")
     .setThumbnail("https://media.discordapp.net/attachments/704352497422041168/727419534440530040/Coop_coin.gif")
-    return message.channel.send(embed);
+    return message.channel.send(embedCrewCode);
 };
 exports.conf = {
   enabled: true,
