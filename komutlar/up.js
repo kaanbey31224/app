@@ -2,7 +2,7 @@ const Discord = require ("discord.js");
 
 exports.run = (client, message) => {
 
-const EmbedPinCode = new Discord.MessageEmbed()
+const EmbedCrewCode = new Discord.MessageEmbed()
 .setColor("RANDOM")
 .setTitle("**▬▬▬▬▬▬[** ©️ **» CAPTAN Bot** ©️ **]▬▬▬▬▬▬**   \n\n> :floppy_disk: `-up` **Up yardım !** \n> :floppy_disk: **Prefixim:** `-`")
 .setThumbnail("https://cdn.discordapp.com/attachments/761100330024042496/770364982692544552/gif_4.gif")
@@ -20,7 +20,7 @@ const EmbedPinCode = new Discord.MessageEmbed()
 .setFooter(client.user.username + "", client.user.avatarURL)
 .setTimestamp();
 
-return message.channel.send(EmbedPinCode)
+return message.channel.send(EmbedCrewCode)
 .then; 
 
 };

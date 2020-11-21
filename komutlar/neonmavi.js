@@ -8,12 +8,12 @@ exports.run = async (client, message, args) => {
   .replace(' ', '+')
 
   
-  const embed = new Discord.MessageEmbed()
+  const CrewCodeembed = new Discord.MessageEmbed()
   .setTitle("Logo")
   .setColor("RANDOM")
   .setImage(linqo)
   .setFooter('Neon Mavi Logo Oluşturuldu')
-  message.channel.send(embed)
+  message.channel.send(CrewCodeembed)
 }
 exports.conf = {
     enabled: true,

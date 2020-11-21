@@ -3,11 +3,11 @@ const Discord = require('discord.js')
 exports.run = async (client ,message, args) =>{
 
   
-  const embed = new Discord.MessageEmbed()
+  const CrewCodeembed = new Discord.MessageEmbed()
   .setTitle("Pingim")
   .setColor("RANDOM")
   .setDescription(`${client.ws.ping} ms`)
-  message.channel.send(embed)
+  message.channel.send(CrewCodeembed)
 };
 exports.conf = {
  enabled: true,

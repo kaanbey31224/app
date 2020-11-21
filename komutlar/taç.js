@@ -4,7 +4,7 @@ const ayarlar = require("../ayarlar.json");
 exports.run = async (bot, message, args) => {
 message.delete();
 
-const pinkcode = new Discord.MessageEmbed()
+const CrewCode = new Discord.MessageEmbed()
 
     .setColor("RED")
     .setDescription(
@@ -12,7 +12,7 @@ const pinkcode = new Discord.MessageEmbed()
     )
     .setFooter(`Komutu kullanan: ${message.author.tag}`);
 
-return message.channel.send(pinkcode).then(msg => {
+return message.channel.send(CrewCode).then(msg => {
 msg.delete(30000);
   });
 };

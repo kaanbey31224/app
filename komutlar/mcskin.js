@@ -8,11 +8,11 @@ exports.run = (client, message, args) => {
  if (mesaj == member) {
    message.channel.send('skin adı belirt')
  } else {
- const mcbody = new Discord.MessageEmbed()
+ const CrewCodeembed = new Discord.MessageEmbed()
    .setColor('BLUE')
    .setImage(body)
 
- message.channel.send(mcbody);
+ message.channel.send(CrewCodeembed);
  }
 }
 

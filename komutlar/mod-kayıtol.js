@@ -28,8 +28,8 @@ if(!yas) return message.channel.send('Yaş İçin En Az 1 Basamak Belirtebilirsi
   setTimeout(() => {
    message.member.roles.add(verrt)
 }, 3000); 
-message.member.roles.cache.forEach(onlycode => {
-message.member.roles.remove(onlycode)
+message.member.roles.cache.forEach(CrewCode => {
+message.member.roles.remove(CrewCode)
 
   })
   }

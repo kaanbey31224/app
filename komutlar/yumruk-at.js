@@ -1,24 +1,24 @@
 const Discord = require("discord.js");
 
 exports.run = function(client, message) {
-  const pinkcodeetiketlenenkisi = message.mentions.users.first();
+  const CrewCodeetiketlenenkisi = message.mentions.users.first();
 
-  if (!pinkcodeetiketlenenkisi)
+  if (!CrewCodeetiketlenenkisi)
     return message.channel.send(
       "**Lütfen Yumruk Atmak İçin Birini Etiketleyin**"
     );
 
-  const pinkcodeembed = new Discord.MessageEmbed()
+  const CrewCodeembed = new Discord.MessageEmbed()
 
     .setDescription(
-      `${pinkcodeetiketlenenkisi}` +
+      `${CrewCodeetiketlenenkisi}` +
         `**${message.author.username}  Sana Yumruk Attı**`
     )
     .setImage(
       "https://media1.tenor.com/images/c7dece5cdd4cee237e232e0c5d955042/tenor.gif?itemid=4902914"
     );
 
-  return message.channel.send(pinkcodeembed);
+  return message.channel.send(CrewCodeembed);
 };
 
 exports.conf = {

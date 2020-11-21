@@ -3,11 +3,11 @@ const ayarlar = require('../ayarlar.json');
  
 exports.run = (client, message, params) => {
   
-  const embed = new Discord.MessageEmbed()
+  const CrewCodeembed = new Discord.MessageEmbed()
   .setColor("RANDOM")
   .setTitle(`${message.guild.name} Adlı Sunucunun Resmi`)
   .setImage(message.guild.iconURL())
-  message.channel.send(embed)
+  message.channel.send(CrewCodeembed)
 }
 
 exports.conf = {
