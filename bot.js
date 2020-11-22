@@ -36,7 +36,7 @@ client.on("message", message => {
 client.on("ready", () => {
   console.log(`Bütün komutlar başarıyla yüklendi!`);
   client.user.setStatus("dnd");
-  client.user.setActivity('| -yardım | ${client.guilds.size} sunucu | ${client.users.size} kullanıcı');
+  client.user.setActivity('| -yardım |');
 })
 
 

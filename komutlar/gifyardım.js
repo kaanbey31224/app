@@ -10,7 +10,7 @@ const EmbedCrewCode = new Discord.MessageEmbed()
 .setDescription(`
 **» Bağlantılar** 
 **[Destek Sunucusu](https://discord.gg/qzHTkhjQgT)** **•** **[Botun Davet Linki](https://discord.com/api/oauth2/authorize?client_id=779006421625995345&permissions=8&scope=bot)** **•** **[Web-Site]( https://hammerhead-spark-sheet.glitch.me/index.html)**
-Bir komut hakkında detaylı __yardım için__: **+yardım**
+Bir komut hakkında detaylı __yardım için__: **-yardım**
 
 **• Komutlar**
 > [+normal](https://discord.gg/qzHTkhjQgT) → normal gifler.
