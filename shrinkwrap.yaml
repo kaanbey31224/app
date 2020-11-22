@@ -4,6 +4,7 @@ dependencies:
   discord.js: 12.4.1
   express: 4.17.1
   generate-password: 1.5.1
+  instagram-analytics: 3.0.1
   instagram-user: 2.0.1
   jimp: 0.16.1
   moment: 2.29.1
@@ -1221,6 +1222,25 @@ packages:
     dev: false
     resolution:
       integrity: sha512-RZY5huIKCMRWDUqZlEi72f/lmXKMvuszcMBduliQ3nnWbx9X/ZBQO7DijMEYS9EhHBb2qacRUMtC7svLwe0lcw==
+  /instagram-analytics/3.0.1:
+    dependencies:
+      instagram-posts: 2.2.0
+      instagram-user: 2.0.1
+      ms-to: 1.0.0
+    dev: false
+    engines:
+      node: '>=10'
+    resolution:
+      integrity: sha512-S6gjgSAqoHEZi4ejY044+GiBkyNPrKppnrscyu0peb05SK5XQTo7PBhwwcIH2cKLmbRzBTE1R98jw0tK4sN+eg==
+  /instagram-posts/2.2.0:
+    dependencies:
+      got: 10.7.0
+      instagram-user: 2.0.1
+    dev: false
+    engines:
+      node: '>=10'
+    resolution:
+      integrity: sha512-An5eJjEtoPthbe3rfMvV07D3ugHZNvY1/1Rl/ThoG4Ro5eXko4M5LLfKEsDmxSiBTZGCXsZguUstNcsvzUIIAA==
   /instagram-user/2.0.1:
     dependencies:
       get-emails: 3.0.0
@@ -1431,6 +1451,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-kHmoybcPV8Sqy59DwNDY3Jefr64lK/by/da0ViFcuA4DH0vQg5Q6Ze5VimxkfQNSC+Mls/Kx53s7TjP1RhFEDQ==
+  /ms-to/1.0.0:
+    dev: false
+    engines:
+      node: '>=4'
+    resolution:
+      integrity: sha1-zE+0l+/3SPHFVgC4YecUgWkwBnM=
   /ms/2.0.0:
     dev: false
     resolution:
@@ -2178,6 +2204,7 @@ specifiers:
   discord.js: ^12.4.0
   express: ^4.17.1
   generate-password: ^1.5.0
+  instagram-analytics: ^3.0.1
   instagram-user: ^2.0.1
   jimp: ^0.16.1
   moment: ^2.29.1

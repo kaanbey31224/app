@@ -721,15 +721,6 @@ client.on("guildMemberRemove", async member => {
 });
 
 
-client.on("guildMemberAdd", member => {
-let botrolü = '776781897296117770' 
-let kayıtsızrolü = '776729108818034708'
-  if (member.user.bot) {
-  member.roles.add(botrolü) 
- } else {
-member.roles.add(kayıtsızrolü) 
-};
-});
 
 
 //////////////////////////////////////////////////

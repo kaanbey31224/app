@@ -21,6 +21,7 @@
     "node-superfetch": "^0.1.10",
     "weather.js": "^0.1.0",
     "user-instagram": "^2.1.8",
-    "instagram-user": "^2.0.1"
+    "instagram-user": "^2.0.1",
+    "instagram-analytics": "^3.0.1"
   }
 }
