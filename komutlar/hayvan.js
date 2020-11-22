@@ -12,15 +12,13 @@ const EmbedCrewCode = new Discord.MessageEmbed()
 **[Destek Sunucusu](https://discord.gg/qzHTkhjQgT)** **•** **[Botun Davet Linki](https://discord.com/api/oauth2/authorize?client_id=779006421625995345&permissions=8&scope=bot)** **•** **[Web-Site]( https://hammerhead-spark-sheet.glitch.me/index.html)**
 Bir komut hakkında detaylı __yardım için__: **-yardım**
 
-• Bot ile ilgili tavsiyelerinizi veya bulduğunuz hataları **-istek-kod** yazarak bize iletebilirsiniz.
-• Hatalı bi kod veya buglu bi kod bulursanız **-bug-bildir** yazarak bize bildirebilirsiniz.
-
 **• Komutlar**
-> [-moderasyon](https://discord.gg/qzHTkhjQgT) → Moderasyon komudları görüntüler.
-> [-kullanıcı](https://discord.gg/qzHTkhjQgT) → Kullanıcı komutları.
-> [-eğlence](https://discord.gg/qzHTkhjQgT) → eğlence komutları.
-> [-logo](https://discord.gg/qzHTkhjQgT) → Logo komutları.
-> [-gifyardım](https://discord.gg/qzHTkhjQgT) → Gif komutları.
+> [+kedi](https://discord.gg/qzHTkhjQgT) → Etiketlediniz kullanıcın bilgilerini gösterir.
+> [+köpek](https://discord.gg/qzHTkhjQgT) → Sosyal medyalarım. 
+> [+tavşan](https://discord.gg/qzHTkhjQgT) → Botta ne kadar komut oldunu gösterir.
+> [+inek](https://discord.gg/qzHTkhjQgT) → Botun Pingine Bakarsın. 
+> [+maymun](https://discord.gg/qzHTkhjQgT) → Bot hakkında bilgi gösterir
+
 
 **▬▬▬▬▬▬▬[** :gear:  **Bilgilendirme**  :gear: **]▬▬▬▬▬▬**
 > :bulb: **Discord Js Sürümü : 12.4.0**
@@ -42,7 +40,7 @@ exports.conf = {
 };
   
   exports.help = {
-    name: 'yardım', 
-    description: 'Botun Komut Listesini Gösterir!',
-    usage: '-yardım'
+    name: 'hayvan', 
+    description: 'hayvan gif Listesini Gösterir!',
+    usage: '+hayvan'
 };

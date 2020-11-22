@@ -20,5 +20,5 @@ exports.conf = {
 exports.help = {
   name: 'sunucuresmi',
   description: 'Sunucuresmi.',
-  usage: '!sunucuresmi',
+  usage: '-sunucuresmi',
 };
