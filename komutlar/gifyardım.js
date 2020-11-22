@@ -17,7 +17,6 @@ Bir komut hakkında detaylı __yardım için__: **+yardım**
 > [+NSFW](https://discord.gg/qzHTkhjQgT) → NSFW gifler.
 > [+hayvan](https://discord.gg/qzHTkhjQgT) → Hayvan gifleri.
 > [+kemalsunal](https://discord.gg/qzHTkhjQgT) → **Kemal Sunal** gifleri.
-> [+kullanıcı](https://discord.gg/qzHTkhjQgT) → kullanıcı komutarı.
 
 **▬▬▬▬▬▬▬[** :gear:  **Bilgilendirme**  :gear: **]▬▬▬▬▬▬**
 > :bulb: **Discord Js Sürümü : 12.4.0**
