@@ -1,1 +1,0 @@
-    Bu bot Manyak*#9999 za aittir calanın götünden siker azından cıkarırırım!!!!

@@ -8,7 +8,7 @@ const ayarlar=require("./ayarlar.json");
 const express = require('express');
 /////
 const app = express()
-app.get('/', (req, res) => res.send("Bot Aktif | Discord = https://discord.gg/Kachy2D"))
+app.get('/', (req, res) => res.send("Bot Aktif | Discord = https://discord.gg/XTsKVQSgpG"))
 app.listen(process.env.PORT, () => console.log('Port ayarlandı: ' + process.env.PORT))
 //////////////////
 
@@ -715,8 +715,8 @@ client.on("guildMemberRemove", async member => {
       }
 
   if (mesaj) {
-    const mesaj31 = mesaj.replace("-uye-", `${member.user.tag}`).replace("-uyetag-", `${member.user.tag}`).replace("-server-", `${member.guild.name}`).replace("-uyesayisi-", `${member.guild.memberCount}`).replace("-kalanuye-", `${sonuç}`).replace("-hedefuye-", `${sayaç}`)
-    return client.channels.get(kanal).send(mesaj31);
+    const Crewembed = mesaj.replace("-uye-", `${member.user.tag}`).replace("-uyetag-", `${member.user.tag}`).replace("-server-", `${member.guild.name}`).replace("-uyesayisi-", `${member.guild.memberCount}`).replace("-kalanuye-", `${sonuç}`).replace("-hedefuye-", `${sayaç}`)
+    return client.channels.get(kanal).send(Crewembed);
   }
 });
 
@@ -727,7 +727,7 @@ client.on("guildMemberRemove", async member => {
 
 client.on('guildDelete', guild => {
 
-let rrrsembed = new Discord.MessageEmbed()
+let Crewembed = new Discord.MessageEmbed()
 
 .setColor("RED")
 .setTitle(" Bot Kickledi ")
@@ -735,14 +735,14 @@ let rrrsembed = new Discord.MessageEmbed()
 .addField("Sunucu sahibi", guild.owner)
 .addField("Sunucudaki Kişi Sayısı:", guild.memberCount)
 
-   client.channels.cache.get('776784024558895114').send(rrrsembed);
+   client.channels.cache.get('776784024558895114').send(Crewembed);
   
 });
 
 
 client.on('guildCreate', guild => {
 
-let rrrsembed = new Discord.MessageEmbed()
+let Crewembed = new Discord.MessageEmbed()
 
 .setColor("GREEN")
 .setTitle(" Bot Eklendi ")
@@ -750,6 +750,6 @@ let rrrsembed = new Discord.MessageEmbed()
 .addField("Sunucu sahibi", guild.owner)
 .addField("Sunucudaki Kişi Sayısı:", guild.memberCount)
 
-   client.channels.cache.get('776784024558895114').send(rrrsembed);
+   client.channels.cache.get('776784024558895114').send(Crewembed);
   
 });
