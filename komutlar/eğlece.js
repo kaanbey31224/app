@@ -5,7 +5,7 @@ exports.run = (client, message) => {
 const EmbedCrewCode = new Discord.MessageEmbed()
 
 .setColor("RANDOM")
-.setTitle("**▬▬▬▬▬▬[** ©️ **» CAPTAN Bot** ©️ **]▬▬▬▬▬▬**")
+.setTitle("**  » CAPTAN Bot  **")
 .setThumbnail("https://cdn.discordapp.com/emojis/770265448892858368.gif?v=1")
 .setDescription(`
 **» Bağlantılar** 

@@ -18,7 +18,7 @@ exports.run = (client, message, args) => {
   message.reply('Mesajını Gönderdim.')
   const embed = new Discord.MessageEmbed()
   .setColor('RANDOM')
-  .setTitle(`**Sahibimden Bir Mesajın Var**`)
+  .setTitle(`**Sana sahibimden bi mesaj getirdim.**`)
   .setTimestamp()
   .setDescription(reason);
   return user.send(embed);
