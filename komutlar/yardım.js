@@ -12,7 +12,7 @@ const EmbedCrewCode = new Discord.MessageEmbed()
 **[Destek Sunucusu](https://discord.gg/qzHTkhjQgT)** **•** **[Botun Davet Linki](https://discord.com/api/oauth2/authorize?client_id=779006421625995345&permissions=8&scope=bot)** **•** **[Web-Site]( https://hammerhead-spark-sheet.glitch.me/index.html)**
 Bir komut hakkında detaylı __yardım için__: **-yardım**
 
-• Bot ile ilgili tavsiyelerinizi veya bulduğunuz hataları **-istek-kod** yazarak bize iletebilirsiniz.
+• Bot ile ilgili tavsiyelerinizi veya istediniğiniz bi kodu **-istek-kod** yazarak bize iletebilirsiniz.
 • Hatalı bi kod veya buglu bi kod bulursanız **-bug-bildir** yazarak bize bildirebilirsiniz.
 
 **• Komutlar**

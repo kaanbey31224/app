@@ -4,15 +4,19 @@ exports.run = (client, message) => {
 
 const EmbedCrewCode = new Discord.MessageEmbed()
 
-.setColor("RANDOM")
+.setColor("PİNK")
 .setTitle("**•Davet**")
-.setThumbnail("https://cdn.discordapp.com/emojis/770265448892858368.gif?v=1")
+.setThumbnail("")
 .setDescription(`
 • Alttaki linklerden bot ile ilgili linklere **ulaşabilirsiniz.** Herhangi bir **bug/hata** bulursanız [-bug-bildir](https://discord.gg/qzHTkhjQgT) ile bize iletebilirsiniz.
 
 • Sunucuma nasıl eklerim?
 Sunucuna eklemek istiyorsan [buraya tıklayarak](https://discord.com/oauth2/authorize?client_id=779006421625995345&permissions=2146958847&scope=bot)ekleyebilirsin.
 
+• Destek Sunucumuz
+[Destek Sunucusuna](https://discord.gg/qzHTkhjQgT) katılarak sizde güzel sohbetlere katılabilirsiniz!
+
+© 2020 Captan | Tüm hakları saklıdır.
 `)
  
 
