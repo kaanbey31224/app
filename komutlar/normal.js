@@ -13,12 +13,12 @@ const EmbedCrewCode = new Discord.MessageEmbed()
 Bir komut hakkında detaylı __yardım için__: **+yardım**
 
 **• Normal Komutlar**
-> [+ara112](https://discord.gg/qzHTkhjQgT) → Ambulansı arar.
-> [+ara155](https://discord.gg/qzHTkhjQgT) → Polisi arar.
-> [+araba](https://discord.gg/qzHTkhjQgT) → Araba gifi atar.
-> [+zeki](https://discord.gg/qzHTkhjQgT) → Zeki gifi atar.
-> [+nükler](https://discord.gg/qzHTkhjQgT) → nükler gifi atar.
-> [+beşlik](https://discord.gg/qzHTkhjQgT) → beşlik gifi atar.
+> [-ara112](https://discord.gg/qzHTkhjQgT) → Ambulansı arar.
+> [-ara155](https://discord.gg/qzHTkhjQgT) → Polisi arar.
+> [-araba](https://discord.gg/qzHTkhjQgT) → Araba gifi atar.
+> [-zeki](https://discord.gg/qzHTkhjQgT) → Zeki gifi atar.
+> [-nükler](https://discord.gg/qzHTkhjQgT) → nükler gifi atar.
+> [-beşlik](https://discord.gg/qzHTkhjQgT) → beşlik gifi atar.
 
 **• Bilgilendirme**
 

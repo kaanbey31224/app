@@ -13,10 +13,10 @@ const EmbedCrewCode = new Discord.MessageEmbed()
 Bir komut hakkında detaylı __yardım için__: **-yardım**
 
 **• Komutlar**
-> [+normal](https://discord.gg/qzHTkhjQgT) → normal gifler.
-> [+NSFW](https://discord.gg/qzHTkhjQgT) → NSFW gifler.
-> [+hayvan](https://discord.gg/qzHTkhjQgT) → Hayvan gifleri.
-> [+kemalsunal](https://discord.gg/qzHTkhjQgT) → **Kemal Sunal** gifleri.
+> [-normal](https://discord.gg/qzHTkhjQgT) → normal gifler.
+> [-NSFW](https://discord.gg/qzHTkhjQgT) → NSFW gifler.
+> [-hayvan](https://discord.gg/qzHTkhjQgT) → Hayvan gifleri.
+> [-kemalsunal](https://discord.gg/qzHTkhjQgT) → **Kemal Sunal** gifleri.
 
 **• Bilgilendirme**
 

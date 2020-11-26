@@ -13,12 +13,12 @@ const EmbedCrewCode = new Discord.MessageEmbed()
 Bir komut hakkında detaylı __yardım için__: **+yardım**
 
 **• Komutlar**
-> [+ks](https://discord.gg/qzHTkhjQgT) → Kemal sunan gif.
-> [+yumruk-at](https://discord.gg/qzHTkhjQgT) → yumruk atar.
-> [+busana](https://discord.gg/qzHTkhjQgT) → busana  gifi atar.
-> [+hayırdır](https://discord.gg/qzHTkhjQgT) → hayırdır inşallah gifi atar.
-> [+halinebak](https://discord.gg/qzHTkhjQgT) → halinebak gifi atar.
-> [+kapakolsun](https://discord.gg/qzHTkhjQgT) → Kapak olsun gifi atar.
+> [-ks](https://discord.gg/qzHTkhjQgT) → Kemal sunan gif.
+> [-yumruk-at](https://discord.gg/qzHTkhjQgT) → yumruk atar.
+> [-busana](https://discord.gg/qzHTkhjQgT) → busana  gifi atar.
+> [-hayırdır](https://discord.gg/qzHTkhjQgT) → hayırdır inşallah gifi atar.
+> [-halinebak](https://discord.gg/qzHTkhjQgT) → halinebak gifi atar.
+> [-kapakolsun](https://discord.gg/qzHTkhjQgT) → Kapak olsun gifi atar.
 
 **• Bilgilendirme**
 

@@ -13,11 +13,11 @@ const EmbedCrewCode = new Discord.MessageEmbed()
 Bir komut hakkında detaylı __yardım için__: **+yardım**
 
 **• Komutlar**
-> [+sex](https://discord.gg/qzHTkhjQgT) → sex gifi atar.
-> [+twork](https://discord.gg/qzHTkhjQgT) → twork gifi atar.
-> [+daşşak](https://discord.gg/qzHTkhjQgT) → Gif atar.
-> [+amınakoduğum](https://discord.gg/qzHTkhjQgT) → *Gif atar.
-> [+şakşak](https://discord.gg/qzHTkhjQgT) → Gif atar.
+> [-sex](https://discord.gg/qzHTkhjQgT) → sex gifi atar.
+> [-twork](https://discord.gg/qzHTkhjQgT) → twork gifi atar.
+> [-daşşak](https://discord.gg/qzHTkhjQgT) → Gif atar.
+> [-amınakoduğum](https://discord.gg/qzHTkhjQgT) → *Gif atar.
+> [-şakşak](https://discord.gg/qzHTkhjQgT) → Gif atar.
 
 **• Bilgilendirme**
 

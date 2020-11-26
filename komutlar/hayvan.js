@@ -13,11 +13,11 @@ const EmbedCrewCode = new Discord.MessageEmbed()
 Bir komut hakkında detaylı __yardım için__: **-yardım**
 
 **• Komutlar**
-> [+kedi](https://discord.gg/qzHTkhjQgT) → Etiketlediniz kullanıcın bilgilerini gösterir.
-> [+köpek](https://discord.gg/qzHTkhjQgT) → Sosyal medyalarım. 
-> [+tavşan](https://discord.gg/qzHTkhjQgT) → Botta ne kadar komut oldunu gösterir.
-> [+inek](https://discord.gg/qzHTkhjQgT) → Botun Pingine Bakarsın. 
-> [+maymun](https://discord.gg/qzHTkhjQgT) → Bot hakkında bilgi gösterir
+> [-kedi](https://discord.gg/qzHTkhjQgT) → Etiketlediniz kullanıcın bilgilerini gösterir.
+> [-köpek](https://discord.gg/qzHTkhjQgT) → Sosyal medyalarım. 
+> [-tavşan](https://discord.gg/qzHTkhjQgT) → Botta ne kadar komut oldunu gösterir.
+> [-inek](https://discord.gg/qzHTkhjQgT) → Botun Pingine Bakarsın. 
+> [-maymun](https://discord.gg/qzHTkhjQgT) → Bot hakkında bilgi gösterir
 
 
 **• Bilgilendirme**
