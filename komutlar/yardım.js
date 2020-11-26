@@ -22,10 +22,11 @@ Bir komut hakkında detaylı __yardım için__: **-yardım**
 > [-logo](https://discord.gg/qzHTkhjQgT) → Logo komutları.
 > [-gifyardım](https://discord.gg/qzHTkhjQgT) → Gif komutları.
 
-**▬▬▬▬▬▬▬[** :gear:  **Bilgilendirme**  :gear: **]▬▬▬▬▬▬**
+**• Bilgilendirme**
+
 > :bulb: **Discord Js Sürümü : 12.4.0**
-> :robot: **quick.db Sürümü : 7.1.2**
-> :eye_in_speech_bubble: **moment Sürümü : 2.29.1**
+> :robot: **Yapımcım** Manyak*#9999
+> :eye_in_speech_bubble: **Sürümüm : ** 2.0.1
 © 2020 Captan | Tüm hakları saklıdır.
 `)
  
