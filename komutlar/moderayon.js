@@ -31,12 +31,14 @@ Bir komut hakkında detaylı __yardım için__: **-yardım**
 > [-çekiliş](https://discord.gg/qzHTkhjQgT) → Çekiliş yaparsınız.
 
 
-**▬▬▬▬▬▬▬[** :gear:  **Bilgilendirme**  :gear: **]▬▬▬▬▬▬**
-> :bulb: **Discord Js Sürümü : 12.4.0**
-> :robot: **quick.db Sürümü : 7.1.2**
-> :eye_in_speech_bubble: **moment Sürümü : 2.29.1**
+**• Bilgilendirme**
+
+> :bulb: **Discord Js Sürümü : 12.5.0**
+> :robot: **Yapımcım : Manyak*#9999**
+> :eye_in_speech_bubble: **Sürümüm : 2.0.1**
 © 2020 Captan | Tüm hakları saklıdır.
 `)
+ 
  
 
 return message.channel.send(EmbedCrewCode)

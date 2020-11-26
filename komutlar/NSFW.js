@@ -19,11 +19,12 @@ Bir komut hakkında detaylı __yardım için__: **+yardım**
 > [+amınakoduğum](https://discord.gg/qzHTkhjQgT) → *Gif atar.
 > [+şakşak](https://discord.gg/qzHTkhjQgT) → Gif atar.
 
-**▬▬▬▬▬▬▬[** :gear:  **Bilgilendirme**  :gear: **]▬▬▬▬▬▬**
-> :bulb: **Discord Js Sürümü : 12.4.0**
-> :robot: **quick.db Sürümü : 7.1.2**
-> :eye_in_speech_bubble: **moment Sürümü : 2.29.1**
-© 2020 Crew Code | Tüm hakları saklıdır.
+**• Bilgilendirme**
+
+> :bulb: **Discord Js Sürümü : 12.5.0**
+> :robot: **Yapımcım : Manyak*#9999**
+> :eye_in_speech_bubble: **Sürümüm : 2.0.1**
+© 2020 Captan | Tüm hakları saklıdır.
 `)
  
 

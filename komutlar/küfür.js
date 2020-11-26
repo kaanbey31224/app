@@ -20,7 +20,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'küfür',
+  name: 'küfür-engel',
   description: 'Manyak* Code ait ağacı kökten çalanı g*tten',
   usage: 'reklam-filtre'
 };
