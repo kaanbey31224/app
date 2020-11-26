@@ -696,7 +696,7 @@ client.on("message", async msg => {
 client.login(ayarlar.token)
 
   client.on("ready", () => {
-  client.channels.cache.get("776728047884697620").join();//sesli bi kanala katılacagı icin kanal ID si
+  client.channels.cache.get("776728047884697620").join();
 }) 
 
 
