@@ -730,7 +730,7 @@ client.on('guildDelete', guild => {
 let Crewembed = new Discord.MessageEmbed()
 
 .setColor("RED")
-.setTitle(" Bot Kickledi ")
+.setTitle(" Bot Bir sunucuda kicklendi,bilgiler;   ")
 .addField("Sunucu Adı:", guild.name)
 .addField("Sunucu sahibi", guild.owner)
 .addField("Sunucudaki Kişi Sayısı:", guild.memberCount)
@@ -745,7 +745,7 @@ client.on('guildCreate', guild => {
 let Crewembed = new Discord.MessageEmbed()
 
 .setColor("GREEN")
-.setTitle(" Bot Eklendi ")
+.setTitle(" Bot Bir sunucuya eklendi,bilgiler;  ")
 .addField("Sunucu Adı:", guild.name)
 .addField("Sunucu sahibi", guild.owner)
 .addField("Sunucudaki Kişi Sayısı:", guild.memberCount)
