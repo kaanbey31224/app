@@ -753,3 +753,6 @@ let Crewembed = new Discord.MessageEmbed()
    client.channels.cache.get('779609540147937280').send(Crewembed);
   
 });
+
+
+////////////////////////////////////////
