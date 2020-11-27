@@ -18,7 +18,6 @@ Bir komut hakkında detaylı __yardım için__: **-yardım**
 > [-emojiyazı](https://discord.gg/qzHTkhjQgT) → Emojili yazı yazmaya ne dersin?.
 > [-espiri](https://discord.gg/qzHTkhjQgT) → Bot espiri yapar.
 > [-sor](https://discord.gg/qzHTkhjQgT) → Bot sorduğunuz soruya cevap verir.
-> [-ara112](https://discord.gg/qzHTkhjQgT) → Ambulansı ararsınız.
 > [-vine](https://discord.gg/qzHTkhjQgT) → Bot size komik paylaşımlar gösterir.
 > [-adamasmaca](https://discord.gg/qzHTkhjQgT) → Adam asmaca oyunu.
 > [-balıktut](https://discord.gg/qzHTkhjQgT) → Dereden balık tutarsınız.
@@ -32,7 +31,6 @@ Bir komut hakkında detaylı __yardım için__: **-yardım**
 > [-yumruk-at](https://discord.gg/qzHTkhjQgT) → Etiketlediğin kişiye bot yumruk atar.
 > [-yazan-kazanır](https://discord.gg/qzHTkhjQgT) → Yazan kazanır oyunu.
 > [-kapaklaf](https://discord.gg/qzHTkhjQgT) → Etiketlediğin kişiye bot kapaklaf söyler.
-> [-kralol](https://discord.gg/qzHTkhjQgT) → Kral olursunuz.
 
 **• Bilgilendirme**
 
