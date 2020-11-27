@@ -11,7 +11,7 @@ const EmbedCrewCode = new Discord.MessageEmbed()
 • Alttaki linklerden bot ile ilgili linklere **ulaşabilirsiniz.** Herhangi bir **bug/hata** bulursanız [-bug-bildir](https://discord.gg/qzHTkhjQgT) ile bize iletebilirsiniz.
 
 • Sunucuma nasıl eklerim?
-Sunucuna eklemek istiyorsan [buraya tıklayarak](https://discord.com/oauth2/authorize?client_id=779006421625995345&permissions=2146958847&scope=bot)ekleyebilirsin.
+Sunucuna eklemek istiyorsan [buraya tıklayarak](https://discord.com/oauth2/authorize?client_id=779006421625995345&permissions=2146958847&scope=bot) ekleyebilirsin.
 
 • Destek Sunucumuz
 [Destek Sunucusuna](https://discord.gg/qzHTkhjQgT) katılarak sizde güzel sohbetlere katılabilirsiniz!
