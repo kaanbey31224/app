@@ -12,7 +12,7 @@ const EmbedCrewCode = new Discord.MessageEmbed()
 
 
 
-**__Kata listede kimse bulunmuyor.__**
+**__Kara listede kimse bulunmuyor.__**
 
 `)
  
