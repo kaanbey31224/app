@@ -20,8 +20,6 @@ exports.run = async (client, message, args) => {
     
         .addField(`<a:mag_right:771416107000922173> **__Sunucudaki Toplam Üye Sayısı__**`,`**\`\`\`${message.guild.memberCount}\`\`\`**`)
     
-        .addField(`<a:mag_right:771416107000922173> **__Seslideki Üye Sayısı__**`,`**\`\`\`${count}\`\`\`**`)
-    
       .addField(`<a:gear:771415920186753034> **__Güvenlik Seviyesi__**`,`**\`\`\`${güvenlik}\`\`\`**`)
     
         .addField(`<a:open_file_folder:771416467051905066>  **__Yazı Kanalları__**`, `» **${textChannels}**`)
