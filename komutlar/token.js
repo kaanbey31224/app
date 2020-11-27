@@ -1,29 +1,34 @@
 const Discord = require('discord.js');
 const ayarlar = require('../ayarlar.json');
+
 exports.run = (client, message, params) => {
     if (!message.guild) {
     const ozelmesajuyari = new Discord.MessageEmbed()
-    .setColor(0xFF0000)
+    .setColor('RED')
     .setTimestamp()
-    .setAuthor(message.author.username, message.author.avatarURL())
-    .setTitle('**Eğlence Komutları Özel Mesajlarda Kullanılamaz!**')
+    .setAuthor(message.author.username, message.author.avatarURL)
+    .addField('**Gif Komutları Özel Mesajlarda Kullanılamaz!**')
     return message.author.send(ozelmesajuyari); }
     if (message.channel.type !== 'dm') {
-      const embed = new Discord.MessageEmbed()
-    .setAuthor(message.author.username + ' Kanka sana tokenimi vereceğime gerçekten inandın mı \nGerçekten inandıysan helal olsun.')
-    .setColor("RANDOM")
+      const token = new Discord.MessageEmbed()
+    .setAuthor(message.author.username + "Kanka sana gercekten tokenimi vereceğime inandınmı? ,İnandıysan sana helal olsun bea.")
+    .setColor('RANDOM')
     .setTimestamp()
-    return message.channel.send(embed);
+    .setDescription('')
+    .setImage(`https://cdn.discordapp.com/attachments/776784024558895114/781898439411236894/token.gif`)
+    return message.channel.send(token);
     }
 };
+
 exports.conf = {
   enabled: true,
   guildOnly: false,
   aliases: [],
   permLevel: 0
 };
+
 exports.help = {
   name: 'token',
-  description: 'token',
+  description: 'tokenimi gösterir. ',
   usage: 'token'
 };

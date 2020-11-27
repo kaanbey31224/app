@@ -15,7 +15,7 @@ module.exports.run = async (client, message, args) => {
   const userError2 = new Discord.MessageEmbed()
     .setColor('#ed455a')
       .setTitle('• Hata: 03 •')
-        .setDescription("```ID'de Harf Kullanılanamaz```")
+        .setDescription("```ID'veya Harf Kullanılanamaz```")
  
   const userError3 = new Discord.MessageEmbed()
     .setColor('#ed455a')
