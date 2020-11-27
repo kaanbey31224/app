@@ -9,7 +9,11 @@ const EmbedCrewCode = new Discord.MessageEmbed()
 .setThumbnail("")
 .setDescription(`
 
-beyaz listede kimse bulunmuyor.
+
+
+
+**__beyaz listede kimse bulunmuyor.__**
+
 `)
  
 
@@ -27,5 +31,5 @@ exports.conf = {
   exports.help = {
     name: 'beyazliste', 
     description: 'Botun Komut Listesini Gösterir!',
-    usage: '-beya'
+    usage: '-beyazliste'
 };

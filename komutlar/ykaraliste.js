@@ -9,7 +9,11 @@ const EmbedCrewCode = new Discord.MessageEmbed()
 .setThumbnail("")
 .setDescription(`
 
-Kata listede kimse bulunmuyor.
+
+
+
+**__Kata listede kimse bulunmuyor.__**
+
 `)
  
 
@@ -25,7 +29,7 @@ exports.conf = {
 };
   
   exports.help = {
-    name: 'yapımcı', 
+    name: 'karaliste', 
     description: 'Botun Komut Listesini Gösterir!',
-    usage: '-yapımcı'
+    usage: '-karaliste'
 };
