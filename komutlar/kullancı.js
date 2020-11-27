@@ -23,6 +23,7 @@ Bir komut hakkında detaylı __yardım için__: **-yardım**
 > [-profil](https://discord.gg/qzHTkhjQgT) → Etiketlediğin kişini profilini görürsünüz.
 > [-sunucuresmi](https://discord.gg/qzHTkhjQgT) → Sunucu resmini gösterir.
 > [-ping](https://discord.gg/qzHTkhjQgT) → Botun Pingine Bakarsın. 
+> [-kurallar](https://discord.gg/qzHTkhjQgT) → Genel kuralları gösterir.
 > [-davet](https://discord.gg/qzHTkhjQgT) → beni sunucuna ekle.
 > [-botbilgi](https://discord.gg/qzHTkhjQgT) → Bot hakkında bilgi gösterir
 > [-bug-bildir](https://discord.gg/qzHTkhjQgT) → Yazdığınız bug'u yapımcılarıma bildirir.
