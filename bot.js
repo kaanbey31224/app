@@ -735,7 +735,7 @@ let Crewembed = new Discord.MessageEmbed()
 .addField("Sunucu sahibi", guild.owner)
 .addField("Sunucudaki Kişi Sayısı:", guild.memberCount)
 
-   client.channels.cache.get('776784024558895114').send(Crewembed);
+   client.channels.cache.get('779609519222423573').send(Crewembed);
   
 });
 
@@ -750,6 +750,6 @@ let Crewembed = new Discord.MessageEmbed()
 .addField("Sunucu sahibi", guild.owner)
 .addField("Sunucudaki Kişi Sayısı:", guild.memberCount)
 
-   client.channels.cache.get('776784024558895114').send(Crewembed);
+   client.channels.cache.get('779609540147937280').send(Crewembed);
   
 });
