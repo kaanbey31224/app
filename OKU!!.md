@@ -1,9 +1,6 @@
-# YouTube Crew Manyak <3 ✨⚡
+#   Code BY 
 
-**Discord  | Manyak#9999**
-
-**YouTube  | Crew Manyak**
-
-
-
+     #Crew Code 
+     #Narcoz Code
+ 
 [**Discord Sunucumuza Katıl**](https://discord.gg/XTsKVQSgpG)
