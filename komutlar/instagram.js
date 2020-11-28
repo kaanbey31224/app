@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-const instagram = require("instagram-analytics");
+const instagram = require("instagram-private-api");
 exports.run = (client, message, args) => {
   let kullanici = args.join(" ");
   if (!kullanici) return message.reply(`❌ Bir Kullanıcı İsmi Girmelisin!`);

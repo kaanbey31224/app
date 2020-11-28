@@ -41,7 +41,7 @@ exports.conf = {
     aliases: [], 
     permLevel: 0 
 };
-  
+
   exports.help = {
     name: 'yardım', 
     description: 'Botun Komut Listesini Gösterir!',
