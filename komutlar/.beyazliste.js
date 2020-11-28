@@ -12,8 +12,9 @@ const EmbedCrewCode = new Discord.MessageEmbed()
 
 
 
-**__Beyaz listede kimse bulunmuyor.__**
-
+**1.**__BOT List#7928__**(768424361765109791)**
+**2.**__Hȥ.𝑬𝑺𝑴𝑬𝑹#1408__**(642790531482648636)**
+**3.**__ꅺRONONOA↯〝ZOROꄶ ツ2220__**(727477114101694467)**
 `)
  
 
