@@ -1,5 +1,4 @@
-
-    const Discord = require('discord.js');
+const Discord = require('discord.js');
 const { stripIndents } = require('common-tags');
 
 exports.run = (client, msg, args) => {
@@ -18,48 +17,48 @@ let x;
     let x11;
     
     //yönetici
-    if (msg.member.hasPermission("ADMINISTRATOR")) x = ":white_check_mark:"
-    if (!msg.member.hasPermission("ADMINISTRATOR")) x = ":x: "
+    if (msg.member.hasPermission("ADMINISTRATOR")) x = "<a:white_check_mark:782690331950579712>"
+    if (!msg.member.hasPermission("ADMINISTRATOR")) x = "<a:x:782690039183835186>"
     
     //Denetim kaydı
-    if (msg.member.hasPermission("VIEW_AUDIT_LOG")) x2 = ":white_check_mark:"
-    if (!msg.member.hasPermission("VIEW_AUDIT_LOG")) x2 = ":x: "
+    if (msg.member.hasPermission("VIEW_AUDIT_LOG")) x2 = "<a:white_check_mark:782690331950579712>"
+    if (!msg.member.hasPermission("VIEW_AUDIT_LOG")) x2 = "<a:x:782690039183835186>"
     
     //Sunucuyu yönet
-    if (msg.member.hasPermission("MANAGE_GUILD")) x3 = ":white_check_mark:"
-    if (!msg.member.hasPermission("MANAGE_GUILD")) x3 = ":x: "
+    if (msg.member.hasPermission("MANAGE_GUILD")) x3 = "<a:white_check_mark:782690331950579712>"
+    if (!msg.member.hasPermission("MANAGE_GUILD")) x3 = "<a:x:782690039183835186>"
     
     //Rolleri yönet
-    if (msg.member.hasPermission("MANAGE_ROLES")) x4 = ":white_check_mark:"
-    if (!msg.member.hasPermission("MANAGE_ROLES")) x4 = ":x: "
+    if (msg.member.hasPermission("MANAGE_ROLES")) x4 = "<a:white_check_mark:782690331950579712>"
+    if (!msg.member.hasPermission("MANAGE_ROLES")) x4 = "<a:x:782690039183835186>"
     
     //Kanalları yönet
-    if (msg.member.hasPermission("MANAGE_CHANNELS")) x5 = ":white_check_mark:"
-    if (!msg.member.hasPermission("MANAGE_CHANNELS")) x5 = ":x: "
+    if (msg.member.hasPermission("MANAGE_CHANNELS")) x5 = "<a:white_check_mark:782690331950579712>"
+    if (!msg.member.hasPermission("MANAGE_CHANNELS")) x5 = "<a:x:782690039183835186>"
     
     //üyeleri at
-    if (msg.member.hasPermission("KICK_MEMBERS")) x6 = ":white_check_mark:"
-    if (!msg.member.hasPermission("KICK_MEMBERS")) x6 = ":x: "
+    if (msg.member.hasPermission("KICK_MEMBERS")) x6 = "<a:white_check_mark:782690331950579712>"
+    if (!msg.member.hasPermission("KICK_MEMBERS")) x6 = "<a:x:782690039183835186>"
     
     //üyeleri yasakla
-    if (msg.member.hasPermission("BAN_MEMBERS")) x7 = ":white_check_mark:"
-    if (!msg.member.hasPermission("BAN_MEMBERS")) x7 = ":x: "
-
+    if (msg.member.hasPermission("BAN_MEMBERS")) x7 = "<a:white_check_mark:782690331950579712>"
+    if (!msg.member.hasPermission("BAN_MEMBERS")) x7 = "<a:x:782690039183835186>"
+    
     //mesajları yönet
-    if (msg.member.hasPermission("MANAGE_MESSAGES")) x8 = ":white_check_mark:"
-    if (!msg.member.hasPermission("MANAGE_MESSAGES")) x8 = ":x: "    
-
+    if (msg.member.hasPermission("MANAGE_MESSAGES")) x8 = "<a:white_check_mark:782690331950579712>"
+    if (!msg.member.hasPermission("MANAGE_MESSAGES")) x8 = "<a:x:782690039183835186>"
+    
     //kullanıcı adlarını yönet
-    if (msg.member.hasPermission("MANAGE_NICKNAMES")) x9 = ":white_check_mark:"
-    if (!msg.member.hasPermission("MANAGE_NICKNAMES")) x9 = ":x: "
+    if (msg.member.hasPermission("MANAGE_NICKNAMES")) x9 = "<a:white_check_mark:782690331950579712>"
+    if (!msg.member.hasPermission("MANAGE_NICKNAMES")) x9 = "<a:x:782690039183835186>"
     
     //emojileri yönet
-    if (msg.member.hasPermission("MANAGE_EMOJIS")) x10 = ":white_check_mark:"
-    if (!msg.member.hasPermission("MANAGE_EMOJIS")) x10 = ":x: "
+    if (msg.member.hasPermission("MANAGE_EMOJIS")) x10 = "<a:white_check_mark:782690331950579712>"
+    if (!msg.member.hasPermission("MANAGE_EMOJIS")) x10 = "<a:x:782690039183835186>"
     
     //webhookları yönet
-    if (msg.member.hasPermission("MANAGE_WEBHOOKS")) x11 = ":white_check_mark:"
-    if (!msg.member.hasPermission("MANAGE_WEBHOOKS")) x11 = ":x: "
+    if (msg.member.hasPermission("MANAGE_WEBHOOKS")) x11 = "<a:white_check_mark:782690331950579712>"
+    if (!msg.member.hasPermission("MANAGE_WEBHOOKS")) x11 = "<a:x:782690039183835186>"
      const embed = new Discord.MessageEmbed()
   .setColor('GREEN')
     .setDescription(` ${x} Yönetici \n${x2} Denetim Kaydını Görüntüle\n ${x3} Sunucuyu Yönet \n${x4} Rolleri Yönet \n${x5} Kanalları Yönet \n${x6} Üyeleri At \n${x7} Üyeleri Yasakla \n${x8} Mesajları Yönet \n${x9} Kullanıcı Adlarını Yönet \n${x10} Emojileri Yönet \n${x11} Webhook'ları Yönet`);
