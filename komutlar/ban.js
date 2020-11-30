@@ -9,11 +9,11 @@ let sebep = args.slice(1).join(" ")
 let guild = message.guild;
 let kanal = '776784024558895114'
 
-if(!member) return message.channel.send("Banlıyacağım üyeyi etiketlemelisin.")
+if(!member) return message.channel.send("**Banlıyacağım üyeyi etiketlemelisin.**")
 
 
 
-if(!sebep) return message.channel.send("Neden banlayacagını acıklaman lazım...")
+if(!sebep) return message.channel.send("**Neden banlayacagını acıklaman lazım...**")
 
 
 guild.members.ban(member)
@@ -22,8 +22,8 @@ const ban = new Discord.MessageEmbed()
 .setThumbnail(message.author.avatarURL())
 .setColor('RED')
 .addField(`Banlanan Kullanıcı`,member)
-.addField(`Yetkili`,message.author)
-.addField(`Sebep`,sebep)
+.addField(`:man_police_officer: Yetkili`,message.author)
+.addField(`:lock: Sebep`,sebep)
 client.channels.cache.get(kanal).send(ban)
 
 
