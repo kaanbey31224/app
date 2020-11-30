@@ -3,9 +3,9 @@ const Discord = require('discord.js')
 exports.run = function(bot, message) {
     message.channel.send(new Discord.MessageEmbed()
     .setColor(message.guild.me.displayHexColor)
-    .setTitle('🎲 Zarın: ' + doMagicDiceVoodoo()));
+    .setTitle('🎲 Zarın: ' + CrewCode()));
 
-    function doMagicDiceVoodoo() {
+    function CrewCode() {
         var rand = ['1', '2', '3', '4', '5', '6'];
 
         return rand[Math.floor(Math.random()*rand.length)];
@@ -24,3 +24,4 @@ exports.help = {
   description: 'Zar Atın',
   usage: 'zar'
 };
+//doMagicDiceVoodoo
