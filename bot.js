@@ -182,7 +182,7 @@ client.on("message", async msg => {
             if (!msg.member.hasPermission("MANAGE_GUILD")) {
                   msg.delete();
                           
-                    return msg.channel.send(`Kufur Etme !`).then(msg => msg.delete(10000));
+                    return msg.channel.send(`Küfür etme Yasak az kaldı ban atmama!`).then(msg => msg.delete(10000));
             }              
                 } catch(err) {
                   console.log(err);
