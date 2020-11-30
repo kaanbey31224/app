@@ -667,7 +667,8 @@ client.on("messageUpdate", msg => {
         }
     }
     if (!i) return;
-
+});
+ 
 
 
 client.on("message", async msg => {
