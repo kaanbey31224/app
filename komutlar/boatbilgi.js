@@ -16,7 +16,7 @@ const Crewistatistikler = new Discord.MessageEmbed()
 .addField(`<a:reminder_ribbon:742698007262396426> Kütüphanesi;`, `Discord.js`, true)
 .addField(`<a:reminder_ribbon:742698007262396426> Discord.js sürümü:`, Discord.version)
   .addField(' Botun Yapılmaya Başlandığı Tarih ', '**15.10.2020**')
- .addField(`» Linkler`, `[Destek Sunucusu](https://discord.gg) **|** [YouTube](https://discord.gg)`, true)
+ .addField(`» Linkler`, `[Destek Sunucusu](https://discord.gg/XTsKVQSgpG) **|** [YouTube](https://www.youtube.com/channel/UCFWkgTpLpQAsvaEi-YwpPig)`, true)
   message.channel.send(Crewistatistikler)
   
   
@@ -25,12 +25,12 @@ const Crewistatistikler = new Discord.MessageEmbed()
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['istatistik'],
+  aliases: ['istatistik','BotBilgi','botbilgi','bot-bilgi','Bot-Bilgi'],
   permLevel: 0
 };
 
 exports.help = {
-  name: 'a',
+  name: 'i',
   description: '',
   usage: ''
 }; 

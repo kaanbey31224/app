@@ -25,12 +25,12 @@ module.exports.run = async(client, message, args) => {
 exports.conf = {
   enabled: true,
     guildOnly: true,
-  aliases: ['istatistik', 'botbilgi', 'bot-bilgi','i'],
+  aliases: [''],
   permLevel: 0
 };
 
 exports.help = {
-  name: 'bilgi-bot',
+  name: 'a',
   description: 'İstediğiniz şeyi bota yazdırır.',
-  usage: 'istatistik [bot durumunu yazar]'
+  usage: 'istatistik'
 };
