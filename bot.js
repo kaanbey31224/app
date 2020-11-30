@@ -202,7 +202,7 @@ client.on("message", async msg => {
           try {
  
                   return msg.reply(
-                    ':wave: Aleyküm Selam, Hoşgeldin')
+                    'Aleyküm Selam, Hoşgeldin')
           } catch(err) {
             console.log(err);
           }
@@ -242,7 +242,7 @@ client.on('guildCreate', guild => {
 
 let Crewembed = new Discord.MessageEmbed()
 
-.setColor("RANDOM")
+.setColor("GREEN")
 .setTitle(" Bot Bir sunucuya eklendi,bilgiler;  ")
 .addField("Sunucu Adı:", guild.name)
 .addField("Sunucu sahibi", guild.owner)

@@ -25,5 +25,5 @@ exports.conf = {
 exports.help = {
     name: 'elmas',
     description: 'Yazdığınız yazıyı dinamik çevirir.',
-    usage: 'elmas'
+    usage: 'elmas <yazı>'
 }
