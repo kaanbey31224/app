@@ -216,7 +216,7 @@ client.on("message", async msg => {
     });
 
 client.login(ayarlar.token)
-
+///////////////////////////////////////////////////////////
   client.on("ready", () => {
   client.channels.cache.get("776728047884697620").join();
 }) 
