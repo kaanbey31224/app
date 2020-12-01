@@ -9,7 +9,7 @@ exports.run = async (client, message, args) => {
         }
         if(!member) {
                 const embed = new Discord.MessageEmbed()
-                        .setDescription(`Aşk ölçmek için birini etiketlemen lazım `)
+                        .setDescription(`Aşk ölçmek için birini etiketlemen lazım,Hem seni ve hemde onu <3`)
                         .setColor("RED")
                         .setTimestamp()
                 message.channel.send({embed})
@@ -33,16 +33,16 @@ exports.run = async (client, message, args) => {
                 var crewkalp = '🖤🖤🖤🖤🖤🖤🖤🖤🖤'
         }
         var crewyorum = `Sizi evlendirelim <3`
-        if(crewanasonuc < 80) {
-                var crewyorum = 'Biraz daha uğraşırsan bu iş olacak gibi :)'
+        if(crewanasonuc < 90) {
+                var crewyorum = 'birazdaha uğraşırsan bu kız senin!'
         }
-        if(crewanasonuc < 60) {
-                var crewyorum = 'Eh biraz biraz bir şeyler var gibi.'
+        if(crewanasonuc < 70) {
+                var crewyorum = 'bilemedim bak'
         }
-        if(crewanasonuc < 40) {
-                var crewyorum = 'c'
+        if(crewanasonuc < 50) {
+                var crewyorum = 'Çok azda olsa senden hoşlanıyo...'
         }
-        if(crewanasonuc < 20) {
+        if(crewanasonuc < 30) {
                 var crewyorum = 'Seni sevmiyormuş ağa beeeeee...'
         }
         const embed = new Discord.MessageEmbed()
@@ -61,7 +61,7 @@ exports.conf = {
 }
  
 exports.help = {
-        name: 'aşkımı-ölç',
+        name: 'aşk-ölç',
         description: 'Aşk ölcer.',
-        usage: 'aşkımı-ölç'
+        usage: '-aşk-ölç'
 }
