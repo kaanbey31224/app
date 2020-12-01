@@ -8,7 +8,7 @@ const CrewCode = new Discord.MessageEmbed()
 
     .setColor("RED")
     .setDescription(
-      `Sunucunun tacı şuanda , kurucu olan bu şerefsizde.<@${message.guild.owner.id}>`
+      `Sunucunun kurucusu bu kişide;<@${message.guild.owner.id}>`
     )
     .setFooter(`Komutu kullanan: ${message.author.tag}`);
 

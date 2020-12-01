@@ -36,7 +36,7 @@ module.exports.run = async (bot, message, args) => {
     reactions.on("collect", async function(reaction) {
       if (reaction.emoji.name === "✅") {
         message.channel.send(
-          `İşlem onaylandı! ${u} adlı şahıs sunucudan atıldı!`
+          `İşlem Tamamlandı! ${u} adlı kişi sunucudan atıldı!`
         );
  
         message.guild.member(u).kick();

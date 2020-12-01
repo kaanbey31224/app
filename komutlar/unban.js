@@ -20,7 +20,7 @@ module.exports.run = async (client, message, args) => {
   const userError3 = new Discord.MessageEmbed()
     .setColor('#ed455a')
       .setTitle('• Hata: 04 •')
-        .setDescription('```Bu Kullanıcı Yasaklanmamış```')
+        .setDescription('```Bu Kullanıcı Zaten Yasaklanmamış```')
    
   const levelError = new Discord.MessageEmbed()
     .setColor('#ed455a')
