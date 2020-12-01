@@ -1,14 +1,14 @@
 const Discord = require('discord.js')
  
 exports.run = async (client, message, args) => {
-        let member = message.guild.member(message.mentions.users.array()[0] || message.guild.members.get(args[0]))
-        let member2 = message.guild.member(message.mentions.users.array()[1] || message.guild.members.get(args[1]))
+        let member = message.guild.member(message.mentions.users.array()[0] ||  message.guild.members.cache.get(args[0]))
+        let member2 = message.guild.member(message.mentions.users.array()[1] || message.guild.members.cache.get(args[1]))
         var s = message.author
         if(member2) {
                 var s = member2.user
         }
         if(!member) {
-                const embed = new Discord.RichEmbed()
+                const embed = new Discord.MessageEmbed()
                         .setDescription(`Aşk ölçmek için birini etiketlemen lazım `)
                         .setColor("RED")
                         .setTimestamp()
@@ -16,38 +16,38 @@ exports.run = async (client, message, args) => {
                 return
         }
  
-        var anasonuc = Math.floor(Math.random() * 101)
-        var kalp = ''
-        var akalp = ''
-        if(Math.floor(Math.round(anasonuc / 10) * 10) >= 10) {
+        var crewanasonuc = Math.floor(Math.random() * 101)
+        var crewkalp = ''
+        var crewkalp = ''
+        if(Math.floor(Math.round(crewanasonuc / 10) * 10) >= 10) {
                 var c = 0
-                for(var i = 0; i < Math.floor(Math.round(anasonuc / 10)); i++) {
-                        kalp += '❤️'
+                for(var i = 0; i < Math.floor(Math.round(crewanasonuc / 10)); i++) {
+                        crewkalp += '❤️'
                         c++
                 }
                 for(var x = c; x < 10; x++) {
-                        akalp += `🖤`
+                        crewkalp += `🖤`
                 }
         } else {
-                var kalp = '🖤'
-                var akalp = '🖤🖤🖤🖤🖤🖤🖤🖤🖤'
+                var crewkalp = '🖤'
+                var crewkalp = '🖤🖤🖤🖤🖤🖤🖤🖤🖤'
         }
-        var yorum = `Sizi evlendirelim <3`
-        if(anasonuc < 80) {
-                var yorum = 'Biraz daha uğraşırsan bu iş olacak gibi :)'
+        var crewyorum = `Sizi evlendirelim <3`
+        if(crewanasonuc < 80) {
+                var crewyorum = 'Biraz daha uğraşırsan bu iş olacak gibi :)'
         }
-        if(anasonuc < 60) {
-                var yorum = 'Eh biraz biraz bir şeyler var gibi.'
+        if(crewanasonuc < 60) {
+                var crewyorum = 'Eh biraz biraz bir şeyler var gibi.'
         }
-        if(anasonuc < 40) {
-                var yorum = 'Azıcıkta olsa bir şeyler hissediyor sana :)'
+        if(crewanasonuc < 40) {
+                var crewyorum = 'c'
         }
-        if(anasonuc < 20) {
-                var yorum = 'Seni Sevmiyor AGA BEEE.'
+        if(crewanasonuc < 20) {
+                var crewyorum = 'Seni sevmiyormuş ağa beeeeee...'
         }
-        const embed = new Discord.RichEmbed()
+        const embed = new Discord.MessageEmbed()
                 .setAuthor(`${member.user.tag} | ${s.tag}`)
-                .setDescription(`Aşk Yüzdesi: ${anasonuc}\n${kalp}${akalp}\n\n${yorum}`)
+                .setDescription(`NE kadar seviyo bakalım : ${crewanasonuc}\n${crewkalp}${crewkalp}\n\n${crewyorum}`)
                 .setColor("RED")
                 .setTimestamp()
         message.channel.send({embed})
