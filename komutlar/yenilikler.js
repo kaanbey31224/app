@@ -8,7 +8,7 @@ exports.run = (client, message) => {
     .setTimestamp()
     .setAuthor(message.author.username, message.author.avatarURL)
     .setDescription(`Bota Yapılan Yenilikler:`)
-    .addField(`1-rol al  \n`,`2-rol ver \n`)
+    .addField(`1-Yetkilerim kısmı yenilendi! \n`,`2-rol ver \n`)
     .addField(`3-extra yardım  \n`, `4-anket  \n`)
     .addField(`4- rol oluştur \n`, `5-sunucu bilgi yenilendi! \n`)
     message.channel.send(yenilikler) }

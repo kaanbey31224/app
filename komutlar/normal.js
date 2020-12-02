@@ -13,6 +13,7 @@ const EmbedCrewCode = new Discord.MessageEmbed()
 Bir komut hakkında detaylı __yardım için__: **+yardım**
 
 **• Normal Komutlar**
+> [-kahve](https://discord.gg/qzHTkhjQgT) → Türk kahvesi icersiniz!
 > [-ara112](https://discord.gg/qzHTkhjQgT) → Ambulansı arar.
 > [-ara155](https://discord.gg/qzHTkhjQgT) → Polisi arar.
 > [-araba](https://discord.gg/qzHTkhjQgT) → Araba gifi atar.

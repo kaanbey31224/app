@@ -255,3 +255,12 @@ let Crewembed = new Discord.MessageEmbed()
 
 ////////////////////////////////////////
 
+client.on('ready', () => {
+  setInterval(function() {
+     let knl = client.channels.cache.get("776728215480696852")
+     if(knl){
+knl.send(":isaret_3:  Kayıt olmak için ``-kayıtol <isim> <yaş> `` şeklinde doldurunuz. :qral:")
+     }
+    }, 1800000) //1000 = 1 Saniye 1800000
+}) 
+ 
