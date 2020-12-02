@@ -1,35 +1,43 @@
 const Discord = require("discord.js");
+const moment = require("moment");
+const useful = require("useful-tools")
+const ayarlar = require("../ayarlar.json");
 
-exports.run = (client, message) => {
-  let sunucu = new Discord.MessageEmbed()
-    .setAuthor("Sunucu Bilgi", message.guild.iconURL())
-    .setThumbnail(message.guild.iconURL())
-  .setColor("RANDOM")
-    .addField("Sunucu İsmi", message.guild.name)
-    .addField("Sunucu İdsi", message.guild.id)
-    .addField("Sunucu Bölgesi", message.guild.region)
-    .addField(
-      "Roller:",
-      message.guild.roles.cache.map(role => role.name).join(", "),
-      true
-    )
-    .addField("AFK kanalı:", `${message.guild.afkChannel}`, true)
-    .addField("AFK zaman aşımı:", message.guild.afkTimeout, true)
-    .addField("Oluşturma tarihi:", message.guild.createdAt, true)
-    .setTimestamp()
-    .setFooter("Sunucu Bilgi", message.guild.iconURL());
-  return message.channel.send(sunucu);
+{exports.run = (client, message, params) => {
+  const tarih = useful.tarih(message.guild.createdTimestamp)
+    const sunucubilgi = new Discord.MessageEmbed()
+      .setColor("DARK")
+      .setAuthor(message.guild.name, message.guild.iconURL)
+      .addField("👑 Sunucu Sahibi", message.guild.owner)
+    .addField("🔖 Sunucu Adı", message.guild.name)
+      .addField("🆔 Sunucu ID", message.guild.id)
+      .addField("🎭 Rol Sayısı", message.guild.roles.size)
+      .addField("🏰 Kanal Sayısı", message.guild.channels.size)
+      .addField("😍 Emoji Sayısı", message.guild.emojis.size)
+      .addField("🌍 Sunucu Bölgesi", message.guild.region)
+      .addField("🗽 Üye Sayısı", message.guild.memberCount)
+      .addField(
+        "🔇 AFK Kanalı", message.guild.afkChannel
+      )
+    .addField('⏰ AFK Zaman Aşımı', message.guild.afkTimeout)
+    .addField('☑ Sistem Mesaj Kanalı ', message.guild.systemChannel)
+      
+      .addField("🔻 Oluşturulma Tarihi", `${tarih}`)
+      .setThumbnail(message.guild.iconURL);
+    return message.channel.send(sunucubilgi);
+    message.react("😂");
+  }
 };
 
-module.exports.conf = {
-  aliases: ["sunucubilgi"],
-  permLevel: 0,
+exports.conf = {
   enabled: true,
-  guildOnly: true
+  guildOnly: false,
+  aliases: ["sunucu", "sunucu-bilgi", "sbilgi","server","server-bilgi","sbilgi","serverinfo","server-info"],
+  permLevel: 0
 };
 
-module.exports.help = {
-  name: "sunucu-bilgi",
-  description: "",
-  usage: "sunucu-bilgi"
+exports.help = {
+  name: "a",
+  description: "Sunucu hakkında bilgi verir.",
+  usage: "sunucubilgi"
 };

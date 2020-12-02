@@ -16,9 +16,8 @@ Bir komut hakkında detaylı __yardım için__: **-yardım**
 **• Komutlar**
 > [-rol-ver](https://discord.gg/qzHTkhjQgT) → Etiketlediniz kullanıcıya rol verir.
 > [-rol-al](https://discord.gg/qzHTkhjQgT) → Etiketlediğin kişden rol alır.
-> [-eğlence](https://discord.gg/qzHTkhjQgT) → eğlence komutları.
-> [-logo](https://discord.gg/qzHTkhjQgT) → Logo komutları.
-> [-gifyardım](https://discord.gg/qzHTkhjQgT) → Gif komutları.
+> [-anket](https://discord.gg/qzHTkhjQgT) → Anket yaparsınız.
+> [-rololuştur](https://discord.gg/qzHTkhjQgT) → Rol oluşturur.
 
 **• Bilgilendirme**
 

@@ -21,6 +21,7 @@ Bir komut hakkında detaylı __yardım için__: **-yardım**
 > [-eğlence](https://discord.gg/qzHTkhjQgT) → eğlence komutları.
 > [-logo](https://discord.gg/qzHTkhjQgT) → Logo komutları.
 > [-gifyardım](https://discord.gg/qzHTkhjQgT) → Gif komutları.
+> [-extra](https://discord.gg/qzHTkhjQgT) → Extra komutlar.
 
 **• Bilgilendirme**
 
