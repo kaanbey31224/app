@@ -10,8 +10,8 @@ exports.run = (client, message) => {
     .setDescription(`Bota Yapılan Yenilikler:`)
     .addField(`1-rol al  \n`,`2-rol ver \n`)
     .addField(`3-exsra yardım  \n`, `4-anket  \n`)
-    .addField(`4-  \n`, `5-  \n`)
-    message.channel.sendEmbed(yenilikler) }
+    .addField(`4- rol oluştur \n`, `5-rol bilgi  \n`)
+    message.channel.send(yenilikler) }
 };
 
 exports.conf = {

@@ -39,9 +39,9 @@ exports.conf = {
   enabled: true,
   guildOnly: true,
   aliases: ["rolal", "ra"],
-  permLevel: 0
+  permLevel: 5
 };
- //Dcs Ekibi
+ //CrewCode
 exports.help = {
   name: "rol-al",
   description: "İstediğiniz kişiden istediğiniz rolü alır.",
