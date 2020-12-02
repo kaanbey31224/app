@@ -276,7 +276,7 @@ knl.send("** Abone rölü almak için youTube kanalıma gidip son videoya like,y
 client.on("message", async msg => { 
 const dcskelime = ["754730560009797723","642790531482648636"]; 
 if (dcskelime.some(dcss => msg.content.includes(dcss))) {
-msg.reply("E")
+msg.reply("**Etiketleme!**")
 msg.delete()
 }}) 
 ///////////////////////////////////////////////////

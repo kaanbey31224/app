@@ -19,6 +19,7 @@ Bir komut hakkında detaylı __yardım için__: **-yardım**
 > [-anket](https://discord.gg/qzHTkhjQgT) → Anket yaparsınız.
 > [-rololuştur](https://discord.gg/qzHTkhjQgT) → Rol oluşturur.
 > [-id](https://discord.gg/qzHTkhjQgT) → İstediğin bi kişinin ID sini alır.
+> [-davet-oluştur](https://discord.gg/qzHTkhjQgT) → Sunucunun davet linkini atar.
 
 **• Bilgilendirme**
 
