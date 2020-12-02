@@ -12,12 +12,10 @@ const EmbedCrewCode = new Discord.MessageEmbed()
 **[Destek Sunucusu](https://discord.gg/qzHTkhjQgT)** **•** **[Botun Davet Linki](https://discord.com/api/oauth2/authorize?client_id=779006421625995345&permissions=2146958847&scope=bot)** **•** **[Web-Site]()**
 Bir komut hakkında detaylı __yardım için__: **-yardım**
 
-• Bot ile ilgili tavsiyelerinizi veya istediniğiniz bi kodu **-istek-kod** yazarak bize iletebilirsiniz.
-• Hatalı bi kod veya buglu bi kod bulursanız **-bug-bildir** yazarak bize bildirebilirsiniz.
 
 **• Komutlar**
-> [-rol-ver](https://discord.gg/qzHTkhjQgT) → Moderasyon komudları görüntüler.
-> [-kullanıcı](https://discord.gg/qzHTkhjQgT) → Kullanıcı komutları.
+> [-rol-ver](https://discord.gg/qzHTkhjQgT) → Etiketlediniz kullanıcıya rol verir.
+> [-rol-al](https://discord.gg/qzHTkhjQgT) → Etiketlediğin kişden rol alır.
 > [-eğlence](https://discord.gg/qzHTkhjQgT) → eğlence komutları.
 > [-logo](https://discord.gg/qzHTkhjQgT) → Logo komutları.
 > [-gifyardım](https://discord.gg/qzHTkhjQgT) → Gif komutları.
@@ -43,7 +41,7 @@ exports.conf = {
 };
 
   exports.help = {
-    name: 'yardım', 
+    name: 'extra', 
     description: 'Botun Komut Listesini Gösterir!',
-    usage: '-yardım'
+    usage: '-extra'
 };

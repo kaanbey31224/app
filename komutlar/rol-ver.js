@@ -39,7 +39,7 @@ exports.conf = {
   enabled: true,
   guildOnly: true,
   aliases: [""],
-  permLevel: 0
+  permLevel: 5
 };
  //Crew Code
 exports.help = {
