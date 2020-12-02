@@ -280,3 +280,21 @@ msg.reply("**Etiketleme!**")
 msg.delete()
 }}) 
 ///////////////////////////////////////////////////
+client.on("ready", async () => {
+let dc = require("discord.js")
+
+let csc = client.channels.cache.get("783749308884189204")
+
+setInterval(() => {
+let cse = new dc.MessageEmbed() 
+.setTitle("Captan bot İstatistik")
+.setColor("RED")
+.setTimestamp()
+.addField("Toplam Sunucu", client.guilds.cache.size)
+.addField("Toplam Kanal", client.channels.cache.size)
+.addField("Toplam Kullanıcı", client.users.cache.size)
+.setThumbnail(client.user.avatarURL)
+csc.send(cse)
+}, 1800000)
+})
+ /////////////////////////////////
