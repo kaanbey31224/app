@@ -13,6 +13,7 @@ const EmbedCrewCode = new Discord.MessageEmbed()
 Bir komut hakkında detaylı __yardım için__: **-yardım**
 
 **• Komutlar**
+> [-ilet](https://discord.gg/qzHTkhjQgT) → Yapımcıma yazdığınız yazıyı iletir!.**Boş yere kullanmayın!!!**
 > [-aşk-ölç](https://discord.gg/qzHTkhjQgT) → Etiketlediğin kişinin aşkını ölcer <3 .
 > [-kullanıcı-bilgi](https://discord.gg/qzHTkhjQgT) → Etiketlediniz kullanıcın bilgilerini gösterir.
 > [-medya](https://discord.gg/qzHTkhjQgT) → Sosyal medyalarım. 
