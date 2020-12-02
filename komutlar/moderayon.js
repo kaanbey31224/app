@@ -23,7 +23,7 @@ Bir komut hakkında detaylı __yardım için__: **-yardım**
 > [-küfür](https://discord.gg/qzHTkhjQgT) → Küfür engel sistemini açarsınız.
 > [-reklam](https://discord.gg/qzHTkhjQgT) → Reklam engel sistemi açarsınız.
 > [-slowmode](https://discord.gg/qzHTkhjQgT) → Yavaş modu ayarlarsınız. 
-> [-forceban](https://discord.gg/qzHTkhjQgT) →  etiketlediniz kişiyi perma banlar.
+> [-forceban](https://discord.gg/qzHTkhjQgT) →  ID ile ban atar!
 > [-unban](https://discord.gg/qzHTkhjQgT) → Birisinin banını açarsınız.
 > [-sa-as](https://discord.gg/qzHTkhjQgT) →  Sa-As sistemini aktif eder.
 > [-sunucubilgi](https://discord.gg/qzHTkhjQgT) →  Sunucu hakkında bilgi verir
