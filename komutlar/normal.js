@@ -18,8 +18,9 @@ Bir komut hakkında detaylı __yardım için__: **+yardım**
 > [-ara155](https://discord.gg/qzHTkhjQgT) → Polisi arar.
 > [-araba](https://discord.gg/qzHTkhjQgT) → Araba gifi atar.
 > [-zeki](https://discord.gg/qzHTkhjQgT) → Zeki gifi atar.
-> [-nükler](https://discord.gg/qzHTkhjQgT) → nükler gifi atar.
-> [-beşlik](https://discord.gg/qzHTkhjQgT) → beşlik gifi atar.
+> [-nükler](https://discord.gg/qzHTkhjQgT) → Nükler gifi atar.
+> [-beşlik](https://discord.gg/qzHTkhjQgT) → Beşlik gifi atar.
+> [-ağla](https://discord.gg/qzHTkhjQgT) → Botu ağlar.
 
 **• Bilgilendirme**
 

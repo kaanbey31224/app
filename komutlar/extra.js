@@ -18,6 +18,7 @@ Bir komut hakkında detaylı __yardım için__: **-yardım**
 > [-rol-al](https://discord.gg/qzHTkhjQgT) → Etiketlediğin kişden rol alır.
 > [-anket](https://discord.gg/qzHTkhjQgT) → Anket yaparsınız.
 > [-rololuştur](https://discord.gg/qzHTkhjQgT) → Rol oluşturur.
+> [-id](https://discord.gg/qzHTkhjQgT) → İstediğin bi kişinin ID sini alır.
 
 **• Bilgilendirme**
 

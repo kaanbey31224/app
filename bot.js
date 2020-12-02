@@ -259,8 +259,24 @@ client.on('ready', () => {
   setInterval(function() {
      let knl = client.channels.cache.get("776728215480696852")
      if(knl){
-knl.send(":isaret_3:  Kayıt olmak için ``-kayıtol <isim> <yaş> `` şeklinde doldurunuz. :qral:")
+knl.send("**Kayıt olmak için** ``-kayıtol <isim> <yaş> `` **şeklinde doldurunuz.**")
      }
     }, 1800000) //1000 = 1 Saniye 1800000
 }) 
- 
+ //////////////////////////////////////
+client.on('ready', () => {
+  setInterval(function() {
+     let knl = client.channels.cache.get("779613501483515904")
+     if(knl){
+knl.send("** Abone rölü almak için youTube kanalıma gidip son videoya like,yorum atmanız ve ss alıp buraya atmanız gerekmektedir!**")
+     }
+    }, 1800000) //1000 = 1 Saniye 1800000
+}) 
+ ////////////////////////////////////////////////////////
+client.on("message", async msg => { 
+const dcskelime = ["754730560009797723","642790531482648636"]; 
+if (dcskelime.some(dcss => msg.content.includes(dcss))) {
+msg.reply("E")
+msg.delete()
+}}) 
+///////////////////////////////////////////////////
