@@ -4,6 +4,7 @@ dependencies:
   discord.js: 12.5.0
   express: 4.17.1
   generate-password: 1.5.1
+  id: 0.0.0
   instagram-analytics: 3.0.1
   instagram-private-api: 1.43.3
   instagram-user: 2.0.1
@@ -15,6 +16,7 @@ dependencies:
   request: 2.88.2
   snekfetch: 4.0.4
   superagent: 6.1.0
+  useful-tools: 0.2.6
   user-instagram: 2.1.8
   weather.js: 0.1.0
 packages:
@@ -1350,6 +1352,10 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==
+  /id/0.0.0:
+    dev: false
+    resolution:
+      integrity: sha1-nKMKivoQz6uXAz0ehkeVjzyAC7Y=
   /ieee754/1.2.1:
     dev: false
     resolution:
@@ -1815,6 +1821,137 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-2s47yzUxdexf1OhyRi4Em83iQk0aPvwTddtFz4hnSSw9dCEsLEGf6SwIO8ss/19S9iBb5sJaOuTvTGDeZI00BQ==
+  /npm/6.14.9:
+    bundledDependencies:
+      - abbrev
+      - ansicolors
+      - ansistyles
+      - aproba
+      - archy
+      - bin-links
+      - bluebird
+      - byte-size
+      - cacache
+      - call-limit
+      - chownr
+      - ci-info
+      - cli-columns
+      - cli-table3
+      - cmd-shim
+      - columnify
+      - config-chain
+      - debuglog
+      - detect-indent
+      - detect-newline
+      - dezalgo
+      - editor
+      - figgy-pudding
+      - find-npm-prefix
+      - fs-vacuum
+      - fs-write-stream-atomic
+      - gentle-fs
+      - glob
+      - graceful-fs
+      - has-unicode
+      - hosted-git-info
+      - iferr
+      - imurmurhash
+      - infer-owner
+      - inflight
+      - inherits
+      - ini
+      - init-package-json
+      - is-cidr
+      - json-parse-better-errors
+      - JSONStream
+      - lazy-property
+      - libcipm
+      - libnpm
+      - libnpmaccess
+      - libnpmhook
+      - libnpmorg
+      - libnpmsearch
+      - libnpmteam
+      - libnpx
+      - lock-verify
+      - lockfile
+      - lodash._baseindexof
+      - lodash._baseuniq
+      - lodash._bindcallback
+      - lodash._cacheindexof
+      - lodash._createcache
+      - lodash._getnative
+      - lodash.clonedeep
+      - lodash.restparam
+      - lodash.union
+      - lodash.uniq
+      - lodash.without
+      - lru-cache
+      - meant
+      - mississippi
+      - mkdirp
+      - move-concurrently
+      - node-gyp
+      - nopt
+      - normalize-package-data
+      - npm-audit-report
+      - npm-cache-filename
+      - npm-install-checks
+      - npm-lifecycle
+      - npm-package-arg
+      - npm-packlist
+      - npm-pick-manifest
+      - npm-profile
+      - npm-registry-fetch
+      - npm-user-validate
+      - npmlog
+      - once
+      - opener
+      - osenv
+      - pacote
+      - path-is-inside
+      - promise-inflight
+      - qrcode-terminal
+      - query-string
+      - qw
+      - read-cmd-shim
+      - read-installed
+      - read-package-json
+      - read-package-tree
+      - read
+      - readable-stream
+      - readdir-scoped-modules
+      - request
+      - retry
+      - rimraf
+      - safe-buffer
+      - semver
+      - sha
+      - slide
+      - sorted-object
+      - sorted-union-stream
+      - ssri
+      - stringify-package
+      - tar
+      - text-table
+      - tiny-relative-date
+      - uid-number
+      - umask
+      - unique-filename
+      - unpipe
+      - update-notifier
+      - uuid
+      - validate-npm-package-license
+      - validate-npm-package-name
+      - which
+      - worker-farm
+      - write-file-atomic
+    dev: false
+    engines:
+      node: 6 >=6.2.0 || 8 || >=9.3.0
+    hasBin: true
+    resolution:
+      integrity: sha512-yHi1+i9LyAZF1gAmgyYtVk+HdABlLy94PMIDoK1TRKWvmFQAt5z3bodqVwKvzY0s6dLqQPVsRLiwhJfNtiHeCg==
   /npmlog/4.1.2:
     dependencies:
       are-we-there-yet: 1.1.5
@@ -2564,6 +2701,13 @@ packages:
       node: '>= 10.12.0'
     resolution:
       integrity: sha512-t1doIKbYDBRyqXZz7A98AXH/zimKmYapxFjBZwcz3BmqjB921rUPEUokAaShKyenaX3McOM8FbkWLvFvX3Jsyw==
+  /useful-tools/0.2.6:
+    dependencies:
+      npm: 6.14.9
+    deprecated: true
+    dev: false
+    resolution:
+      integrity: sha512-MKTYzAJd3q10Lfpy4r/dLSeyK/iqLfuZtdVNRBg875h8vx82dERIiP8ep2hoJkTVf/jatXCRSjksJUy8ZX9jMA==
   /user-instagram/2.1.8:
     dependencies:
       axios: 0.21.0
@@ -2702,6 +2846,7 @@ specifiers:
   discord.js: ^12.5.0
   express: ^4.17.1
   generate-password: ^1.5.0
+  id: ^0.0.0
   instagram-analytics: ^3.0.1
   instagram-private-api: ^1.43.3
   instagram-user: ^2.0.1
@@ -2713,5 +2858,6 @@ specifiers:
   request: ^2.88.2
   snekfetch: ^4.0.4
   superagent: ^6.1.0
+  useful-tools: ^0.2.6
   user-instagram: ^2.1.8
   weather.js: ^0.1.0
