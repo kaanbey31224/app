@@ -20,6 +20,7 @@ Bir komut hakkında detaylı __yardım için__: **-yardım**
 > [-rololuştur](https://discord.gg/qzHTkhjQgT) → Rol oluşturur.
 > [-id](https://discord.gg/qzHTkhjQgT) → İstediğin bi kişinin ID sini alır.
 > [-davet-oluştur](https://discord.gg/qzHTkhjQgT) → Sunucunun davet linkini atar.
+> [-oy-kick](https://discord.gg/qzHTkhjQgT) → Oylama yaparak bir kişiyi sunucudan atar.
 
 **• Bilgilendirme**
 
