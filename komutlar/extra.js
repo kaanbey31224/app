@@ -26,6 +26,7 @@ Bir komut hakkında detaylı __yardım için__: **-yardım**
 > [-davet-sıralaması](https://discord.gg/qzHTkhjQgT) → Sunucuda yapılan davetleri sıralar
 > [-sipariş](https://discord.gg/qzHTkhjQgT) → Şipariş verirsiniz. **Boş yere kullanmayın!**
 > [-iltifat](https://discord.gg/qzHTkhjQgT) → Etiketlediğin kişiye bot iltifat eder.
+> [-nick](https://discord.gg/qzHTkhjQgT) → Etiketlediğin kişinin ismini değiştirir.
 
 **• Bilgilendirme**
 
