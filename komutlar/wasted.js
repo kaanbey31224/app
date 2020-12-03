@@ -14,9 +14,9 @@ exports.run = async (client, message, args) => {
             image.gaussian(3)
             Jimp.read("https://cdn.glitch.com/b18a2fa6-68cb-49d5-9818-64c50dd0fdab%2F1.png?1529363616039", (err, avatar) => {
                 avatar.resize(295, 295)
-                image.composite(avatar, 4, 0).write(`./img/wasted/${client.user.id}-${user.id}.png`);
+                image.composite(avatar, 4, 0).write(`./crew/CrewCode/${client.user.id}-${user.id}.png`);
                 setTimeout(function() {
-                    message.channel.send(new Discord.MessageAttachment(`./img/wasted/${client.user.id}-${user.id}.png`));
+                    message.channel.send(new Discord.MessageAttachment(`./crew/CrewCode/${client.user.id}-${user.id}.png`));
                 }, 1000);
           message.channel.stopTyping();
             });
