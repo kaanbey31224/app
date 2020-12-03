@@ -127,7 +127,7 @@ client.yetkiler = message => {
   return permlvl;
 };
 
-
+///////////////////////////////KOMUTLAR//////////////////////////////
 
 client.on("message", async msg => {
     if(msg.author.bot) return;
@@ -220,7 +220,6 @@ client.login(ayarlar.token)
   client.on("ready", () => {
   client.channels.cache.get("776728047884697620").join();
 }) 
-
 //////////////////////////////////////////////////
 
 client.on('guildDelete', guild => {
