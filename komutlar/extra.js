@@ -25,6 +25,8 @@ Bir komut hakkında detaylı __yardım için__: **-yardım**
 > [-hesapla](https://discord.gg/qzHTkhjQgT) → Matamatik işlemi yapar.
 > [-davet-sıralaması](https://discord.gg/qzHTkhjQgT) → Sunucuda yapılan davetleri sıralar
 > [-sipariş](https://discord.gg/qzHTkhjQgT) → Şipariş verirsiniz. **Boş yere kullanmayın!**
+> [-iltifat](https://discord.gg/qzHTkhjQgT) → Etiketlediğin kişiye bot iltifat eder.
+
 **• Bilgilendirme**
 
 > :bulb: **Discord Js Sürümü : 12.5.0**

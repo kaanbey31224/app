@@ -23,18 +23,16 @@ Bir komut hakkında detaylı __yardım için__: **-yardım**
 > [-balıktut](https://discord.gg/qzHTkhjQgT) → Dereden balık tutarsınız.
 > [-tersyazı](https://discord.gg/qzHTkhjQgT) →  Yazdığınız yazıyı bot tersten yazar
 > [-mcskin](https://discord.gg/qzHTkhjQgT) →Yazdığınız ismin minecraft görünüşünü atar.
-> [-fbi](https://discord.gg/qzHTkhjQgT) → FBİ gifi atar.
 > [-token](https://discord.gg/qzHTkhjQgT) →  Botun tokenini gösterir.
 > [-düello](https://discord.gg/qzHTkhjQgT) →  Arkadaşlarınızla düello yaparsınız.
 > [-wasted](https://discord.gg/qzHTkhjQgT) → Polis tarafından yakalanırsnız
-> [-atatürk](https://discord.gg/qzHTkhjQgT) → Atatürk gifi atar.
 > [-yumruk-at](https://discord.gg/qzHTkhjQgT) → Etiketlediğin kişiye bot yumruk atar.
 > [-yazan-kazanır](https://discord.gg/qzHTkhjQgT) → Yazan kazanır oyunu.
 > [-kapaklaf](https://discord.gg/qzHTkhjQgT) → Etiketlediğin kişiye bot kapaklaf söyler.
 > [-şanslısayım](https://discord.gg/qzHTkhjQgT) → Şanslı sayını bulmaya calışır.
+> [-kaçcm](https://discord.gg/qzHTkhjQgT) → Malafatını ölçer.
 
 **• Bilgilendirme**
-
 > :bulb: **Discord Js Sürümü : 12.5.0**
 > :robot: **Yapımcım : Manyak*#9999**
 > :eye_in_speech_bubble: **Sürümüm : 2.0.1**
