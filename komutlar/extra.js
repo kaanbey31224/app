@@ -21,7 +21,7 @@ Bir komut hakkında detaylı __yardım için__: **-yardım**
 > [-id](https://discord.gg/qzHTkhjQgT) → İstediğin bi kişinin ID sini alır.
 > [-davet-oluştur](https://discord.gg/qzHTkhjQgT) → Sunucunun davet linkini atar.
 > [-oy-kick](https://discord.gg/qzHTkhjQgT) → Oylama yaparak bir kişiyi sunucudan atar.
-
+> [-hesapla](https://discord.gg/qzHTkhjQgT) → Matamatik işlemi yapar.
 **• Bilgilendirme**
 
 > :bulb: **Discord Js Sürümü : 12.5.0**
