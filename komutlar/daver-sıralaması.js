@@ -1,5 +1,3 @@
-//Eğer Çoook Fazla Davet Yapan Varsa Bu Kod Sunucunuzda Çalışmaz!
-
 const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
@@ -14,17 +12,17 @@ module.exports.run = async (bot, message, args) => {
   let possibleinvites = [];
   invites.forEach(function(invites) {
     possibleinvites.push(
-      `<a:783981808688955402:783981808688955402> | ${invites.inviter.username} | Davet: ${invites.uses}`
+      `:small_orange_diamond: | ${invites.inviter.username} | Davet: ${invites.uses}`
     );
   });
 
-  const embed = new Discord.MessageEmbed()
+  const CrewCode = new Discord.MessageEmbed()
     .setTitle(`**📧 SUNUCU DAVET BİLGİLERİ 🔐**`)
     .setColor("RANDOM")
     .addField("↪ Invites Info ↩", `**${possibleinvites.join("\n")}**`)
     .setTimestamp()
     .setFooter(`Komutu Kullanan: ${message.author.username}`);
-  message.channel.send(embed);
+  message.channel.send(CrewCode);
 };
 
 exports.conf = {
@@ -34,7 +32,7 @@ exports.conf = {
   permLevel: 0,
   kategori: "sunucu"
 };
-//Dcs Ekibi
+//CrewCode
 exports.help = {
   name: "davet-sıralaması",
   description: "Sunucunuza en çok kullanıcı getirenleri sıralar.",

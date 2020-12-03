@@ -22,6 +22,7 @@ Bir komut hakkında detaylı __yardım için__: **-yardım**
 > [-davet-oluştur](https://discord.gg/qzHTkhjQgT) → Sunucunun davet linkini atar.
 > [-oy-kick](https://discord.gg/qzHTkhjQgT) → Oylama yaparak bir kişiyi sunucudan atar.
 > [-hesapla](https://discord.gg/qzHTkhjQgT) → Matamatik işlemi yapar.
+> [-davet-sıralaması](https://discord.gg/qzHTkhjQgT) → Sunucuda yapılan davetleri sıralar
 **• Bilgilendirme**
 
 > :bulb: **Discord Js Sürümü : 12.5.0**
