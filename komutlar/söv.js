@@ -32,7 +32,7 @@ exports.run = async (client, msg, args) => {
 }})
   if(member.id === "335413922649604096")return msg.channel.send({embed: {
  color: Math.floor(Math.random() * (0xFFFFFF + 1)),
- description: (`:no_entry_sign: Hoop! Birşeyler ters gitti @❅ Raksix#3362  etiketlemişsin yarram!`)
+ description: (`:no_entry_sign: Hoop! Birşeyler ters gitti @๖Hz.𝑬𝑺𝑴𝑬𝑹#1408 etiketlemişsin yarram!`)
 }})
   if(member.id === "203116573211230208")return msg.channel.send({embed: {
  color: Math.floor(Math.random() * (0xFFFFFF + 1)),

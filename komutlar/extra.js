@@ -27,7 +27,9 @@ Bir komut hakkında detaylı __yardım için__: **-yardım**
 > [-sipariş](https://discord.gg/qzHTkhjQgT) → Şipariş verirsiniz. **Boş yere kullanmayın!**
 > [-iltifat](https://discord.gg/qzHTkhjQgT) → Etiketlediğin kişiye bot iltifat eder.
 > [-nick](https://discord.gg/qzHTkhjQgT) → Etiketlediğin kişinin ismini değiştirir.
-> [-tekerleme](https://discord.gg/qzHTkhjQgT) → tekerleme yazar.
+> [-tekerleme](https://discord.gg/qzHTkhjQgT) → Tekerleme yazar.
+> [-söv](https://discord.gg/qzHTkhjQgT) → Etiketlediğin kişiye söver.
+> [-ilgincbilgi](https://discord.gg/qzHTkhjQgT) → İlginç bilgi yazar.
 
 **• Bilgilendirme**
 
