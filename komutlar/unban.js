@@ -1,42 +1,23 @@
-const Discord = require("discord.js");
-const client = new Discord.Client();
+const discord = require('discord.js')
+exports.run = function(client, message, args,params) {
 
-exports.run = (client, message, args) => {
-  if (!message.member.hasPermission("BAN_MEMBERS"))
-    return message.reply("Yetkin Yok!");
-  let reason = args.slice(1).join(" ");
-  let user = args[0];
-
-  if (!user)
-    return message
-      .reply("Banı kaldırılacak kişinin ID numarasını yazmalısın.")
-      .catch(console.error);
-  if (!reason)
-    return message.reply("Ban Kaldirma Sebebi Yazmalisin").catch(console.error);
-message.guild.unmembers.members.ban(user, reason);
-
-  const embed = new Discord.MessageEmbed()
-    .setColor("RED")
-    .setTimestamp()
-    .addField("Eylem:", "Ban kaldırma")
-    .addField("Kullanıcı ID:", `${user}`)
-    .addField(
-      "Yetkili:",
-      `${message.author.username}#${message.author.discriminator}`
-    )
-    .addField("Sebep", reason);
-  return message.channel.send(embed);
+  if (args.length < 1) {
+    return message.reply('Doğru Kullanım -tersyazı merhaba')
+  }
+   
+message.channel.send(args.join(' ').split('').reverse().join(''))
 };
 
 exports.conf = {
+  aliases: [ 'ters' ],
   enabled: true,
-  guildOnly: true,
-  aliases: [],
-  permLevel: 2
+  guildOnly: false,
+  permLevel: 0
 };
 
 exports.help = {
-  name: "unban",
-  description: "İstediğiniz kişinin banını kaldırır.",
-  usage: "unban [kullanıcı] [sebep]"
+  name: 'tersyazı',
+  description: 'Gönderdiğiniz mesajın ters çevrilmiş halini yazar.',
+  category: 'Kullanıcı',
+  usage: 'tersyaz yazı',
 };
