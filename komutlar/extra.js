@@ -30,6 +30,7 @@ Bir komut hakkında detaylı __yardım için__: **-yardım**
 > [-tekerleme](https://discord.gg/qzHTkhjQgT) → Tekerleme yazar.
 > [-söv](https://discord.gg/qzHTkhjQgT) → Etiketlediğin kişiye söver.
 > [-ilgincbilgi](https://discord.gg/qzHTkhjQgT) → İlginç bilgi yazar.
+> [-desteaç](https://discord.gg/qzHTkhjQgT) → Zula deste açar.
 
 **• Bilgilendirme**
 
