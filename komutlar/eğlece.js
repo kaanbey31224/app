@@ -31,6 +31,7 @@ Bir komut hakkında detaylı __yardım için__: **-yardım**
 > [-yumruk-at](https://discord.gg/qzHTkhjQgT) → Etiketlediğin kişiye bot yumruk atar.
 > [-yazan-kazanır](https://discord.gg/qzHTkhjQgT) → Yazan kazanır oyunu.
 > [-kapaklaf](https://discord.gg/qzHTkhjQgT) → Etiketlediğin kişiye bot kapaklaf söyler.
+> [-şanslısayım](https://discord.gg/qzHTkhjQgT) → Şan
 
 **• Bilgilendirme**
 
