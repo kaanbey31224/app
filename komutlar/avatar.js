@@ -15,7 +15,7 @@ exports.run = async (client, message, args) => {
 
  const avatar = new Discord.MessageEmbed()
         .setColor("RANDOM")
-       .setAuthor("» Buyur Avatarın,")
+       .setAuthor("İşte sana avatarın!,")
         .setImage(user.avatarURL())
     message.channel.send(avatar)
     
@@ -25,7 +25,7 @@ exports.conf = {
   enabled: true, 
   guildOnly: false, 
   aliases: ["pp"],
-  permLevel: `Yetki gerekmiyor.` 
+  permLevel: 0
 };
 
 exports.help = {
