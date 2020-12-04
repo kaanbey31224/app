@@ -61,7 +61,7 @@ exports.conf = {
  };
  
 exports.help = {
-  name: 'söv',
+  name: 'asöv',
   description: 'Birine Söver.',
   usage: 'söv'
  }

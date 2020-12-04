@@ -27,7 +27,6 @@ Bir komut hakkında detaylı __yardım için__: **-yardım**
 > [-iltifat](https://discord.gg/qzHTkhjQgT) → Etiketlediğin kişiye bot iltifat eder.
 > [-nick](https://discord.gg/qzHTkhjQgT) → Etiketlediğin kişinin ismini değiştirir.
 > [-tekerleme](https://discord.gg/qzHTkhjQgT) → Tekerleme yazar.
-> [-söv](https://discord.gg/qzHTkhjQgT) → Etiketlediğin kişiye söver.
 > [-ilgincbilgi](https://discord.gg/qzHTkhjQgT) → İlginç bilgi yazar.
 > [-desteaç](https://discord.gg/qzHTkhjQgT) → Zula deste açar.
 > [-soygunyap](https://discord.gg/qzHTkhjQgT) → Vurgun yapmaya hazırmısın? :D
