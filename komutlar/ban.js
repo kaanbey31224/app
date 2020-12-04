@@ -3,15 +3,15 @@ const db = require("quick.db");
 module.exports.run = async (bot, message, args) => {
   if (!message.member.hasPermission("BAN_MEMBERS")) {
     const embedCrewCode = new Discord.MessageEmbed()
-      .setDescription("```⚠ Ne yazık ki bu komutu kullanmaya yetkin yok. ⚠ ```")
+      .setDescription("```⚠ Bu komutu kullanmak için yeterince yetkin yok malesef ⚠ ```")
       .setColor("BLACK");
  
     message.channel.send(embedCrewCode);
     return;
   }
  
-  let u = message.mentions.users.first();
-  if (!u) {
+  let c = message.mentions.users.first();
+  if (!c) {
     return message.channel.send(
       new Discord.MessageEmbed()
         .setDescription("```Banlayacağım üyeyi etiketlemelisin!```")
@@ -22,7 +22,7 @@ module.exports.run = async (bot, message, args) => {
  
   const embedCrewCode = new Discord.MessageEmbed()
     .setColor("BLACK")
-    .setDescription(`${u} Adlı şahsın sunucudan banlanmasını onaylıyor musunuz?`)
+    .setDescription(`${c} Bu kişiyi banlanmasını onaylıyormusunuz?`)
     .setFooter(bot.user.username, bot.user.avatarURL);
   message.channel.send(embedCrewCode).then(async function(sentEmbed) {
     const emojiArray = ["✅"];
@@ -32,14 +32,14 @@ module.exports.run = async (bot, message, args) => {
     var reactions = sentEmbed.createReactionCollector(filter, {
       time: 30000
     });
-    reactions.on("end", () => sentEmbed.edit("İşlem iptal oldu!"));
+    reactions.on("end", () => sentEmbed.edit("Başarılı bir şekilde işlem iptal edildi!"));
     reactions.on("collect", async function(reaction) {
       if (reaction.emoji.name === "✅") {
         message.channel.send(
-          `İşlem Tamamlandı! ${u} adlı kişi sunucudan Banlandı!`
+          `İşlem Tamamlandı! ${c} adlı kişi sunucudan Banlandı!`
         );
  
-        message.guild.member(u).ban();
+        message.guild.member(c).ban();
       }
     });
   });
