@@ -297,3 +297,19 @@ csc.send(cse)
 }, 1800000)
 })
  /////////////////////////////////
+
+client.on("message", message => {
+  if (message.channel.type === "dm") {
+      if (message.author.bot) return;
+      const CrewCode = new Discord.MessageEmbed()
+       .setTitle(`${client.user.username}'- Bu kişi bana mesaj attı!`)
+       .setColor('BLACK')
+       .setDescription(`
+        **Bana mesaj atan kişi:** ${message.author}
+        **Gönderdiği Mesaj:** ${message.content}
+        `)
+       .setThumbnail(message.author.avatarURL({dynamic: true})) 
+  client.channels.cache.get("784515224229118023").send(CrewCode);
+  }
+});
+/////////////////////////////////////////////////////////////////////////////////////////////
