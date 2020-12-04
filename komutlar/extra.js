@@ -31,6 +31,7 @@ Bir komut hakkında detaylı __yardım için__: **-yardım**
 > [-söv](https://discord.gg/qzHTkhjQgT) → Etiketlediğin kişiye söver.
 > [-ilgincbilgi](https://discord.gg/qzHTkhjQgT) → İlginç bilgi yazar.
 > [-desteaç](https://discord.gg/qzHTkhjQgT) → Zula deste açar.
+> [-soygunyap](https://discord.gg/qzHTkhjQgT) → Vurgun yapmaya hazırmısın? :D
 
 **• Bilgilendirme**
 
