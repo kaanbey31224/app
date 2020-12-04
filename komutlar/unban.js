@@ -1,34 +1,40 @@
-const Discord = require('discord.js');
-const ayarlar = require('../ayarlar.json');
+const Discord = require("discord.js");
 
-exports.run = (client, message, params) => {
-    if (!message.guild) {
-    const ozelmesajuyari = new Discord.MessageEmbed()
-    .setColor('RED')
-    .setTimestamp()
-    .setAuthor(message.author.username, message.author.avatarURL)
-    .addField('**Gif Komutları Özel Mesajlarda Kullanılamaz!**')
-    return message.author.send(ozelmesajuyari); }
-    if (message.channel.type !== 'dm') {
-      const daşşak = new Discord.MessageEmbed()
-    .setAuthor(message.author.username + "  Evde!")
-    .setColor('RANDOM')
-    .setTimestamp()
-    .setDescription('')
-    .setImage(`https://cdn.discordapp.com/attachments/779099271441809420/780020669022470154/tassak.gif`)
-    return message.channel.send(daşşak);
-    }
+
+exports.run = (client, message, args) => {
+
+
+let member = args[0]
+let guild = message.guild;
+let CrewCode = '776784024558895114'
+
+if(!member) return message.channel.send("Banlanan kişinin ID sini girmelisin!")
+
+
+
+
+
+guild.members.unban(member)
+
+const crew = new Discord.MessageEmbed()
+.setThumbnail(message.author.avatarURL())
+.setColor('RANDOM')
+.addField(`Bağışlanan kullanıcı`,`<@${member}>`)
+.addField(`Bağışlayan yetkili`,message.author)
+.setTimestamp()
+.setFooter(`${message.author.username} Tarafından Kullanıldı`)
+client.channels.cache.get(CrewCode).send(crew)
+
+
 };
-
 exports.conf = {
-  enabled: true,
-  guildOnly: false,
-  aliases: [],
-  permLevel: 0
+  enabled: true, 
+  guildOnly: false, 
+  aliases: [], 
+  permLevel: 3 
 };
-
 exports.help = {
-  name: 'daşşak',
-  description: 'daşşak Gifi atar',
-  usage: 'daşşak'
+  name: 'unban', 
+  description: 'Kullanıcıya Ban Atar',
+  usage: '-ban ' 
 };

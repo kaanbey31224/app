@@ -1,4 +1,5 @@
 dependencies:
+  axios: 0.21.0
   chalk: 4.1.0
   common-tags: 1.8.0
   discord.js: 12.5.0
@@ -2853,6 +2854,7 @@ registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
+  axios: ^0.21.0
   chalk: ^4.1.0
   common-tags: ^1.8.0
   discord.js: ^12.5.0
