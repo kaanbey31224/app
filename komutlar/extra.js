@@ -24,7 +24,6 @@ Bir komut hakkında detaylı __yardım için__: **-yardım**
 > [-oy-kick](https://discord.gg/qzHTkhjQgT) → Oylama yaparak bir kişiyi sunucudan atar.
 > [-hesapla](https://discord.gg/qzHTkhjQgT) → Matamatik işlemi yapar.
 > [-davet-sıralaması](https://discord.gg/qzHTkhjQgT) → Sunucuda yapılan davetleri sıralar
-> [-sipariş](https://discord.gg/qzHTkhjQgT) → Şipariş verirsiniz. **Boş yere kullanmayın!**
 > [-iltifat](https://discord.gg/qzHTkhjQgT) → Etiketlediğin kişiye bot iltifat eder.
 > [-nick](https://discord.gg/qzHTkhjQgT) → Etiketlediğin kişinin ismini değiştirir.
 > [-tekerleme](https://discord.gg/qzHTkhjQgT) → Tekerleme yazar.

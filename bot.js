@@ -273,11 +273,11 @@ knl.send("** Abone rölü almak için youTube kanalıma gidip son videoya like,y
 }) 
  ////////////////////////////////////////////////////////
 //client.on("message", async msg => { 
-//const dcskelime = ["",""]; 
+//const dcskelime = ["754730560009797723"]; 
 //if (dcskelime.some(dcss => msg.content.includes(dcss))) {
 //msg.reply("**Etiketleme!**")
 //msg.delete()
-//}}) 
+//}})
 ///////////////////////////////////////////////////
 client.on("ready", async () => {
 let dc = require("discord.js")
@@ -285,7 +285,7 @@ let dc = require("discord.js")
 let csc = client.channels.cache.get("783749308884189204")
 
 setInterval(() => {
-let cse = new dc.MessageEmbed() 
+let cse = new dc.MessageEmbed()
 .setTitle("Captan bot İstatistik")
 .setColor("RED")
 .setTimestamp()
