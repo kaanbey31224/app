@@ -1,26 +1,30 @@
-const Discord = require('discord.js');
-const db = require('quick.db');
+const Discord = require('discord.js')
 
-const moment = require('moment');
-require('moment-duration-format');
-exports.run = async (client, message, args) => {
-   var olcum = await message.channel.send( ' Ölçüm yapılıyor, lütfen bekleyiniz...');
- var sonuc = await message.channel.send( " Veriler alındı...").then(msg => msg.delete(3000))
-     await olcum.edit( ` **Tepki Gecikmesi** \`${Math.round((sonuc.createdTimestamp - olcum.createdTimestamp - client.ping) )}\`**ms**\n **Bot Gecikmesi** \`${Math.round(client.ping)}\`**ms**`);
-///
-  
-  
+exports.run = async (client, message, args, color) => {
+
+    let start = Date.now(); message.channel.send( 'Pong! ').then(message => { 
+    let diff = (Date.now() - start); 
+    let API = (client.ping).toFixed(2)
+        
+        let embed = new Discord.MessageEmbed()
+        .setTitle(`Captan bot`)
+        .setColor(0xff2f2f)
+        .addField("📶 Mesaj Gecikmesi", `${diff}ms`, true)
+        .addField("💻 Bot Gecikmesi", `${API}ms`, true)
+        message.edit(embed);
+      
+    });
+
 }
 
 exports.conf = {
-  enabled: true,
-  guildOnly: false,
-  aliases: [],
-  permLevel: 0
-};
+    enabled: true,
+    guildOnly: false,
+    aliases: [],
+    permLevel: 0
+  };
 
 exports.help = {
-  name: 'ping',
-  description: 'Ping was here',
-  usage: 'ping'
-}
+    name: 'ping',
+    category: 'INFO'
+} 
