@@ -302,7 +302,7 @@ client.on("message", message => {
   if (message.channel.type === "dm") {
       if (message.author.bot) return;
       const CrewCode = new Discord.MessageEmbed()
-       .setTitle(`${client.user.username}'- Bu kişi bana mesaj attı!`)
+       .setTitle(`${client.user.username}'- DM kutuma mesaj geldi!`)
        .setColor('BLACK')
        .setDescription(`
         **Bana mesaj atan kişi:** ${message.author}
