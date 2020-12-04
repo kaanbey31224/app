@@ -1,41 +1,60 @@
 const Discord = require("discord.js");
-
-
-exports.run = (client, message, args) => {
-
-
-let member = message.mentions.users.first()
-let sebep = args.slice(1).join(" ")
-let guild = message.guild;
-let kanal = '776784024558895114'
-
-if(!member) return message.channel.send("**Banlıyacağım üyeyi etiketlemelisin.**")
-
-
-
-if(!sebep) return message.channel.send("**Neden banlayacagını acıklaman lazım...**")
-
-
-guild.members.ban(member)
-
-const ban = new Discord.MessageEmbed()
-.setThumbnail(message.author.avatarURL())
-.setColor('RED')
-.addField(`Banlanan Kullanıcı`,member)
-.addField(`:man_police_officer: Yetkili`,message.author)
-.addField(`:lock: Sebep`,sebep)
-client.channels.cache.get(kanal).send(ban)
-
-
+const db = require("quick.db");
+module.exports.run = async (bot, message, args) => {
+  if (!message.member.hasPermission("BAN_MEMBERS")) {
+    const embedCrewCode = new Discord.MessageEmbed()
+      .setDescription("```⚠ Ne yazık ki bu komutu kullanmaya yetkin yok. ⚠ ```")
+      .setColor("BLACK");
+ 
+    message.channel.send(embedCrewCode);
+    return;
+  }
+ 
+  let u = message.mentions.users.first();
+  if (!u) {
+    return message.channel.send(
+      new Discord.MessageEmbed()
+        .setDescription("Lütfen atılacak kişiyi etiketleyiniz!")
+        .setColor("BLACK")
+        .setFooter(bot.user.username, bot.user.avatarURL)
+    );
+  }
+ 
+  const embedCrewCode = new Discord.MessageEmbed()
+    .setColor("BLACK")
+    .setDescription(`${u} Adlı şahsın sunucudan banlanmasını onaylıyor musunuz?`)
+    .setFooter(bot.user.username, bot.user.avatarURL);
+  message.channel.send(embedCrewCode).then(async function(sentEmbed) {
+    const emojiArray = ["✅"];
+    const filter = (reaction, user) =>
+      emojiArray.includes(reaction.emoji.name) && user.id === message.author.id;
+    await sentEmbed.react(emojiArray[0]).catch(function() {});
+    var reactions = sentEmbed.createReactionCollector(filter, {
+      time: 30000
+    });
+    reactions.on("end", () => sentEmbed.edit("İşlem iptal oldu!"));
+    reactions.on("collect", async function(reaction) {
+      if (reaction.emoji.name === "✅") {
+        message.channel.send(
+          `İşlem Tamamlandı! ${u} adlı kişi sunucudan Banlandı!`
+        );
+ 
+        message.guild.member(u).ban();
+      }
+    });
+  });
 };
-exports.conf = {
-  enabled: true, 
-  guildOnly: false, 
-  aliases: [''], 
-  permLevel: 4
+ 
+module.exports.conf = {
+  aliases: [],
+  permLevel: 2,
+  enabled: true,
+  guildOnly: true,
+  kategori: "moderasyon"
 };
-exports.help = {
-  name: 'ban', 
-  description: 'Kullanıcıya Sunucudan Atar', 
-  usage: 'ban'
+ 
+module.exports.help = {
+  name: "ban",
+  description: "kick",
+  usage: "kick"
 };
