@@ -14,7 +14,7 @@ module.exports.run = async (bot, message, args) => {
   if (!u) {
     return message.channel.send(
       new Discord.MessageEmbed()
-        .setDescription("Lütfen atılacak kişiyi etiketleyiniz!")
+        .setDescription("```Lütfen atılacak kişiyi etiketleyiniz!```")
         .setColor("BLACK")
         .setFooter(bot.user.username, bot.user.avatarURL)
     );
