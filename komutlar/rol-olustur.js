@@ -1,9 +1,15 @@
 const Discord = require("discord.js")
 
 exports.run = async (client, message, args) => {
-if (!message.member.hasPermission("MANAGE_ROLES"))
-  return message.channel.send("Bu Komutu Kullanabilmen İçin Rolleri Yönet Yetkilisi Olman Lazım !")
-
+  if (!message.member.hasPermission("BAN_MEMBERS")) {
+    const embedCrewCode = new Discord.MessageEmbed()
+      .setDescription("```⚠ Ne yazık ki bu komutu kullanmaya yetkin yok. ⚠ ```")
+      .setColor("BLACK");
+ 
+    message.channel.send(embedCrewCode);
+    return;
+  }
+ 
 let guild = message.guild;
 let isim = args.slice(0).join(" ");
 if (!isim)

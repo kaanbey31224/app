@@ -4,6 +4,7 @@ exports.run = (bot, message) => {
   while (guildArray.length) {
     const embed = new Discord.MessageEmbed();
 
+ 
     const guilds = guildArray.splice(0,25);
     for (const guild of guilds) {
       embed.addField(`**${guild.name}** - ÜYE SAYISI : **${guild.memberCount}**`, guild.id);

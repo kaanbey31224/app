@@ -11,10 +11,15 @@ exports.run = (client, message, args) => {
       );
     return message.author.sendEmbed(ozelmesajuyari);
   }
-  if (!message.member.hasPermission("MANAGE_ROLES"))
-    return message.channel.send(
-      "❌ Bu Komutu Kullana Bilmek için `Rolleri Yönet` Yetkisine Sahip Olmalısın!"
-    );
+  if (!message.member.hasPermission("BAN_MEMBERS")) {
+    const embedCrewCode = new Discord.MessageEmbed()
+      .setDescription("```⚠ Ne yazık ki bu komutu kullanmaya yetkin yok. ⚠ ```")
+      .setColor("BLACK");
+ 
+    message.channel.send(embedCrewCode);
+    return;
+  }
+ 
   let guild = message.guild;
   let rol = message.mentions.roles.first();
   let user = message.mentions.members.first();
