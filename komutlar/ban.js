@@ -1,41 +1,29 @@
-const Discord = require("discord.js");
+const Discord = require('discord.js');
 
+exports.run = async (client, message, args) => {
+  const yazi = args.slice(0).join('+'); 
 
-exports.run = (client, message, args) => {
+  if(!yazi) return message.channel.send(`**Lütfen yazı yazınız.** <a:maple_leaf:742698148329291826>`)
+  const linqo = `https://dummyimage.com/2000x500/33363c/ffffff&text=${yazi}`
+  .replace(' ', '+')
 
-
-let member = message.mentions.users.first()
-let sebep = args.slice(1).join(" ")
-let guild = message.guild;
-let kanal = '776784024558895114'
-
-if(!member) return message.channel.send("**Banlıyacağım üyeyi etiketlemelisin.**")
-
-
-
-if(!sebep) return message.channel.send("**Neden banlayacagını acıklaman lazım...**")
-
-
-guild.members.ban(member)
-
-const ban = new Discord.MessageEmbed()
-.setThumbnail(message.author.avatarURL())
-.setColor('RED')
-.addField(`Banlanan Kullanıcı`,member)
-.addField(`:man_police_officer: Yetkili`,message.author)
-.addField(`:lock: Sebep`,sebep)
-client.channels.cache.get(kanal).send(ban)
-
-
-};
+  
+  const embed = new Discord.MessageEmbed()
+  .setTitle("Banner")
+  .setColor("RANDOM")
+  .setImage(linqo)
+  .setFooter('Banner Oluşturuldu')
+  message.channel.send(embed)
+}
 exports.conf = {
-  enabled: true, 
-  guildOnly: false, 
-  aliases: [''], 
-  permLevel: 4
-};
+    enabled: true,
+    guildOnly: false,
+    aliases: ['yazıfoto','yazı-foto'],
+    permLevel: 0
+}
+
 exports.help = {
-  name: 'ban', 
-  description: 'Kullanıcıya Sunucudan Atar', 
-  usage: 'ban'
-};
+    name: 'banner',
+    description: 'Yazdığınız yazıyı bannera çevirir.',
+    usage: 'banner <yazı>'
+}
