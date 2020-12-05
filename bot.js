@@ -158,7 +158,7 @@ client.on("message", async message => {
                 try {
                   if (!message.member.hasPermission("MANAGE_GUILD")) {
                     message.delete();                                       
-                    return message.channel.send(`${message.author.id}, Reklam Yapmak Yasak!`).then(message => message.delete(10000));
+                    return message.channel.send(`<@${message.author.id}> Reklam Yapmak Yasak!`).then(message => message.delete(10000));
                   }              
                 } catch(err) {
                   console.log(err);
