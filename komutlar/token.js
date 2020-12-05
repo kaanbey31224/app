@@ -11,11 +11,11 @@ exports.run = (client, message, params) => {
     return message.author.send(ozelmesajuyari); }
     if (message.channel.type !== 'dm') {
       const token = new Discord.MessageEmbed()
-    .setAuthor(message.author.username + "Kanka sana gercekten tokenimi vereceğime inandınmı? ,İnandıysan sana helal olsun bea.")
+    .setAuthor(message.author.username + " Alsana Token Güle Güle Kulan :)")
     .setColor('RANDOM')
     .setTimestamp()
     .setDescription('')
-    .setImage(`https://cdn.discordapp.com/attachments/776784024558895114/781898439411236894/token.gif`)
+    .setImage(`https://thumbs.gfycat.com/BlindGaseousAnteater-size_restricted.gif`)
     return message.channel.send(token);
     }
 };

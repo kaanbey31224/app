@@ -1,30 +1,24 @@
 const Discord = require('discord.js')
+ 
+exports.run = async (client ,message, args) =>{
 
-exports.run = async (client, message, args, color) => {
-
-    let start = Date.now(); message.channel.send( 'Pong! ').then(message => { 
-    let diff = (Date.now() - start); 
-    let API = (client.ping).toFixed(2)
-        
-        let embed = new Discord.MessageEmbed()
-        .setTitle(`Captan bot`)
-        .setColor(0xff2f2f)
-        .addField("📶 Mesaj Gecikmesi", `${diff}ms`, true)
-        .addField("💻 Bot Gecikmesi", `${API}ms`, true)
-        message.edit(embed);
-      
-    });
-
-}
-
+  
+  const Crewembed = new Discord.MessageEmbed()
+  .setTitle("<a:piiing:782890760936751126> Pingim!")
+  .setColor("BLACK")
+  .setDescription(`${client.ws.ping} ms`)
+  message.channel.send(Crewembed)
+};
 exports.conf = {
-    enabled: true,
-    guildOnly: false,
-    aliases: [],
-    permLevel: 0
-  };
-
+ enabled: true,
+ guildOnly: false,
+ aliases: ['ping'],
+ permLevel: 0
+};
+ 
 exports.help = {
-    name: 'ping',
-    category: 'INFO'
-} 
+ name: 'ping',
+ description: 'Botun Pingine Bakarsın',
+ usage: '!ping'
+};
+ 
