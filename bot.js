@@ -158,8 +158,7 @@ client.on("message", async msg => {
                 try {
                   if (!msg.member.hasPermission("MANAGE_GUILD")) {
                     msg.delete();                                       
-                    return msg.channel.send(`${msg.user}, Reklam Yapmak Yasak!`).then(msg => msg.delete(10000));
-                  }              
+reply                  }              
                 } catch(err) {
                   console.log(err);
                 }
