@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 
 exports.run = async(client, message, args) => {
- if (!message.member.roles.cache.has("783639441839357962") && !message.member.hasPermission('ADMINISTRATOR')) return message.channel.send(new Discord.MessageEmbed().setAuthor(message.member.displayName, message.author.avatarURL({dynamic: true})).setColor(0x00bfff).addField("Yetersiz Yetki",`Bu Komutu Kullanmak içi Yeterli Yetkiniz Yok`)).then(m => m.delete({timeout: 7000}));
+ if (!message.member.roles.cache.has("783639441839357962") && !message.member.hasPermission('KİCK_MEMBERS')) return message.channel.send(new Discord.MessageEmbed().setAuthor(message.member.displayName, message.author.avatarURL({dynamic: true})).setColor(0x00bfff).addField("Yetersiz Yetki",`Bu Komutu Kullanmak içi Yeterli Yetkiniz Yok`)).then(m => m.delete({timeout: 7000}));
   
   let uye = message.mentions.members.first() || message.guild.members.cache.get(args[0]);
   let reason = args.splice(1).join(" ");
@@ -14,7 +14,7 @@ exports.run = async(client, message, args) => {
 exports.conf = {
     enabled: true,
     guildOnly: false,
-    permLevel: 0,
+    permLevel: 2,
     aliases: ["mute","cmute","chatmute","chat-mute"]
     }
     

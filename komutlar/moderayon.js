@@ -20,6 +20,8 @@ Bir komut hakkında detaylı __yardım için__: **-yardım**
 
 
 **• Komutlar**
+> [-mute](https://discord.gg/qzHTkhjQgT) →  Etiketlediğin kişiye mute atar!
+> [-unmute](https://discord.gg/qzHTkhjQgT) →  Etiketlediğin kişinin mutesini açar!
 > [-kayıt-bilgi](https://discord.gg/qzHTkhjQgT) →  Kayıt için bilgi.
 > [-taç](https://discord.gg/qzHTkhjQgT) → Sunucunun sahibini gösterir.
 > [-sil](https://discord.gg/qzHTkhjQgT) → Yazdığınız miktarda mesajı siler.
