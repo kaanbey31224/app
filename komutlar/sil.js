@@ -1,6 +1,6 @@
 const { MessageEmbed } = require("discord.js");
 exports.run = (Bot, Mesaj, Argüman) => {
-  const Sayı = Number(Argüman[0]);
+  const crew = Number(Argüman[0]);
 
   const Hata = new MessageEmbed()
     .setColor("#7f0000")
@@ -13,76 +13,76 @@ exports.run = (Bot, Mesaj, Argüman) => {
     .setFooter(`${Mesaj.author.username} Tarafından İstendi.`,Mesaj.author.avatarURL());
   {
     if (!Mesaj.member.hasPermission("MANAGE_MESSAGES")) {
-      Hata.setDescription("Bu komutu kullanmak için `Mesajları Yönet` yetkisine sahip olmanız gerekmektedir.");
+      Hata.setDescription("\`Bu komutu kullanmak için `Mesajları Yönet` yetkisine sahip olmanız gerekmektedir.\`");
       Mesaj.channel.send(Hata).then(msg => msg.delete({ timeout: 5000}));
       
     } else {
-      if (!Sayı) {
+      if (!crew) {
         Hata.setDescription("Bir sayı belirtiniz.");
         Mesaj.channel.send(Hata).then(msg => msg.delete({ timeout: 5000}));
       } else {
-        if (Sayı < 101) {
-          Başarılı.setDescription(`${Sayı} adet mesaj başarıyla silindi!`);
+        if (crew < 101) {
+          Başarılı.setDescription(`${crew} Adet mesajı sildim!`);
           Mesaj.channel.send(Başarılı).then(msg => msg.delete({ timeout: 5000}));
-          Mesaj.channel.bulkDelete(Sayı);
+          Mesaj.channel.bulkDelete(crew);
         }
-        if (Sayı > 100 && Sayı < 200) {
-          Başarılı.setDescription(`${Sayı} adet mesaj başarıyla silindi!`);
+        if (crew > 100 && crew < 200) {
+          Başarılı.setDescription(`${crew} Adet mesajı sildim!`);
           Mesaj.channel.send(Başarılı).then(msg => msg.delete({ timeout: 5000}));
           Mesaj.channel.bulkDelete(100).then(() => {
-            Mesaj.channel.bulkDelete(Sayı - 100);
+            Mesaj.channel.bulkDelete(crew - 100);
           });
         }
-        if (Sayı == 200) {
-          Başarılı.setDescription(`${Sayı} adet mesaj başarıyla silindi!`);
+        if (crew == 200) {
+          Başarılı.setDescription(`${crew} Adet mesajı sildim!`);
           Mesaj.channel.send(Başarılı).then(msg => msg.delete({ timeout: 12000}));
           Mesaj.channel.bulkDelete(100);
           Mesaj.channel.bulkDelete(100);
         }
-        if (Sayı > 200 && Sayı < 300) {
-          Başarılı.setDescription(`${Sayı} adet mesaj başarıyla silindi!`);
+        if (crew > 200 && crew < 300) {
+          Başarılı.setDescription(`${crew} Adet mesajı sildim!`);
           Mesaj.channel.send(Başarılı).then(msg => msg.delete({ timeout: 5000}));
           Mesaj.channel.bulkDelete(100);
           Mesaj.channel.bulkDelete(100).then(() => {
-            Mesaj.channel.bulkDelete(Sayı - 200);
+            Mesaj.channel.bulkDelete(crew - 200);
           });
         }
-        if (Sayı == 300) {
-          Başarılı.setDescription(`${Sayı} adet mesaj başarıyla silindi!`);
+        if (crew == 300) {
+          Başarılı.setDescription(`${crew} Adet mesajı sildim!`);
           Mesaj.channel.send(Başarılı).then(msg => msg.delete({ timeout: 12000}));
           Mesaj.channel.bulkDelete(100);
           Mesaj.channel.bulkDelete(100);
           Mesaj.channel.bulkDelete(100);
         }
-        if (Sayı > 300 && Sayı < 400) {
-          Başarılı.setDescription(`${Sayı} adet mesaj başarıyla silindi!`);
+        if (crew > 300 && crew < 400) {
+          Başarılı.setDescription(`${crew} Adet mesajı sildim!`);
           Mesaj.channel.send(Başarılı).then(msg => msg.delete({ timeout: 6000}));
           Mesaj.channel.bulkDelete(100);
           Mesaj.channel.bulkDelete(100);
           Mesaj.channel.bulkDelete(100).then(() => {
-            Mesaj.channel.bulkDelete(Sayı - 300);
+            Mesaj.channel.bulkDelete(crew - 300);
           });
         }
-        if (Sayı == 400) {
-          Başarılı.setDescription(`${Sayı} adet mesaj başarıyla silindi!`);
+        if (crew == 400) {
+          Başarılı.setDescription(`${crew} Adet mesajı sildim!`);
           Mesaj.channel.send(Başarılı).then(msg => msg.delete({ timeout: 12000}));
           Mesaj.channel.bulkDelete(100);
           Mesaj.channel.bulkDelete(100);
           Mesaj.channel.bulkDelete(100);
           Mesaj.channel.bulkDelete(100);
         }
-        if (Sayı > 400 && Sayı < 500) {
-          Başarılı.setDescription(`${Sayı} adet mesaj başarıyla silindi!`);
+        if (crew > 400 && crew < 500) {
+          Başarılı.setDescription(`${crew} Adet mesajı sildim!`);
           Mesaj.channel.send(Başarılı).then(msg => msg.delete({ timeout: 7000}));
           Mesaj.channel.bulkDelete(100);
           Mesaj.channel.bulkDelete(100);
           Mesaj.channel.bulkDelete(100);
           Mesaj.channel.bulkDelete(100).then(() => {
-            Mesaj.channel.bulkDelete(Sayı - 400);
+            Mesaj.channel.bulkDelete(crew - 400);
           });
         }
-        if (Sayı == 500) {
-          Başarılı.setDescription(`${Sayı} adet mesaj başarıyla silindi!`);
+        if (crew == 500) {
+          Başarılı.setDescription(`${crew} Adet mesajı sildim!`);
           Mesaj.channel.send(Başarılı).then(msg => msg.delete({ timeout: 12000}));
           Mesaj.channel.bulkDelete(100);
           Mesaj.channel.bulkDelete(100);
@@ -90,19 +90,19 @@ exports.run = (Bot, Mesaj, Argüman) => {
           Mesaj.channel.bulkDelete(100);
           Mesaj.channel.bulkDelete(100);
         }
-        if (Sayı > 500 && Sayı < 600) {
-          Başarılı.setDescription(`${Sayı} adet mesaj başarıyla silindi!`);
+        if (crew > 500 && crew < 600) {
+          Başarılı.setDescription(`${crew} Adet mesajı sildim!`);
           Mesaj.channel.send(Başarılı).then(msg => msg.delete({ timeout: 8000}));
           Mesaj.channel.bulkDelete(100);
           Mesaj.channel.bulkDelete(100);
           Mesaj.channel.bulkDelete(100);
           Mesaj.channel.bulkDelete(100);
           Mesaj.channel.bulkDelete(100).then(() => {
-            Mesaj.channel.bulkDelete(Sayı - 500);
+            Mesaj.channel.bulkDelete(crew - 500);
           });
         }
-        if (Sayı == 600) {
-          Başarılı.setDescription(`${Sayı} adet mesaj başarıyla silindi!`);
+        if (crew == 600) {
+          Başarılı.setDescription(`${crew} Adet mesajı sildim!`);
           Mesaj.channel.send(Başarılı).then(msg => msg.delete({ timeout: 12000}));
           Mesaj.channel.bulkDelete(100);
           Mesaj.channel.bulkDelete(100);
@@ -111,8 +111,8 @@ exports.run = (Bot, Mesaj, Argüman) => {
           Mesaj.channel.bulkDelete(100);
           Mesaj.channel.bulkDelete(100);
         }
-        if (Sayı > 600 && Sayı < 700) {
-          Başarılı.setDescription(`${Sayı} adet mesaj başarıyla silindi!`);
+        if (crew > 600 && crew < 700) {
+          Başarılı.setDescription(`${crew} Adet mesajı sildim!`);
           Mesaj.channel.send(Başarılı).then(msg => msg.delete({ timeout: 5900}));
           Mesaj.channel.bulkDelete(100);
           Mesaj.channel.bulkDelete(100);
@@ -120,11 +120,11 @@ exports.run = (Bot, Mesaj, Argüman) => {
           Mesaj.channel.bulkDelete(100);
           Mesaj.channel.bulkDelete(100);
           Mesaj.channel.bulkDelete(100).then(() => {
-            Mesaj.channel.bulkDelete(Sayı - 600);
+            Mesaj.channel.bulkDelete(crew - 600);
           });
         }
-        if (Sayı == 700) {
-          Başarılı.setDescription(`${Sayı} adet mesaj başarıyla silindi!`);
+        if (crew == 700) {
+          Başarılı.setDescription(`${crew} Adet mesajı sildim!`);
           Mesaj.channel.send(Başarılı).then(msg => msg.delete({ timeout: 12000}));
           Mesaj.channel.bulkDelete(100);
           Mesaj.channel.bulkDelete(100);
@@ -134,8 +134,8 @@ exports.run = (Bot, Mesaj, Argüman) => {
           Mesaj.channel.bulkDelete(100);
           Mesaj.channel.bulkDelete(100);
         }
-        if (Sayı > 700 && Sayı < 800) {
-          Başarılı.setDescription(`${Sayı} adet mesaj başarıyla silindi!`);
+        if (crew > 700 && crew < 800) {
+          Başarılı.setDescription(`${crew} Adet mesajı sildim!`);
           Mesaj.channel.send(Başarılı).then(msg => msg.delete({ timeout: 10000}));
           Mesaj.channel.bulkDelete(100);
           Mesaj.channel.bulkDelete(100);
@@ -144,11 +144,11 @@ exports.run = (Bot, Mesaj, Argüman) => {
           Mesaj.channel.bulkDelete(100);
           Mesaj.channel.bulkDelete(100);
           Mesaj.channel.bulkDelete(100).then(() => {
-            Mesaj.channel.bulkDelete(Sayı - 700);
+            Mesaj.channel.bulkDelete(crew - 700);
           });
         }
-        if (Sayı == 800) {
-          Başarılı.setDescription(`${Sayı} adet mesaj başarıyla silindi!`);
+        if (crew == 800) {
+          Başarılı.setDescription(`${crew} Adet mesajı sildim!`);
           Mesaj.channel.send(Başarılı).then(msg => msg.delete({ timeout: 12000}));
           Mesaj.channel.bulkDelete(100);
           Mesaj.channel.bulkDelete(100);
@@ -159,8 +159,8 @@ exports.run = (Bot, Mesaj, Argüman) => {
           Mesaj.channel.bulkDelete(100);
           Mesaj.channel.bulkDelete(100);
         }
-        if (Sayı > 800 && Sayı < 900) {
-          Başarılı.setDescription(`${Sayı} adet mesaj başarıyla silindi!`);
+        if (crew > 800 && crew < 900) {
+          Başarılı.setDescription(`${crew} Adet mesajı sildim!`);
           Mesaj.channel.send(Başarılı).then(msg => msg.delete({ timeout: 11000}));
           Mesaj.channel.bulkDelete(100);
           Mesaj.channel.bulkDelete(100);
@@ -170,11 +170,11 @@ exports.run = (Bot, Mesaj, Argüman) => {
           Mesaj.channel.bulkDelete(100);
           Mesaj.channel.bulkDelete(100);
           Mesaj.channel.bulkDelete(100).then(() => {
-            Mesaj.channel.bulkDelete(Sayı - 800);
+            Mesaj.channel.bulkDelete(crew - 800);
           });
         }
-        if (Sayı == 900) {
-          Başarılı.setDescription(`${Sayı} adet mesaj başarıyla silindi!`);
+        if (crew == 900) {
+          Başarılı.setDescription(`${crew} Adet mesajı sildim!`);
           Mesaj.channel.send(Başarılı).then(msg => msg.delete({ timeout: 12000}));
           Mesaj.channel.bulkDelete(100);
           Mesaj.channel.bulkDelete(100);
@@ -186,8 +186,8 @@ exports.run = (Bot, Mesaj, Argüman) => {
           Mesaj.channel.bulkDelete(100);
           Mesaj.channel.bulkDelete(100);
         }
-        if (Sayı > 900 && Sayı < 1000) {
-          Başarılı.setDescription(`${Sayı} adet mesaj başarıyla silindi!`);
+        if (crew > 900 && crew < 1000) {
+          Başarılı.setDescription(`${crew} Adet mesajı sildim!`);
           Mesaj.channel.send(Başarılı).then(msg => msg.delete({ timeout: 12000}));
           Mesaj.channel.bulkDelete(100);
           Mesaj.channel.bulkDelete(100);
@@ -198,12 +198,12 @@ exports.run = (Bot, Mesaj, Argüman) => {
           Mesaj.channel.bulkDelete(100);
           Mesaj.channel.bulkDelete(100);
           Mesaj.channel.bulkDelete(100).then(() => {
-            Mesaj.channel.bulkDelete(Sayı - 900);
+            Mesaj.channel.bulkDelete(crew - 900);
           });
         }
 
-        if (Sayı == 1000) {
-          Başarılı.setDescription(`${Sayı} adet mesaj başarıyla silindi!`);
+        if (crew == 1000) {
+          Başarılı.setDescription(`${crew} Adet mesajı sildim!`);
           Mesaj.channel.send(Başarılı).then(msg => msg.delete({ timeout: 13000}));
           Mesaj.channel.bulkDelete(100);
           Mesaj.channel.bulkDelete(100);
@@ -216,8 +216,8 @@ exports.run = (Bot, Mesaj, Argüman) => {
           Mesaj.channel.bulkDelete(100);
           Mesaj.channel.bulkDelete(100);
         }
-        if (Sayı > 1000) {
-          Hata.setDescription("En fazla 1000 adet mesaj silebilirsiniz.");
+        if (crew > 1000) {
+          Hata.setDescription("Malesef en fazla 1000 mesaj silebiyom");
           Mesaj.channel.send(Hata).then(msg => msg.delete({ timeout: 5000}));
         }
       }

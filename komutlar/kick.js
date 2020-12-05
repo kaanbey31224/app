@@ -3,43 +3,43 @@ const db = require("quick.db");
 module.exports.run = async (bot, message, args) => {
   if (!message.member.hasPermission("KICK_MEMBERS")) {
     const embedCrewCode = new Discord.MessageEmbed()
-      .setDescription("```⚠ Ne yazık ki bu komutu kullanmaya yetkin yok. ⚠ ```")
+      .setDescription("```⚠ Malesef bu komut kullanmaya yetkin yetmiyor! ⚠ ```")
       .setColor("BLACK");
  
     message.channel.send(embedCrewCode);
     return;
   }
  
-  let u = message.mentions.users.first();
-  if (!u) {
+  let c = message.mentions.users.first();
+  if (!c) {
     return message.channel.send(
       new Discord.MessageEmbed()
-        .setDescription("Lütfen atılacak kişiyi etiketleyiniz!")
+        .setDescription("Sunucudan atacağım üyeyi etiketlemelisin!")
         .setColor("BLACK")
         .setFooter(bot.user.username, bot.user.avatarURL)
     );
   }
  
   const embedCrewCode = new Discord.MessageEmbed()
-    .setColor("BLACK")
-    .setDescription(`${u} Adlı şahsın sunucudan atılmasını onaylıyor musunuz?`)
+    .setColor("RED")
+    .setDescription(`${c} Bu kişinin sunucudan atılmasını onaylıyormusun?`)
     .setFooter(bot.user.username, bot.user.avatarURL);
-  message.channel.send(embedCrewCode).then(async function(sentEmbed) {
+  message.channel.send(embedCrewCode).then(async function(crewembed) {
     const emojiArray = ["✅"];
     const filter = (reaction, user) =>
       emojiArray.includes(reaction.emoji.name) && user.id === message.author.id;
-    await sentEmbed.react(emojiArray[0]).catch(function() {});
-    var reactions = sentEmbed.createReactionCollector(filter, {
+    await crewembed.react(emojiArray[0]).catch(function() {});
+    var reactions = crewembed.createReactionCollector(filter, {
       time: 30000
     });
-    reactions.on("end", () => sentEmbed.edit("İşlem iptal oldu!"));
+    reactions.on("end", () => crewembed.edit("Başarılı bir şekilde İşlem iptal oldu!"));
     reactions.on("collect", async function(reaction) {
       if (reaction.emoji.name === "✅") {
         message.channel.send(
-          `İşlem Tamamlandı! ${u} adlı kişi sunucudan atıldı!`
+          `İşlem Tamamlandı! ${c} adlı kişi sunucudan atıldı!`
         );
  
-        message.guild.member(u).kick();
+        message.guild.member(c).kick();
       }
     });
   });
