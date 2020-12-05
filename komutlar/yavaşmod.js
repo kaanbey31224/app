@@ -1,7 +1,15 @@
 const Discord = require('discord.js');
 
 exports.run = async(client, message, args) => { //CrewCode
-if (message.channel.type !== "text") return;
+  if (!message.guild) {
+    const ozelmesajuyari = new Discord.MessageEmbed()
+    .setColor(0xFF0000)
+    .setTimestamp()
+    .setAuthor(message.author.username, message.author.avatarURL)
+    .addField('**Komutları Özel Mesajlarda Kullanılamaz!**')
+    return message.author.send(ozelmesajuyari); }
+  
+  if (message.channel.type !== "text") return;
 const limit = args[0] ? args[0] : 0;
   if(!limit) {
               var embed = new Discord.MessageEmbed()

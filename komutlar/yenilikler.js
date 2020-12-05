@@ -2,6 +2,14 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 exports.run = (client, message) => {
+    if (!message.guild) {
+    const ozelmesajuyari = new Discord.MessageEmbed()
+    .setColor(0xFF0000)
+    .setTimestamp()
+    .setAuthor(message.author.username, message.author.avatarURL)
+    .addField('**Komutları Özel Mesajlarda Kullanılamaz!**')
+    return message.author.send(ozelmesajuyari); }
+  
   if (message.channel.type !== 'dm') {
     const yenilikler = new Discord.MessageEmbed()
     .setColor(0x00AE86)

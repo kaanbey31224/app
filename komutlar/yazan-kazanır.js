@@ -3,7 +3,7 @@ const { delay, randomRange, verify } = require('../util/Util');
 const words = ['çikolata', 'vortex', 'odun', 'bomba', 'süt', 'şimşek', 'yıldırım', 'patlat', 'savaş', 'kelime', 'yok et', 'bilmem', 'öldür', 'sonsuzluk', 'gerçek'];
 
 exports.run = async (client, msg, args) => {
-  
+ 
   this.fighting = new Set();
   
   let opponent = msg.mentions.users.first()
