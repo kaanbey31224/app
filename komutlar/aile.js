@@ -3,7 +3,13 @@ exports.run = (bot, message) => {
   const guildArray = bot.guilds.cache.array()
   while (guildArray.length) {
     const embed = new Discord.MessageEmbed();
-
+    if (!message.guild) {
+    const ozelmesajuyari = new Discord.MessageEmbed()
+    .setColor(0xFF0000)
+    .setTimestamp()
+    .setAuthor(message.author.username, message.author.avatarURL)
+    .addField('**Komutları Özel Mesajlarda Kullanılamaz!**')
+    return message.author.send(ozelmesajuyari); }
  
     const guilds = guildArray.splice(0,25);
     for (const guild of guilds) {

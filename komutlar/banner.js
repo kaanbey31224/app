@@ -6,7 +6,13 @@ exports.run = async (client, message, args) => {
   if(!yazi) return message.channel.send(`**Lütfen yazı yazınız.** <a:maple_leaf:742698148329291826>`)
   const linqo = `https://dummyimage.com/2000x500/33363c/ffffff&text=${yazi}`
   .replace(' ', '+')
-
+    if (!message.guild) {
+    const ozelmesajuyari = new Discord.MessageEmbed()
+    .setColor(0xFF0000)
+    .setTimestamp()
+    .setAuthor(message.author.username, message.author.avatarURL)
+    .addField('**Komutları Özel Mesajlarda Kullanılamaz!**')
+    return message.author.send(ozelmesajuyari); }
   
   const embed = new Discord.MessageEmbed()
   .setTitle("Banner")

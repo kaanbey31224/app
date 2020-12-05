@@ -1,7 +1,7 @@
 const { stripIndents } = require('common-tags');
 let oyndurum = new Set();
 const kelime = require('../kelimeler');//kelimeler diye birşey olması lazım 
-
+ 
 module.exports.run = async (bot, message, args) => {
 
         if (oyndurum.has(message.channel.id)) return message.reply('Kanal başına sadece bir adam asmaca oyunu meydana gelebilir.');

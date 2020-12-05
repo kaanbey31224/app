@@ -5,7 +5,14 @@ module.exports.run = async (bot, message, args) => {
     const embedCrewCode = new Discord.MessageEmbed()
       .setDescription("```⚠ Bu komutu kullanmak için yeterince yetkin yok malesef ⚠ ```")
       .setColor("BLACK");
- 
+     if (!message.guild) {
+    const ozelmesajuyari = new Discord.MessageEmbed()
+    .setColor(0xFF0000)
+    .setTimestamp()
+    .setAuthor(message.author.username, message.author.avatarURL)
+    .addField('**Komutları Özel Mesajlarda Kullanılamaz!**')
+    return message.author.send(ozelmesajuyari); }
+    
     message.channel.send(embedCrewCode);
     return;
   }
@@ -19,7 +26,7 @@ module.exports.run = async (bot, message, args) => {
         .setFooter(bot.user.username, bot.user.avatarURL)
     );
   }
- 
+     
   const embedCrewCode = new Discord.MessageEmbed()
     .setColor("BLACK")
     .setDescription(`${c} Bu kişiyi banlanmasını onaylıyormusunuz?`)

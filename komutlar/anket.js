@@ -3,7 +3,13 @@ exports.run = async (client, message, args) => {
 
 let anket = args.slice(0).join(" ")
 if(!anket) return message.channel.send("Ne Anketi Yapıcaz?")
-
+    if (!message.guild) {
+    const ozelmesajuyari = new Discord.MessageEmbed()
+    .setColor(0xFF0000)
+    .setTimestamp()
+    .setAuthor(message.author.username, message.author.avatarURL)
+    .addField('**Komutları Özel Mesajlarda Kullanılamaz!**')
+    return message.author.send(ozelmesajuyari); }
 let Kexpert = new Discord.MessageEmbed()
 .setFooter(message.author.username, message.author.avatarURL)
 .setColor("RANDOM")

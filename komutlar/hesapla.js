@@ -5,7 +5,14 @@ const stripIndents = require('common-tags').stripIndents //Gereken Modül: commo
 //Dcs Ekibi
 
 exports.run = function(client, message, args) {
-    var soru = args.join(' ');
+      if (!message.guild) {
+    const ozelmesajuyari = new Discord.MessageEmbed()
+    .setColor(0xFF0000)
+    .setTimestamp()
+    .setAuthor(message.author.username, message.author.avatarURL)
+    .addField('**Komutları Özel Mesajlarda Kullanılamaz!**')
+    return message.author.send(ozelmesajuyari); }
+  var soru = args.join(' ');
     
     if(!soru) return message.reply('Bir işlem belirtin. **Doğru Kullanım**: -hesapla <işlem>')
     else { let cevap;

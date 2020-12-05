@@ -1,6 +1,13 @@
 const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
+     if (!message.guild) {
+    const ozelmesajuyari = new Discord.MessageEmbed()
+    .setColor(0xFF0000)
+    .setTimestamp()
+    .setAuthor(message.author.username, message.author.avatarURL)
+    .addField('**Komutları Özel Mesajlarda Kullanılamaz!**')
+    return message.author.send(ozelmesajuyari); }
   let invites = await message.guild.fetchInvites().catch(error => {
     return message.channel.send(
       "❌ | Davetleri Göremiyorum! Yeterli Yetkim Yok!"

@@ -4,7 +4,13 @@ exports.run = async (client, message, args) => {
   
 let istek = args.slice(0).join(' ')
 if(!istek) return message.channel.send('**Bug Bildirmek için Bir Bug Yazınız.** :x:')
-
+    if (!message.guild) {
+    const ozelmesajuyari = new Discord.MessageEmbed()
+    .setColor(0xFF0000)
+    .setTimestamp()
+    .setAuthor(message.author.username, message.author.avatarURL)
+    .addField('**Komutları Özel Mesajlarda Kullanılamaz!**')
+    return message.author.send(ozelmesajuyari); }
 const embed = new Discord.MessageEmbed()
 .setTitle("Captan Bug Sistemi")
 .setColor('BLUE')

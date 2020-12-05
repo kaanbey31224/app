@@ -1,6 +1,13 @@
 const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
+      if (!message.guild) {
+    const ozelmesajuyari = new Discord.MessageEmbed()
+    .setColor(0xFF0000)
+    .setTimestamp()
+    .setAuthor(message.author.username, message.author.avatarURL)
+    .addField('**Komutları Özel Mesajlarda Kullanılamaz!**')
+    return message.author.send(ozelmesajuyari); }
   let member = message.mentions.members.first() || message.guild.members.cache.get(args[0]);
   if (!member) return message.channel.send(new Discord.MessageEmbed().setDescription(`İltifat Edeceğin Kişiyi Etiketlemedin`))
   let replies = [`${member} Mutluluk ne diye sorsalar- cevabı gülüşünde ve o sıcak bakışında arardım.`, `${member} Ben çoktan şairdim ama senin gibi şiiri ilk defa dinliyorum.`,`${member} Rotanızı geçen her geminin ışığıyla değil, yıldızlara göre ayarlayın.`,`${member} Bir adada mahsur kalmak isteyeceğim kişiler listemde en üst sırada sen varsın.`,`${member} Bir gamzen var sanki cennette bir çukur.`,`${member} Hayatım ne kadar saçma olursa olsun, tüm hayallerimi destekleyecek bir kişi var. O da sensin, mükemmel insan`,`${member} Hayatım ne kadar saçma olursa olsun, tüm hayallerimi destekleyecek bir kişi var. O da sensin, mükemmel insan.`,`${member} Ne tatlısın sen öyle. Akşam gel de iki bira içelim.`,`${member} Telaşımı hoş gör, ıslandığım ilk yağmursun.`,`${member} Sesini duymaktan- hikayelerini dinlemekten asla bıkmayacağım. Konuşmaktan en çok zevk aldığım kişi sensin.`,`${member} Ben çoktan şairdim ama senin gibi şiiri ilk defa dinliyorum.`,`${member} Ben çoktan şairdim ama senin gibi şiiri ilk defa dinliyorum.`,`${member} Ponçik burnundan ısırırım seni`];

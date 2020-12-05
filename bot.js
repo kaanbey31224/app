@@ -272,12 +272,12 @@ knl.send("** Abone rölü almak için youTube kanalıma gidip son videoya like,y
     }, 1800000) //1000 = 1 Saniye 1800000
 }) 
  ////////////////////////////////////////////////////////
-//client.on("message", async msg => { 
-//const dcskelime = ["754730560009797723"]; 
-//if (dcskelime.some(dcss => msg.content.includes(dcss))) {
-//msg.reply("**Etiketleme!**")
-//msg.delete()
-//}})
+client.on("message", async msg => { 
+const dcskelime = ["754730560009797723"]; 
+if (dcskelime.some(dcss => msg.content.includes(dcss))) {
+msg.reply("**Etiketleme!**")
+msg.delete()
+}})
 ///////////////////////////////////////////////////
 client.on("ready", async () => {
 let dc = require("discord.js")
@@ -298,18 +298,18 @@ csc.send(cse)
 })
  /////////////////////////////////
 
-client.on("message", message => {
-  if (message.channel.type === "dm") {
-      if (message.author.bot) return;
-      const CrewCode = new Discord.MessageEmbed()
-       .setTitle(`${client.user.username}'- DM kutuma mesaj geldi!`)
-       .setColor('BLACK')
-       .setDescription(`
-        **Bana mesaj atan kişi:** ${message.author}
-        **Gönderdiği Mesaj:** ${message.content}
-        `)
-       .setThumbnail(message.author.avatarURL({dynamic: true})) 
-  client.channels.cache.get("784515224229118023").send(CrewCode);
-  }
-});
+//client.on("message", message => {
+ // if (message.channel.type === "dm") {
+ //     if (message.author.bot) return;
+ //     const CrewCode = new Discord.MessageEmbed()
+ //      .setTitle(`${client.user.username}'- DM kutuma mesaj geldi!`)
+ //      .setColor('BLACK')
+  //     .setDescription(`
+  //      **Bana mesaj atan kişi:** ${message.author}
+  //      **Gönderdiği Mesaj:** ${message.content}
+  //      `)
+ //      .setThumbnail(message.author.avatarURL({dynamic: true})) 
+ // client.channels.cache.get("784515224229118023").send(CrewCode);
+//  }
+//});
 /////////////////////////////////////////////////////////////////////////////////////////////

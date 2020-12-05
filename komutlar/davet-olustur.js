@@ -1,9 +1,11 @@
 exports.run = async (client, message, args) => {
-    try {
+ 
+  try {
       let invite = await message.channel.createInvite({
         maxAge: args.age * 60,
         maxUses: args.uses
-      }); //CrewCode
+    }); //CrewCode    
+   
   
       message.channel.send('**Bu Sunucunun Davet Linkini Kurdum.**\n'
         + '**Link Aşağıda**'
@@ -16,6 +18,7 @@ exports.run = async (client, message, args) => {
       client.log.error(e);
     }
   };
+
   //CrewCode
   exports.conf = {
     enabled: true,

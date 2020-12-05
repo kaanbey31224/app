@@ -2,7 +2,13 @@ const Discord = require('discord.js');
 const { stripIndents } = require('common-tags');
 const { randomRange, verify } = require('../util/Util.js');
 exports.run = async (client, message, args) => {
-  
+      if (!message.guild) {
+    const ozelmesajuyari = new Discord.MessageEmbed()
+    .setColor(0xFF0000)
+    .setTimestamp()
+    .setAuthor(message.author.username, message.author.avatarURL)
+    .addField('**Komutları Özel Mesajlarda Kullanılamaz!**')
+    return message.author.send(ozelmesajuyari); }
   this.fighting = new Set();
   
 	let opponent = message.mentions.users.first()

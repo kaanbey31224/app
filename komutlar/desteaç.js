@@ -1,7 +1,14 @@
 const Discord = require('discord.js');
 
 exports.run = (client, message) => {
-    let zulapng = "https://pbs.twimg.com/media/EBNNWy5XoAE7Xiu.jpg"
+      if (!message.guild) {
+    const ozelmesajuyari = new Discord.MessageEmbed()
+    .setColor(0xFF0000)
+    .setTimestamp()
+    .setAuthor(message.author.username, message.author.avatarURL)
+    .addField('**Komutları Özel Mesajlarda Kullanılamaz!**')
+    return message.author.send(ozelmesajuyari); } 
+  let zulapng = "https://pbs.twimg.com/media/EBNNWy5XoAE7Xiu.jpg"
     var destedencikanlar = [
         "M4A1 **Megatronik Desen**",
         "M4A4 **Cehnnem Susturucu**",
