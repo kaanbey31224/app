@@ -11,8 +11,8 @@ exports.run = (client, message, params) => {
     return message.author.send(ozelmesajuyari); }
     if (message.channel.type !== 'dm') {
       const token = new Discord.MessageEmbed()
-    .setAuthor(message.author.username + " Alsana Token Güle Güle Kulan :)")
-    .setColor('RANDOM')
+    .setAuthor(message.author.username + " Alsana Token Güle Güle Kulan :)  ")
+    .setColor('BLACK')
     .setTimestamp()
     .setDescription('')
     .setImage(`https://thumbs.gfycat.com/BlindGaseousAnteater-size_restricted.gif`)

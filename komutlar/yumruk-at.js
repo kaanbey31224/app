@@ -15,7 +15,7 @@ exports.run = function(client, message) {
         `**${message.author.username}  Sana Yumruk Attı**`
     )
     .setImage(
-      "https://cdn.discordapp.com/attachments/779099271441809420/780013987294478336/yumruk.gif"
+      "https://media1.giphy.com/media/f9qqV2Dp84wmIaFjxn/giphy.gif"
     );
 
   return message.channel.send(CrewCodeembed);
