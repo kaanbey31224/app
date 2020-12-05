@@ -129,10 +129,10 @@ client.yetkiler = message => {
 
 ///////////////////////////////KOMUTLAR//////////////////////////////
 
-client.on("message", async msg => {
-    if(msg.author.bot) return;
+client.on("message", async message => {
+    if(message.author.bot) return;
     
-    let i = await db.fetch(`reklamFiltre_${msg.guild.id}`)  
+    let i = await db.fetch(`reklamFiltre_${message.guild.id}`)  
           if (i == 'acik') {
               const reklam = ["https://","http://","discord.gg",
       "discord.gg",
@@ -154,11 +154,11 @@ client.on("message", async msg => {
       ".party",
       ".rf.gd",
       ".az"]
-              if (reklam.some(word => msg.content.toLowerCase().includes(word))) {
+              if (reklam.some(word => message.content.toLowerCase().includes(word))) {
                 try {
-                  if (!msg.member.hasPermission("MANAGE_GUILD")) {
-                    msg.delete();                                       
-                    return msg.channel.send(`${msg.user}, Reklam Yapmak Yasak!`).then(msg => msg.delete(10000));
+                  if (!message.member.hasPermission("MANAGE_GUILD")) {
+                    message.delete();                                       
+                    return message.channel.send(`${message.author.id}, Reklam Yapmak Yasak!`).then(message => message.delete(10000));
                   }              
                 } catch(err) {
                   console.log(err);
