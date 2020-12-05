@@ -1,4 +1,6 @@
 exports.run = async (client, msg, args) => {
+ 
+  
   let kufur=[
     "anan bana sakso çekiyor cnm 5 dk bekle",
     "amına kodumun jedayı seni",

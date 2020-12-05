@@ -1,7 +1,14 @@
 const Discord = require('discord.js');
 const db = require('quick.db');
 exports.run = async (client, message, args) => {
- if (!message.member.hasPermission('ADMINISTRATOR')) return message.reply('Yetkiniz Bulunmamaktadır!');
+ if (!message.guild) {
+    const ozelmesajuyari = new Discord.MessageEmbed()
+    .setColor(0xFF0000)
+    .setTimestamp()
+    .setAuthor(message.author.username, message.author.avatarURL)
+    .addField('**Komutları Özel Mesajlarda Kullanılamaz!**')
+    return message.author.send(ozelmesajuyari); }
+  if (!message.member.hasPermission('ADMINISTRATOR')) return message.reply('Yetkiniz Bulunmamaktadır!');
 let reklam = db.fetch(`kufurengel.${message.guild.id}`)
 if(!reklam) {
 message.channel.send(`Küfür filtresi başarıyla açıldı.`)

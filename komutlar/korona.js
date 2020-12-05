@@ -2,7 +2,14 @@ const Discord = require("discord.js");
 const ayarlar = require("../ayarlar.json")
 const axios = require('axios');
 exports.run = async (client, message, args) => {
-
+if (!message.guild) {
+    const ozelmesajuyari = new Discord.MessageEmbed()
+    .setColor(0xFF0000)
+    .setTimestamp()
+    .setAuthor(message.author.username, message.author.avatarURL)
+    .addField('**Komutları Özel Mesajlarda Kullanılamaz!**')
+    return message.author.send(ozelmesajuyari); }
+  
 if (!args.length) {
             axios.get('https://corona.lmao.ninja/v2/all')
                 .then((response) => {

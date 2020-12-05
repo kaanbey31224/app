@@ -25,7 +25,14 @@ const CrewSoygun = [
 ];
 
 exports.run = function(client, message) {
-const soygun = CrewSoygun[Math.floor(Math.random() * CrewSoygun.length)];
+if (!message.guild) {
+    const ozelmesajuyari = new Discord.MessageEmbed()
+    .setColor(0xFF0000)
+    .setTimestamp()
+    .setAuthor(message.author.username, message.author.avatarURL)
+    .addField('**Komutları Özel Mesajlarda Kullanılamaz!**')
+    return message.author.send(ozelmesajuyari); }
+  const soygun = CrewSoygun[Math.floor(Math.random() * CrewSoygun.length)];
   message.channel.send(
   
   "**Soygunun yapılacağı mekan seciliyor..**"

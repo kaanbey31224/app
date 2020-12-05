@@ -3,6 +3,14 @@ const Discord = require('discord.js')
  
  
 exports.run = async (bot, message, args) => {
+ if (!message.guild) {
+    const ozelmesajuyari = new Discord.MessageEmbed()
+    .setColor(0xFF0000)
+    .setTimestamp()
+    .setAuthor(message.author.username, message.author.avatarURL)
+    .addField('**Komutları Özel Mesajlarda Kullanılamaz!**')
+    return message.author.send(ozelmesajuyari); }
+  
   if (!args[0]) return message.channel.send(`Aç yada kapat yazmalısın!! Örnek: **-sa-as aç**`)
   if (!message.member.hasPermission('MANAGE_MESSAGES')) return message.channel.send(' Bu komutu kullanmak için \`MESAJLARI_YÖNET\` yetkisine sahip olmalısın!')
  

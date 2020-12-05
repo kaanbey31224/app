@@ -1,6 +1,12 @@
 const Discord = require("discord.js");
 exports.run = async (client, message, args) => {
-
+    if (!message.guild) {
+    const ozelmesajuyari = new Discord.MessageEmbed()
+    .setColor(0xFF0000)
+    .setTimestamp()
+    .setAuthor(message.author.username, message.author.avatarURL)
+    .addField('**Komutları Özel Mesajlarda Kullanılamaz!**')
+    return message.author.send(ozelmesajuyari); }
   
 let istek = args.slice(0).join(' ')
 if(!istek) return message.channel.send('**İstek kod Bildirmek için Bir İstek Yazınız.** :x:')

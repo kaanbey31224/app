@@ -4,7 +4,14 @@ const agree    = "✅";
 const disagree = "❎";
 
 module.exports.run = async (bot, message, args) => {
-
+if (!message.guild) {
+    const ozelmesajuyari = new Discord.MessageEmbed()
+    .setColor(0xFF0000)
+    .setTimestamp()
+    .setAuthor(message.author.username, message.author.avatarURL)
+    .addField('**Komutları Özel Mesajlarda Kullanılamaz!**')
+    return message.author.send(ozelmesajuyari); }
+  
   if (message.mentions.users.size === 0){
     return message.channel.send(" **| Lütfen Birini Etiketleyiniz!**");
   }

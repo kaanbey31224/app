@@ -3,7 +3,14 @@ const moment = require('moment')
 moment.locale('tr')
 
 exports.run = function(client, message, args) {
- const kisi = message.mentions.users.first() || message.author;
+ if (!message.guild) {
+    const ozelmesajuyari = new Discord.MessageEmbed()
+    .setColor(0xFF0000)
+    .setTimestamp()
+    .setAuthor(message.author.username, message.author.avatarURL)
+    .addField('**Komutları Özel Mesajlarda Kullanılamaz!**')
+    return message.author.send(ozelmesajuyari); }
+  const kisi = message.mentions.users.first() || message.author;
  var x
  switch (kisi.presence.status) {
      case 'online': x ='<:online:779097055971901450>'

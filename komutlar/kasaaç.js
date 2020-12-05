@@ -1,7 +1,14 @@
 
 const Discord = require('discord.js');
 exports.run = async (client, message, args) => {
-    let csgopng = "https://cdn.discordapp.com/attachments/447829045376319500/516564269584744448/csgo.png"
+  if (!message.guild) {
+    const ozelmesajuyari = new Discord.MessageEmbed()
+    .setColor(0xFF0000)
+    .setTimestamp()
+    .setAuthor(message.author.username, message.author.avatarURL)
+    .addField('**Komutları Özel Mesajlarda Kullanılamaz!**')
+    return message.author.send(ozelmesajuyari); }
+  let csgopng = "https://cdn.discordapp.com/attachments/447829045376319500/516564269584744448/csgo.png"
     var kasadancikanlar = [
         "Glock-18 'Fade' (**Factory New**) \nFiyatı:**298.88$**",
         "M4A4 Poseidon (**Factory New**) \nFiyatı:**216.11$**",

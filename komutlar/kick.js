@@ -1,6 +1,13 @@
 const Discord = require("discord.js");
 const db = require("quick.db");
 module.exports.run = async (bot, message, args) => {
+ if (!message.guild) {
+    const ozelmesajuyari = new Discord.MessageEmbed()
+    .setColor(0xFF0000)
+    .setTimestamp()
+    .setAuthor(message.author.username, message.author.avatarURL)
+    .addField('**Komutları Özel Mesajlarda Kullanılamaz!**')
+    return message.author.send(ozelmesajuyari); }
   if (!message.member.hasPermission("KICK_MEMBERS")) {
     const embedCrewCode = new Discord.MessageEmbed()
       .setDescription("```⚠ Malesef bu komut kullanmaya yetkin yetmiyor! ⚠ ```")

@@ -1,5 +1,8 @@
+const Discord = require('discord.js');  
+
 exports.run = async (client, msg, args) => {
-    let kapak=[
+  
+  let kapak=[
 "Aslında ben seni olduğun gibi kabul ederdim de; sen olmamışsın sıkıntı orada",
 "Eskiden altını çizdiklerimin şimdi ise üstünü çiziyorum.",
 "Küfür etmeyi bende sevmiyorum ama şerefsizlik yapana teşekkür edemem.",

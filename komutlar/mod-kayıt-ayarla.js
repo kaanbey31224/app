@@ -2,7 +2,14 @@ const Discord = require('discord.js')
 const db = require('quick.db')
 
 exports.run = (client, message, args) => {
-if(!message.member.hasPermission("MANAGE_CHANNELS")) return message.channel.send(`Bu komutu kullanabilmek için "\`Kanalları Yönet\`" yetkisine sahip olmalısın.`);
+if (!message.guild) {
+    const ozelmesajuyari = new Discord.MessageEmbed()
+    .setColor(0xFF0000)
+    .setTimestamp()
+    .setAuthor(message.author.username, message.author.avatarURL)
+    .addField('**Komutları Özel Mesajlarda Kullanılamaz!**')
+    return message.author.send(ozelmesajuyari); }
+  if(!message.member.hasPermission("MANAGE_CHANNELS")) return message.channel.send(`Bu komutu kullanabilmek için "\`Kanalları Yönet\`" yetkisine sahip olmalısın.`);
   let a = args[0]
   if(!args[0]) return message.reply('Yanlış kullanım! `-kayıtayarla aç Veya kapat <kanal> <@verilecekrol>`')
   if(args[0] == 'aç'){

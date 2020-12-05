@@ -1,6 +1,6 @@
 const { MessageEmbed } = require("discord.js");
 exports.run = (Bot, Mesaj, Argüman) => {
-  const crew = Number(Argüman[0]);
+const crew = Number(Argüman[0]);
 
   const crewHata = new MessageEmbed()
     .setColor("#7f0000")

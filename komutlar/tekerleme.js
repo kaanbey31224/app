@@ -16,7 +16,7 @@ var box = [
 "Sen seni biI, sen seni, biI sen seni, biI sen seni, sen seni biImezsen patIatırIar enseni."
 ]
 const CrewCode = box[Math.floor(Math.random() * box.length)];
-
+ 
 message.channel.send(
 new discord.MessageEmbed()
 .setTitle("Tekerleme")
