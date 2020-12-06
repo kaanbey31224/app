@@ -3,7 +3,7 @@ const db = require("quick.db");
 module.exports.run = async (bot, message, args) => {
   if (!message.member.hasPermission("BAN_MEMBERS")) {
     const embedCrewCode = new Discord.MessageEmbed()
-      .setDescription("```⚠ Bu komutu kullanmak için yeterince yetkin yok malesef ⚠ ```")
+      .setDescription("```⚠ 😥 Bu komutu kullanmak için yeterince yetkin yok malesef 😥 ⚠ ```")
       .setColor("BLACK");
      if (!message.guild) {
     const ozelmesajuyari = new Discord.MessageEmbed()
@@ -43,7 +43,7 @@ module.exports.run = async (bot, message, args) => {
     reactions.on("collect", async function(reaction) {
       if (reaction.emoji.name === "✅") {
         message.channel.send(
-          `İşlem Tamamlandı! ${c} adlı kişi sunucudan Banlandı!`
+          `İşlem Tamamlandı! ${c} adlı kişi sunucudan Banlandı! 😁`
         );
  
         message.guild.member(c).ban();
