@@ -35,7 +35,7 @@ client.channels.cache.get(CrewCode).send(crew)
 
 };
 exports.conf = {
-  enabled: true, 
+  enabled: false, 
   guildOnly: false, 
   aliases: [], 
   permLevel: 3 
