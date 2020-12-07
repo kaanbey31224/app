@@ -313,3 +313,9 @@ csc.send(cse)
 //  }
 //});
 /////////////////////////////////////////////////////////////////////////////////////////////
+  //client.on('message', async msg => { 
+  //if (msg.content.toLowerCase() === 'selamun aleyküm') { 
+  //await msg.react('<:AS:767780149596127233>'); 
+  //msg.react(''); 
+  //} 
+  //});
