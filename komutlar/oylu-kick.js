@@ -1,1 +1,0 @@
-//bunu ben kodladım ondan yayınlanmasını istemediğimden dolayı sildim , Kendiniz ayarlayın aq ben uğraşamam

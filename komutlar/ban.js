@@ -1,1 +1,0 @@
-//Kendiniz ayarlayın aq ben uğraşamam
