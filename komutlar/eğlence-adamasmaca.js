@@ -1,6 +1,6 @@
 const { stripIndents } = require('common-tags');
 let oyndurum = new Set();
-const kelime = require('../kelimeler');//kelimeler diye birşey olması lazım 
+const kelime = require('../kelimeler');
  
 module.exports.run = async (bot, message, args) => {
 
